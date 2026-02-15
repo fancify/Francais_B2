@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* ── Apple Design System tokens ── */
+@theme inline {
+  /* 主色系 */
+  --color-apple-blue: #007AFF;
+  --color-apple-green: #34C759;
+  --color-apple-orange: #FF9F0A;
+  --color-apple-red: #FF3B30;
+  --color-apple-purple: #AF52DE;
+  --color-apple-teal: #5AC8FA;
+  --color-apple-pink: #FF2D55;
+  --color-apple-yellow: #FFCC00;
+
+  /* 灰度 */
+  --color-apple-bg: #F5F5F7;
+  --color-apple-card: #FFFFFF;
+  --color-apple-border: #D2D2D7;
+  --color-apple-text: #1D1D1F;
+  --color-apple-secondary: #86868B;
+
+  /* 功能色 */
+  --color-correct: #34C759;
+  --color-wrong: #FF3B30;
+
+  /* 圆角 */
+  --radius-card: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+
+  /* 阴影 */
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.12);
+
+  /* 字体 */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
+
+  /* 背景 */
+  --color-background: #F5F5F7;
+  --color-foreground: #1D1D1F;
+}
+
+/* ── 全局基础样式 ── */
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── 滚动条美化 ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D2D2D7;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #86868B;
+}
+
+/* ── 选中文本颜色 ── */
+::selection {
+  background: rgba(0, 122, 255, 0.2);
+}
