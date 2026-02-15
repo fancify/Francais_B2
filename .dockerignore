@@ -1,0 +1,9 @@
+.git
+.gitignore
+__pycache__
+*.pyc
+.streamlit/secrets.toml
+app_backup.py
+data/progress.json
+.claude
+.env

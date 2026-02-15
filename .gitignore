@@ -1,0 +1,12 @@
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+data/progress.json
+.env
+.claude/
+app_backup.py
+*.png
+*.pdf
+*.log
+.DS_Store
+.playwright-mcp/
