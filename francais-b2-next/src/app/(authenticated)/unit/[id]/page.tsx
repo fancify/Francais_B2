@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, use } from "react";
+import { useState, useEffect } from "react";
 import { loadUnits, getUnit } from "@/lib/data";
 import { TabGroup } from "@/components/ui/TabGroup";
 import { QuizTab } from "@/components/unit/QuizTab";
@@ -12,12 +12,11 @@ import type { Unit } from "@/lib/types";
 const TAB_LABELS = ["Quiz", "Oral", "Écriture", "Examen B2"];
 
 interface PageProps {
-  params: Promise<{ id: string }>;
+  params: { id: string };
 }
 
 export default function UnitPage({ params }: PageProps): React.ReactElement {
-  const { id } = use(params);
-  const unitId = parseInt(id, 10);
+  const unitId = parseInt(params.id, 10);
 
   const [units, setUnits] = useState<Unit[]>([]);
   const [activeTab, setActiveTab] = useState(0);
