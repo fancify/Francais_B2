@@ -40,8 +40,11 @@ export default function LoginPage(): React.ReactElement | null {
         {/* 标题 */}
         <div className="mb-8 text-center">
           <h1 className="text-2xl font-bold text-apple-text">
-            Vibe Français B2
+            🇫🇷 Vibe Français B2
           </h1>
+          <p className="mt-1 text-xs text-apple-secondary tracking-wide">
+            Crafted by Fan &amp; Fan
+          </p>
           <p className="mt-2 text-sm text-apple-secondary">
             Édito B2 — Cahier d&#39;exercices dynamique
           </p>

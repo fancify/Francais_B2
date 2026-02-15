@@ -10,8 +10,13 @@ export function Logo({ compact = false }: LogoProps): React.ReactElement {
   }
 
   return (
-    <span className="text-xl font-bold tracking-tight text-apple-text">
-      Vibe Français
-    </span>
+    <div className="leading-tight">
+      <span className="text-xl font-bold tracking-tight text-apple-text">
+        🇫🇷 Vibe Français
+      </span>
+      <p className="text-[10px] text-apple-secondary tracking-wide">
+        Crafted by Fan &amp; Fan
+      </p>
+    </div>
   );
 }
