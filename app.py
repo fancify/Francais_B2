@@ -79,11 +79,8 @@ header[data-testid="stHeader"] {
     border: none !important;
     pointer-events: none !important;
 }
-header[data-testid="stHeader"] [data-testid="stToolbar"],
-header[data-testid="stHeader"] [data-testid="stToolbar"] > div {
-    pointer-events: none !important;
-}
-header[data-testid="stHeader"] [data-testid="stToolbar"] button {
+/* 允许 header 内所有按钮可点击（含侧边栏折叠/展开按钮） */
+header[data-testid="stHeader"] button {
     pointer-events: auto !important;
 }
 button[data-testid="stBaseButton-header"] {

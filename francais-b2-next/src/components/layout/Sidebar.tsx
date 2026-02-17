@@ -3,10 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Logo } from "@/components/layout/Logo";
 
 interface SidebarProps {
   units: { unit_number: number; theme: string }[];
+  collapsed: boolean;
+  onToggle: () => void;
 }
 
 interface NavItem {
@@ -20,7 +21,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Examen Blanc", href: "/exam-blanc" },
 ];
 
-export function Sidebar({ units }: SidebarProps): React.ReactElement {
+export function Sidebar({ units, collapsed, onToggle }: SidebarProps): React.ReactElement {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -42,6 +43,20 @@ export function Sidebar({ units }: SidebarProps): React.ReactElement {
         </svg>
       </button>
 
+      {/* 桌面端：侧边栏折叠时的展开按钮 */}
+      {collapsed && (
+        <button
+          type="button"
+          onClick={onToggle}
+          className="fixed top-4 left-4 z-50 hidden rounded-[14px] bg-apple-card p-2.5 shadow-[0_2px_12px_rgba(0,0,0,0.08)] transition-colors hover:bg-apple-bg lg:flex"
+          aria-label="Ouvrir la barre latérale"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <path d="M3 5h14M3 10h14M3 15h14" />
+          </svg>
+        </button>
+      )}
+
       {/* 移动端遮罩 */}
       {mobileOpen && (
         <div
@@ -52,27 +67,43 @@ export function Sidebar({ units }: SidebarProps): React.ReactElement {
 
       {/* 侧边栏主体 */}
       <aside
-        className={`fixed top-0 left-0 z-50 flex h-full w-[260px] flex-col border-r border-apple-border bg-apple-card transition-transform lg:translate-x-0 ${
+        className={`fixed top-0 left-0 z-50 flex h-full w-[260px] flex-col border-r border-apple-border bg-apple-card transition-transform duration-300 ease-in-out ${
           mobileOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
+        } ${collapsed ? "lg:-translate-x-full" : "lg:translate-x-0"}`}
       >
-        {/* Logo 区域 */}
-        <div className="flex h-16 items-center justify-between px-5">
-          <Logo />
-          <button
-            type="button"
-            onClick={() => setMobileOpen(false)}
-            className="rounded-lg p-1.5 text-apple-secondary hover:bg-apple-bg lg:hidden"
-            aria-label="Fermer le menu"
-          >
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="1.5">
-              <path d="M4 4l10 10M14 4L4 14" />
-            </svg>
-          </button>
+        {/* 顶部操作栏 */}
+        <div className="flex h-14 items-center justify-between px-4">
+          <p className="text-xs font-semibold uppercase tracking-wider text-apple-secondary">
+            Navigation
+          </p>
+          <div className="flex items-center gap-1">
+            {/* 桌面端折叠按钮 */}
+            <button
+              type="button"
+              onClick={onToggle}
+              className="hidden rounded-lg p-1.5 text-apple-secondary transition-colors hover:bg-apple-bg lg:flex"
+              aria-label="Fermer la barre latérale"
+            >
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M11 4L6 9l5 5" />
+              </svg>
+            </button>
+            {/* 移动端关闭按钮 */}
+            <button
+              type="button"
+              onClick={() => setMobileOpen(false)}
+              className="rounded-lg p-1.5 text-apple-secondary hover:bg-apple-bg lg:hidden"
+              aria-label="Fermer le menu"
+            >
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M4 4l10 10M14 4L4 14" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* 主导航 */}
-        <nav className="px-3 pt-2">
+        <nav className="px-3">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
