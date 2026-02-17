@@ -26,7 +26,7 @@ export default function ProgressPage(): React.ReactElement {
   const currentB2Progress = totalQuizzes > 0
     ? (unitsDone / 12) * 50 + (avgScore / 100) * 50
     : 0;
-  const readinessPct = 40 + currentB2Progress * 0.6;
+  const readinessPct = 20 + currentB2Progress * 0.8;
 
   // ── 雷达图维度 (0-10) ──
   const vocabWps = weakPoints.filter((w) => w.type === "vocabulary").length;

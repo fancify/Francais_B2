@@ -37,9 +37,9 @@ export function RadarChart({
   ];
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex w-full flex-col items-center">
       <p className="mb-2 text-sm font-semibold text-apple-secondary">Compétences</p>
-      <ResponsiveContainer width="100%" height={280}>
+      <ResponsiveContainer width="100%" aspect={1.1}>
         <RechartsRadarChart data={data} cx="50%" cy="50%" outerRadius="70%">
           <PolarGrid stroke="#D2D2D7" />
           <PolarAngleAxis
