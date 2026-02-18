@@ -13,7 +13,7 @@ import streamlit.components.v1 as components
 
 from lib.components import render_accent_bar, render_word_counter
 from lib.grading import grade_exam_blanc_writing
-from lib.matching import match_answer
+from lib.matching import match_answer, match_vocab_answer
 from lib.prompts import EXAM_WRITING_PROMPTS
 from lib.quiz import generate_exam_blanc
 from lib.storage import save_scores
@@ -31,13 +31,14 @@ EXAM_DURATION = 3600  # 60 分钟（秒）
 def _force_submit_exam(exam: dict, units: list[dict]) -> None:
     """评分逻辑（正常提交和超时提交共用）。"""
 
-    # -- 词汇评分（fuzzy matching） --
+    # -- 词汇评分（fuzzy matching + 冠词支持） --
     vocab_results = []
     vocab_correct = 0
     for i, v in enumerate(exam["vocabulary"]):
         user_ans = st.session_state.get(f"eb_vocab_{i}", "").strip()
         expected = v["answer"].strip()
-        is_correct, hint = match_answer(user_ans, expected)
+        article = v.get("article", "")
+        is_correct, hint = match_vocab_answer(user_ans, expected, article)
         if is_correct:
             vocab_correct += 1
         vocab_results.append({

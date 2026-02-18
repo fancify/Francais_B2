@@ -13,7 +13,7 @@ from lib.grading import (
     grade_oral,
     grade_writing,
 )
-from lib.matching import match_answer
+from lib.matching import match_answer, match_conj_answer, match_expr_answer, match_vocab_answer
 from lib.prompts import (
     EXAM_ORAL_PROMPTS,
     EXAM_WRITING_PROMPTS,
@@ -182,17 +182,21 @@ def _grade_quiz(
             is_correct = (user_ans == q["answer"])
             hint = ""
         else:
-            is_correct, hint = match_answer(user_ans.strip(), q["answer"].strip())
+            is_correct, hint = match_vocab_answer(
+                user_ans.strip(), q["answer"].strip(), q.get("article", ""),
+            )
         results["vocab"].append({**q, "user_answer": user_ans, "correct": is_correct, "hint": hint})
 
     for i, q in enumerate(expr_qs):
         user_ans = st.session_state.get(f"qe_{i}", "").strip()
-        is_correct, hint = match_answer(user_ans, q["answer"].strip())
+        is_correct, hint = match_expr_answer(user_ans, q["answer"].strip())
         results["expr"].append({**q, "user_answer": user_ans, "correct": is_correct, "hint": hint})
 
     for i, q in enumerate(conj_qs):
         user_ans = st.session_state.get(f"qc_{i}", "").strip()
-        is_correct, hint = match_answer(user_ans, q["answer"].strip())
+        is_correct, hint = match_conj_answer(
+            user_ans, q["answer"].strip(), q.get("person", ""),
+        )
         results["conj"].append({**q, "user_answer": user_ans, "correct": is_correct, "hint": hint})
 
     for i, q in enumerate(trans_qs):
@@ -323,17 +327,18 @@ def _render_oral(unit: dict) -> None:
         | **Total** | **/25** |
         """)
 
-    oral_text = st.text_area(
-        "Votre réponse orale (dictée) :", height=220,
-        placeholder="Appuyez sur \U0001f399 pour dicter votre réponse\u2026",
-        key=f"oral_text_{unit['unit_number']}",
-    )
+    with st.form(f"oral_form_{unit['unit_number']}"):
+        oral_text = st.text_area(
+            "Votre réponse orale (dictée) :", height=220,
+            placeholder="Appuyez sur \U0001f399 pour dicter votre réponse\u2026",
+            key=f"oral_text_{unit['unit_number']}",
+        )
+        render_word_counter(oral_text)
+        oral_submitted = st.form_submit_button(
+            "Évaluer", type="primary", use_container_width=True,
+        )
 
-    render_word_counter(oral_text)
-
-    if oral_text.strip() and st.button(
-        "Évaluer", type="primary", key=f"eval_oral_{unit['unit_number']}",
-    ):
+    if oral_submitted and oral_text.strip():
         with st.spinner("Évaluation en cours\u2026"):
             grade = grade_oral(oral_text, unit)
         if grade:
@@ -588,17 +593,18 @@ def _render_exam_pe(unit: dict) -> None:
     )
     st.markdown(f"**Sujet :** {ep_prompt}")
 
-    exam_pe_text = st.text_area(
-        "Votre production :", height=220,
-        placeholder="Rédigez ici\u2026",
-        key=f"exam_pe_{unit['unit_number']}",
-    )
+    with st.form(f"exam_pe_form_{unit['unit_number']}"):
+        exam_pe_text = st.text_area(
+            "Votre production :", height=220,
+            placeholder="Rédigez ici\u2026",
+            key=f"exam_pe_{unit['unit_number']}",
+        )
+        render_word_counter(exam_pe_text)
+        pe_submitted = st.form_submit_button(
+            "Évaluer la PE", type="primary", use_container_width=True,
+        )
 
-    render_word_counter(exam_pe_text)
-
-    if exam_pe_text.strip() and st.button(
-        "Évaluer la PE", type="primary", key="eval_exam_pe",
-    ):
+    if pe_submitted and exam_pe_text.strip():
         with st.spinner("Évaluation\u2026"):
             grade = grade_writing(exam_pe_text, unit)
         if grade:
@@ -627,17 +633,18 @@ def _render_exam_po(unit: dict) -> None:
         "\u2192 conclusion \u00b7 ~300-400 mots"
     )
 
-    exam_po_text = st.text_area(
-        "Votre production orale :", height=220,
-        placeholder="Dictez ici\u2026",
-        key=f"exam_po_{unit['unit_number']}",
-    )
+    with st.form(f"exam_po_form_{unit['unit_number']}"):
+        exam_po_text = st.text_area(
+            "Votre production orale :", height=220,
+            placeholder="Dictez ici\u2026",
+            key=f"exam_po_{unit['unit_number']}",
+        )
+        render_word_counter(exam_po_text)
+        po_submitted = st.form_submit_button(
+            "Évaluer la PO", type="primary", use_container_width=True,
+        )
 
-    render_word_counter(exam_po_text)
-
-    if exam_po_text.strip() and st.button(
-        "Évaluer la PO", type="primary", key="eval_exam_po",
-    ):
+    if po_submitted and exam_po_text.strip():
         with st.spinner("Évaluation\u2026"):
             grade = grade_oral(exam_po_text, unit)
         if grade:

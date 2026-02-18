@@ -190,6 +190,7 @@ def generate_unit_quiz(
     n_mcq = max(1, n_vocab // 4)
     for i, v in enumerate(vocab_qs):
         key = _vocab_key(v)
+        article = v.get("article", "")
         if i < n_mcq:
             correct_def = v["definition"]
             pool = [d for d in all_defs if d != correct_def]
@@ -208,6 +209,7 @@ def generate_unit_quiz(
                 "qtype": "fill",
                 "prompt": v["definition"],
                 "answer": v["answer"],
+                "article": article,
                 "_key": key,
             })
 
@@ -229,6 +231,7 @@ def generate_unit_quiz(
             "qtype": "fill",
             "prompt": f"{c['verb']} — {c['tense']} — {c['person']}",
             "answer": c["answer"],
+            "person": c["person"],
             "_key": _conj_key(c),
         })
 
