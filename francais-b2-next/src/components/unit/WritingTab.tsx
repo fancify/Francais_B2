@@ -31,6 +31,7 @@ export function WritingTab({ unit }: WritingTabProps): React.ReactElement {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<string | null>(null);
   const [warning, setWarning] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
   const [criteriaOpen, setCriteriaOpen] = useState(false);
 
   function wordCount(): number {
@@ -49,16 +50,28 @@ export function WritingTab({ unit }: WritingTabProps): React.ReactElement {
 
     setLoading(true);
     setResult(null);
+    setError(null);
 
-    const res = await fetch("/api/grade-writing", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text, theme: unit.theme }),
-    });
+    try {
+      const res = await fetch("/api/grade-writing", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text, theme: unit.theme }),
+      });
 
-    const data = (await res.json()) as { grade: string };
-    setResult(data.grade);
-    setLoading(false);
+      if (!res.ok) {
+        const errData = (await res.json().catch(() => ({}))) as { error?: string };
+        throw new Error(errData.error || `Erreur serveur (${res.status})`);
+      }
+
+      const data = (await res.json()) as { grade: string };
+      if (!data.grade) throw new Error("Réponse vide du serveur");
+      setResult(data.grade);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Erreur inconnue");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -116,6 +129,14 @@ export function WritingTab({ unit }: WritingTabProps): React.ReactElement {
       {/* 警告 */}
       {warning && (
         <p className="text-sm font-medium text-apple-orange">{warning}</p>
+      )}
+
+      {/* 错误提示 */}
+      {error && (
+        <div className="rounded-[14px] border border-red-200 bg-red-50 p-4">
+          <p className="text-sm font-medium text-red-800">Erreur : {error}</p>
+          <p className="mt-1 text-xs text-red-600">Veuillez réessayer.</p>
+        </div>
       )}
 
       {/* loading */}

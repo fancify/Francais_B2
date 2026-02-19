@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useApp } from "@/contexts/AppContext";
 import { generateUnitQuiz } from "@/lib/quiz";
-import { matchAnswer, matchVocabAnswer, matchExprAnswer, matchConjAnswer } from "@/lib/matching";
+import { matchAnswer, matchVocabAnswer, matchConjAnswer } from "@/lib/matching";
 import { AccentBar } from "@/components/ui/AccentBar";
 import { MetricCard } from "@/components/ui/MetricCard";
 import type {
@@ -112,7 +112,8 @@ function QuestionField({
         )}
         {question.prompt}
       </p>
-      {question.hint && (
+      {/* 表达题不显示 hint（避免暴露答案） */}
+      {question.hint && sectionKey !== "expr" && (
         <p className="text-xs italic text-apple-secondary">Exemple : {question.hint}</p>
       )}
 
@@ -137,7 +138,7 @@ function QuestionField({
           type="text"
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          placeholder="Votre réponse..."
+          placeholder={sectionKey === "expr" ? "Écrivez une expression ou une phrase..." : "Votre réponse..."}
           className="w-full rounded-[10px] border border-apple-border bg-apple-bg px-3 py-2 text-sm text-apple-text outline-none transition-colors placeholder:text-apple-secondary focus:border-apple-blue"
         />
       )}
@@ -150,9 +151,10 @@ function QuestionField({
 interface ResultItemProps {
   result: QuizResult;
   index: number;
+  isExpr?: boolean;
 }
 
-function ResultItem({ result, index }: ResultItemProps): React.ReactElement {
+function ResultItem({ result, index, isExpr }: ResultItemProps): React.ReactElement {
   return (
     <div className="space-y-1">
       <p className="text-sm text-apple-text">
@@ -170,12 +172,21 @@ function ResultItem({ result, index }: ResultItemProps): React.ReactElement {
       </p>
       {!result.correct && (
         <p className="pl-6 text-sm">
-          <span className="text-apple-secondary">Attendu :</span>{" "}
-          <span className="font-medium text-apple-text">{result.answer}</span>
-          {result.feedback_hint && (
-            <span className="ml-2 text-xs italic text-apple-orange">
-              {result.feedback_hint}
-            </span>
+          {isExpr ? (
+            // 表达题：显示 AI 反馈而非期望答案
+            result.feedback_hint && (
+              <span className="text-xs italic text-apple-orange">{result.feedback_hint}</span>
+            )
+          ) : (
+            <>
+              <span className="text-apple-secondary">Attendu :</span>{" "}
+              <span className="font-medium text-apple-text">{result.answer}</span>
+              {result.feedback_hint && (
+                <span className="ml-2 text-xs italic text-apple-orange">
+                  {result.feedback_hint}
+                </span>
+              )}
+            </>
           )}
         </p>
       )}
@@ -193,8 +204,8 @@ interface QuizTabProps {
 export function QuizTab({ unit, allUnits }: QuizTabProps): React.ReactElement {
   const { weakPoints, addScore, addWeakPoint, reduceWeakPoint } = useApp();
 
-  // 状态：idle → quiz → results
-  const [phase, setPhase] = useState<"idle" | "quiz" | "results">("idle");
+  // 状态：idle → quiz → grading → results
+  const [phase, setPhase] = useState<"idle" | "quiz" | "grading" | "results">("idle");
   const [quiz, setQuiz] = useState<QuizData | null>(null);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [results, setResults] = useState<QuizResults | null>(null);
@@ -213,15 +224,20 @@ export function QuizTab({ unit, allUnits }: QuizTabProps): React.ReactElement {
     setAnswers((prev) => ({ ...prev, [`${sectionKey}-${index}`]: value }));
   }
 
-  // 提交评分
-  function handleSubmit(): void {
+  // 提交评分（异步：表达题用 AI）
+  async function handleSubmit(): Promise<void> {
     if (!quiz) return;
+
+    setPhase("grading");
 
     const graded: QuizResults = { vocab: [], expr: [], conj: [], trans: [] };
     let totalCorrect = 0;
     let totalCount = 0;
 
+    // 先评分非 expr 部分（客户端）
     for (const section of SECTIONS) {
+      if (section.key === "expr") continue;
+
       const questions = quiz[section.key];
       const sectionResults: QuizResult[] = [];
 
@@ -234,8 +250,6 @@ export function QuizTab({ unit, allUnits }: QuizTabProps): React.ReactElement {
 
         if (section.key === "vocab" && q.qtype === "fill") {
           [correct, hint] = matchVocabAnswer(userAnswer, q.answer, q.article || "");
-        } else if (section.key === "expr") {
-          [correct, hint] = matchExprAnswer(userAnswer, q.answer);
         } else if (section.key === "conj") {
           [correct, hint] = matchConjAnswer(userAnswer, q.answer, q.person || "");
         } else {
@@ -259,6 +273,62 @@ export function QuizTab({ unit, allUnits }: QuizTabProps): React.ReactElement {
       }
 
       graded[section.key] = sectionResults;
+    }
+
+    // 表达题：用 AI 批量评分
+    const exprQuestions = quiz.expr;
+    if (exprQuestions.length > 0) {
+      const items = exprQuestions.map((q, i) => ({
+        usage: q.prompt,
+        userAnswer: answers[`expr-${i}`] ?? "",
+      }));
+
+      try {
+        const res = await fetch("/api/grade-expressions", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ items }),
+        });
+        const data = (await res.json()) as {
+          results?: { correct: boolean; feedback: string }[];
+          error?: string;
+        };
+
+        const aiResults = data.results ?? [];
+        const exprResults: QuizResult[] = exprQuestions.map((q, i) => {
+          const correct = aiResults[i]?.correct ?? false;
+          const feedback = aiResults[i]?.feedback ?? "";
+          totalCount++;
+          if (correct) {
+            totalCorrect++;
+            reduceWeakPoint("expression", unit.unit_number, q._key);
+          } else {
+            addWeakPoint("expression", unit.unit_number, q._key, q.prompt);
+          }
+          return {
+            ...q,
+            user_answer: items[i].userAnswer,
+            correct,
+            feedback_hint: feedback,
+          };
+        });
+        graded.expr = exprResults;
+      } catch {
+        // AI 评分失败：用本地 matchAnswer 降级
+        const exprResults: QuizResult[] = exprQuestions.map((q, i) => {
+          const userAnswer = answers[`expr-${i}`] ?? "";
+          const [correct, hint] = matchAnswer(userAnswer, q.answer);
+          totalCount++;
+          if (correct) {
+            totalCorrect++;
+            reduceWeakPoint("expression", unit.unit_number, q._key);
+          } else {
+            addWeakPoint("expression", unit.unit_number, q._key, q.prompt);
+          }
+          return { ...q, user_answer: userAnswer, correct, feedback_hint: hint };
+        });
+        graded.expr = exprResults;
+      }
     }
 
     // 记录分数
@@ -297,6 +367,18 @@ export function QuizTab({ unit, allUnits }: QuizTabProps): React.ReactElement {
         >
           Commencer le quiz
         </button>
+      </div>
+    );
+  }
+
+  // ── 评分中 ──
+  if (phase === "grading") {
+    return (
+      <div className="flex flex-col items-center justify-center gap-4 py-16">
+        <div className="h-10 w-10 animate-spin rounded-full border-3 border-apple-blue border-t-transparent" />
+        <p className="text-sm font-medium text-apple-secondary">
+          Évaluation des expressions en cours...
+        </p>
       </div>
     );
   }
@@ -399,7 +481,7 @@ export function QuizTab({ unit, allUnits }: QuizTabProps): React.ReactElement {
             >
               <div className="space-y-4">
                 {sectionResults.map((r, i) => (
-                  <ResultItem key={i} result={r} index={i} />
+                  <ResultItem key={i} result={r} index={i} isExpr={section.key === "expr"} />
                 ))}
               </div>
             </Collapsible>
