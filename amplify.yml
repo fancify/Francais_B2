@@ -5,6 +5,8 @@ frontend:
     preBuild:
       commands:
         - npm ci
+        - echo "OPENROUTER_API_KEY=$OPENROUTER_API_KEY" > .env.local
+        - echo "NEXT_PUBLIC_APP_PASSWORD=$NEXT_PUBLIC_APP_PASSWORD" >> .env.local
     build:
       commands:
         - npm run build
