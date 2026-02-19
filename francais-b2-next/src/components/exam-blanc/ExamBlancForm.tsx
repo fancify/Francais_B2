@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { matchAnswer } from "@/lib/matching";
+import { matchAnswer, matchVocabAnswer } from "@/lib/matching";
 import { AccentBar } from "@/components/ui/AccentBar";
 import type { ExamBlancData, ExamBlancResults } from "@/lib/types";
 
@@ -42,7 +42,7 @@ export function ExamBlancForm({ exam, onSubmit }: ExamBlancFormProps): React.Rea
     // 词汇评分
     const vocabResults = exam.vocabulary.map((q, i) => {
       const userAns = vocabAnswers[i];
-      const [correct, hint] = matchAnswer(userAns, q.answer);
+      const [correct, hint] = matchVocabAnswer(userAns, q.answer, q.article || "");
       return {
         definition: q.definition,
         user_answer: userAns,

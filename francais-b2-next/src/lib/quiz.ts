@@ -255,6 +255,7 @@ export function generateUnitQuiz(
         qtype: "fill",
         prompt: v.definition,
         answer: v.answer,
+        article: v.article || "",
         _key: key,
       });
     }
@@ -274,6 +275,7 @@ export function generateUnitQuiz(
     qtype: "fill" as const,
     prompt: `${c.verb} — ${c.tense} — ${c.person}`,
     answer: c.answer,
+    person: c.person,
     _key: conjKey(c),
   }));
 
@@ -314,6 +316,7 @@ export function generateExamBlanc(
       allVocab.push({
         definition: v.definition,
         answer: v.answer,
+        article: v.article || "",
         _unit: u.unit_number,
       });
     }

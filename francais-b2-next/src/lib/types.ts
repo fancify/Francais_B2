@@ -4,6 +4,7 @@ export interface VocabItem {
   word: string;
   definition: string;
   answer: string;
+  article: string;
 }
 
 export interface ExpressionItem {
@@ -50,6 +51,8 @@ export interface QuizQuestion {
   hint?: string;
   transform_type?: string;
   source?: string;
+  article?: string;
+  person?: string;
 }
 
 export interface QuizResult extends QuizQuestion {
@@ -130,6 +133,7 @@ export interface ExamScore {
 export interface ExamBlancVocabQ {
   definition: string;
   answer: string;
+  article: string;
   _unit: number;
 }
 

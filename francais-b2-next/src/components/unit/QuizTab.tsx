@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useApp } from "@/contexts/AppContext";
 import { generateUnitQuiz } from "@/lib/quiz";
-import { matchAnswer } from "@/lib/matching";
+import { matchAnswer, matchVocabAnswer, matchExprAnswer, matchConjAnswer } from "@/lib/matching";
 import { AccentBar } from "@/components/ui/AccentBar";
 import { MetricCard } from "@/components/ui/MetricCard";
 import type {
@@ -228,7 +228,19 @@ export function QuizTab({ unit, allUnits }: QuizTabProps): React.ReactElement {
       for (let i = 0; i < questions.length; i++) {
         const q = questions[i];
         const userAnswer = answers[`${section.key}-${i}`] ?? "";
-        const [correct, hint] = matchAnswer(userAnswer, q.answer);
+
+        let correct: boolean;
+        let hint: string;
+
+        if (section.key === "vocab" && q.qtype === "fill") {
+          [correct, hint] = matchVocabAnswer(userAnswer, q.answer, q.article || "");
+        } else if (section.key === "expr") {
+          [correct, hint] = matchExprAnswer(userAnswer, q.answer);
+        } else if (section.key === "conj") {
+          [correct, hint] = matchConjAnswer(userAnswer, q.answer, q.person || "");
+        } else {
+          [correct, hint] = matchAnswer(userAnswer, q.answer);
+        }
 
         sectionResults.push({
           ...q,
