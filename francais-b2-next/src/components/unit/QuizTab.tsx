@@ -99,7 +99,10 @@ function blankExpression(sentence: string, expression: string): string {
   const boundary = "(?![a-zA-ZÀ-ÿ0-9])";
 
   if (expression.includes("...")) {
-    const parts = expression.split("...").map((p) => p.trim()).filter(Boolean);
+    const parts = expression
+      .split("...")
+      .map((p) => p.replace(/\s*\([^)]*\)\s*$/, "").trim()) // strip "(mise en relief)" etc.
+      .filter(Boolean);
     let result = sentence;
     for (const part of parts) {
       result = result.replace(
@@ -269,10 +272,15 @@ function ResultItem({ result, index }: ResultItemProps): React.ReactElement {
         </span>
       </p>
       {!result.correct && (
-        <p className="pl-6 text-sm">
-          <span className="text-apple-secondary">Attendu :</span>{" "}
-          <span className="font-medium text-apple-text">{result.answer}</span>
-        </p>
+        <div className="pl-6 space-y-0.5">
+          <p className="text-sm">
+            <span className="text-apple-secondary">Expression :</span>{" "}
+            <span className="font-medium text-apple-text">{result.answer}</span>
+          </p>
+          {result.hint && (
+            <p className="text-sm text-apple-secondary italic">{result.hint}</p>
+          )}
+        </div>
       )}
     </div>
   );
