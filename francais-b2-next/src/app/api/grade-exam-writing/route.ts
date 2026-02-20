@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { callLLM } from "@/lib/openrouter";
 
+export const dynamic = "force-dynamic";
+
 export async function POST(req: NextRequest): Promise<NextResponse> {
   try {
     const body = await req.json();

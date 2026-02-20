@@ -3,6 +3,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { callLLM, parseJsonResponse } from "@/lib/openrouter";
 import type { ExamCEData } from "@/lib/types";
 
+export const dynamic = "force-dynamic";
+
 export async function POST(req: NextRequest): Promise<NextResponse> {
   try {
     const body = await req.json();

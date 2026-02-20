@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { callLLM, parseJsonResponse } from "@/lib/openrouter";
 
+export const dynamic = "force-dynamic";
+
 interface ExprItem {
   usage: string;
   userAnswer: string;
