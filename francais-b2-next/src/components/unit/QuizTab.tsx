@@ -82,6 +82,12 @@ function Collapsible({
   );
 }
 
+// ── 工具：转义正则特殊字符 ──
+
+function escapeRegex(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 // ── 单题渲染（表单态） ──
 
 interface QuestionFieldProps {
@@ -112,8 +118,7 @@ function QuestionField({
         )}
         {question.prompt}
       </p>
-      {/* 表达题不显示 hint（避免暴露答案） */}
-      {question.hint && sectionKey !== "expr" && (
+      {question.hint && (
         <p className="text-xs italic text-apple-secondary">Exemple : {question.hint}</p>
       )}
 
@@ -138,11 +143,75 @@ function QuestionField({
           type="text"
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          placeholder={sectionKey === "expr" ? "Écrivez une expression ou une phrase..." : "Votre réponse..."}
+          placeholder="Votre réponse..."
           className="w-full rounded-[10px] border border-apple-border bg-apple-bg px-3 py-2 text-sm text-apple-text outline-none transition-colors placeholder:text-apple-secondary focus:border-apple-blue"
         />
       )}
     </div>
+  );
+}
+
+// ── Expressions 区块（参考列表 + 填空 + 下拉选择） ──
+
+interface ExprSectionProps {
+  questions: QuizQuestion[];
+  answers: Record<string, string>;
+  onAnswer: (index: number, value: string) => void;
+}
+
+function ExprSection({ questions, answers, onAnswer }: ExprSectionProps): React.ReactElement {
+  const allExpressions = questions.map((q) => q.answer);
+
+  return (
+    <Collapsible title={`Expressions (${questions.length})`} defaultOpen>
+      {/* Référence */}
+      <div className="mb-4 border-b border-apple-border pb-4">
+        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-apple-secondary">
+          Expressions à utiliser
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {allExpressions.map((expr) => (
+            <span
+              key={expr}
+              className="rounded-full bg-apple-blue/10 px-2.5 py-1 text-xs font-medium text-apple-blue"
+            >
+              {expr}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Questions */}
+      <div className="space-y-5">
+        {questions.map((q, i) => {
+          const hint = q.hint ?? "";
+          const blanked = hint
+            ? hint.replace(new RegExp(escapeRegex(q.answer), "gi"), "___")
+            : q.prompt;
+
+          return (
+            <div key={i} className="space-y-2">
+              <p className="text-xs italic text-apple-secondary">{q.prompt}</p>
+              <p className="rounded-[10px] bg-apple-bg px-3 py-2 text-sm text-apple-text">
+                {blanked}
+              </p>
+              <select
+                value={answers[`expr-${i}`] ?? ""}
+                onChange={(e) => onAnswer(i, e.target.value)}
+                className="w-full rounded-[10px] border border-apple-border bg-apple-bg px-3 py-2 text-sm text-apple-text outline-none transition-colors focus:border-apple-blue"
+              >
+                <option value="">— Choisissez une expression —</option>
+                {allExpressions.map((expr) => (
+                  <option key={expr} value={expr}>
+                    {expr}
+                  </option>
+                ))}
+              </select>
+            </div>
+          );
+        })}
+      </div>
+    </Collapsible>
   );
 }
 
@@ -151,10 +220,9 @@ function QuestionField({
 interface ResultItemProps {
   result: QuizResult;
   index: number;
-  isExpr?: boolean;
 }
 
-function ResultItem({ result, index, isExpr }: ResultItemProps): React.ReactElement {
+function ResultItem({ result, index }: ResultItemProps): React.ReactElement {
   return (
     <div className="space-y-1">
       <p className="text-sm text-apple-text">
@@ -172,22 +240,8 @@ function ResultItem({ result, index, isExpr }: ResultItemProps): React.ReactElem
       </p>
       {!result.correct && (
         <p className="pl-6 text-sm">
-          {isExpr ? (
-            // 表达题：显示 AI 反馈而非期望答案
-            result.feedback_hint && (
-              <span className="text-xs italic text-apple-orange">{result.feedback_hint}</span>
-            )
-          ) : (
-            <>
-              <span className="text-apple-secondary">Attendu :</span>{" "}
-              <span className="font-medium text-apple-text">{result.answer}</span>
-              {result.feedback_hint && (
-                <span className="ml-2 text-xs italic text-apple-orange">
-                  {result.feedback_hint}
-                </span>
-              )}
-            </>
-          )}
+          <span className="text-apple-secondary">Attendu :</span>{" "}
+          <span className="font-medium text-apple-text">{result.answer}</span>
         </p>
       )}
     </div>
@@ -275,60 +329,22 @@ export function QuizTab({ unit, allUnits }: QuizTabProps): React.ReactElement {
       graded[section.key] = sectionResults;
     }
 
-    // 表达题：用 AI 批量评分
+    // 表达题：下拉选择，直接精确匹配
     const exprQuestions = quiz.expr;
     if (exprQuestions.length > 0) {
-      const items = exprQuestions.map((q, i) => ({
-        usage: q.prompt,
-        userAnswer: answers[`expr-${i}`] ?? "",
-      }));
-
-      try {
-        const res = await fetch("/api/grade-expressions", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ items }),
-        });
-        const data = (await res.json()) as {
-          results?: { correct: boolean; feedback: string }[];
-          error?: string;
-        };
-
-        const aiResults = data.results ?? [];
-        const exprResults: QuizResult[] = exprQuestions.map((q, i) => {
-          const correct = aiResults[i]?.correct ?? false;
-          const feedback = aiResults[i]?.feedback ?? "";
-          totalCount++;
-          if (correct) {
-            totalCorrect++;
-            reduceWeakPoint("expression", unit.unit_number, q._key);
-          } else {
-            addWeakPoint("expression", unit.unit_number, q._key, q.prompt);
-          }
-          return {
-            ...q,
-            user_answer: items[i].userAnswer,
-            correct,
-            feedback_hint: feedback,
-          };
-        });
-        graded.expr = exprResults;
-      } catch {
-        // AI 评分失败：用本地 matchAnswer 降级
-        const exprResults: QuizResult[] = exprQuestions.map((q, i) => {
-          const userAnswer = answers[`expr-${i}`] ?? "";
-          const [correct, hint] = matchAnswer(userAnswer, q.answer);
-          totalCount++;
-          if (correct) {
-            totalCorrect++;
-            reduceWeakPoint("expression", unit.unit_number, q._key);
-          } else {
-            addWeakPoint("expression", unit.unit_number, q._key, q.prompt);
-          }
-          return { ...q, user_answer: userAnswer, correct, feedback_hint: hint };
-        });
-        graded.expr = exprResults;
-      }
+      const exprResults: QuizResult[] = exprQuestions.map((q, i) => {
+        const userAnswer = answers[`expr-${i}`] ?? "";
+        const correct = userAnswer.trim().toLowerCase() === q.answer.trim().toLowerCase();
+        totalCount++;
+        if (correct) {
+          totalCorrect++;
+          reduceWeakPoint("expression", unit.unit_number, q._key);
+        } else {
+          addWeakPoint("expression", unit.unit_number, q._key, q.prompt);
+        }
+        return { ...q, user_answer: userAnswer, correct, feedback_hint: "" };
+      });
+      graded.expr = exprResults;
     }
 
     // 记录分数
@@ -392,6 +408,18 @@ export function QuizTab({ unit, allUnits }: QuizTabProps): React.ReactElement {
         {SECTIONS.map((section) => {
           const questions = quiz[section.key];
           if (questions.length === 0) return null;
+
+          // Expressions: custom layout
+          if (section.key === "expr") {
+            return (
+              <ExprSection
+                key="expr"
+                questions={questions}
+                answers={answers}
+                onAnswer={(i, val) => updateAnswer("expr", i, val)}
+              />
+            );
+          }
 
           return (
             <Collapsible key={section.key} title={`${section.label} (${questions.length})`} defaultOpen>
@@ -481,7 +509,7 @@ export function QuizTab({ unit, allUnits }: QuizTabProps): React.ReactElement {
             >
               <div className="space-y-4">
                 {sectionResults.map((r, i) => (
-                  <ResultItem key={i} result={r} index={i} isExpr={section.key === "expr"} />
+                  <ResultItem key={i} result={r} index={i} />
                 ))}
               </div>
             </Collapsible>

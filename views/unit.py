@@ -4,6 +4,8 @@
 
 from __future__ import annotations
 
+import re
+
 import streamlit as st
 
 from lib.components import render_accent_bar, render_word_counter
@@ -121,14 +123,27 @@ def _render_quiz(unit: dict, units: list[dict]) -> None:
 
             # 2. Expressions
             with st.expander(f"Expressions ({len(expr_qs)} questions)", expanded=True):
+                # Référence : liste de toutes les expressions à utiliser
+                ref_text = " · ".join(f"`{q['answer']}`" for q in expr_qs)
+                st.markdown(f"**Expressions à utiliser :** {ref_text}")
+                st.markdown("---")
+
+                expr_options = ["—"] + [q["answer"] for q in expr_qs]
                 for i, q in enumerate(expr_qs):
-                    st.markdown(f"**{i + 1}.** {q['prompt']}")
-                    if q.get("hint"):
-                        st.caption(f"Ex. : {q['hint']}")
-                    st.text_input(
-                        f"Expr {i + 1}", key=f"qe_{i}",
-                        placeholder="Tapez l'expression exacte\u2026",
-                        label_visibility="collapsed",
+                    # Blank the expression in the example sentence
+                    hint = q.get("hint", "")
+                    if hint:
+                        blanked = re.sub(
+                            re.escape(q["answer"]), "`___`", hint, flags=re.IGNORECASE
+                        )
+                    else:
+                        blanked = q["prompt"]
+
+                    st.markdown(f"**{i + 1}.** *{q['prompt']}*")
+                    st.markdown(f"> {blanked}")
+                    st.selectbox(
+                        f"Expr {i + 1}", options=expr_options, key=f"qe_{i}",
+                        index=0, label_visibility="collapsed",
                     )
 
             # 3. Conjugaison
@@ -189,6 +204,8 @@ def _grade_quiz(
 
     for i, q in enumerate(expr_qs):
         user_ans = st.session_state.get(f"qe_{i}", "").strip()
+        if user_ans == "—":
+            user_ans = ""
         is_correct, hint = match_expr_answer(user_ans, q["answer"].strip())
         results["expr"].append({**q, "user_answer": user_ans, "correct": is_correct, "hint": hint})
 
