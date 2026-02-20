@@ -88,6 +88,34 @@ function escapeRegex(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+// ── 工具：在例句中将表达式替换为 ___ ──
+// 处理两种情况：
+//   1. 普通表达式：整词匹配，不匹配部分词（如 "Malgré le" 不匹配 "Malgré les"）
+//   2. 含 "..." 的表达式（如 "Certes... mais"）：拆分后分别替换每个部分
+
+function blankExpression(sentence: string, expression: string): string {
+  if (!sentence) return "";
+  // 整词边界：匹配后不能紧跟字母或数字
+  const boundary = "(?![a-zA-ZÀ-ÿ0-9])";
+
+  if (expression.includes("...")) {
+    const parts = expression.split("...").map((p) => p.trim()).filter(Boolean);
+    let result = sentence;
+    for (const part of parts) {
+      result = result.replace(
+        new RegExp(escapeRegex(part) + boundary, "gi"),
+        "___",
+      );
+    }
+    return result;
+  }
+
+  return sentence.replace(
+    new RegExp(escapeRegex(expression) + boundary, "gi"),
+    "___",
+  );
+}
+
 // ── 单题渲染（表单态） ──
 
 interface QuestionFieldProps {
@@ -185,9 +213,7 @@ function ExprSection({ questions, answers, onAnswer }: ExprSectionProps): React.
       <div className="space-y-5">
         {questions.map((q, i) => {
           const hint = q.hint ?? "";
-          const blanked = hint
-            ? hint.replace(new RegExp(escapeRegex(q.answer), "gi"), "___")
-            : q.prompt;
+          const blanked = hint ? blankExpression(hint, q.answer) : q.prompt;
 
           return (
             <div key={i} className="space-y-2">
