@@ -13,6 +13,11 @@ interface GradedItem {
 }
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
+  const apiKey = process.env.OPENROUTER_API_KEY;
+  if (!apiKey) {
+    return NextResponse.json({ error: "OPENROUTER_API_KEY not configured" }, { status: 500 });
+  }
+
   try {
     const body = await req.json();
     const { items } = body as { items?: ExprItem[] };
@@ -53,7 +58,7 @@ Réponds UNIQUEMENT avec un JSON valide (sans markdown, sans backticks) :
 
 Le tableau doit avoir exactement ${items.length} éléments, un par question.`;
 
-    const raw = await callLLM(system, questionsBlock, { temperature: 0.3 });
+    const raw = await callLLM(system, questionsBlock, apiKey, { temperature: 0.3 });
     const parsed = parseJsonResponse(raw) as GradedItem[];
 
     // 确保返回数组长度正确

@@ -3,6 +3,11 @@ import { NextRequest, NextResponse } from "next/server";
 import { callLLM } from "@/lib/openrouter";
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
+  const apiKey = process.env.OPENROUTER_API_KEY;
+  if (!apiKey) {
+    return NextResponse.json({ error: "OPENROUTER_API_KEY not configured" }, { status: 500 });
+  }
+
   try {
     const body = await req.json();
     const { text, prompt } = body as { text?: string; prompt?: string };
@@ -41,7 +46,7 @@ Format with clear headers. Be rigorous — this simulates a real DELF B2 exam.
 End your response with exactly this line:
 SCORE_TOTAL: [number]/50`;
 
-    const grade = await callLLM(system, text);
+    const grade = await callLLM(system, text, apiKey);
     return NextResponse.json({ grade });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown error";

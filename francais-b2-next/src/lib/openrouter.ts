@@ -5,13 +5,9 @@ import OpenAI from "openai";
 const OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1";
 const DEFAULT_MODEL = "google/gemini-2.0-flash-001";
 
-// 模块级别读取——webpack 会在构建时内联这个值
-const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY ?? "";
-
-function getClient(): OpenAI {
-  if (!OPENROUTER_API_KEY) throw new Error("OPENROUTER_API_KEY not configured");
+function getClient(apiKey: string): OpenAI {
   return new OpenAI({
-    apiKey: OPENROUTER_API_KEY,
+    apiKey,
     baseURL: OPENROUTER_BASE_URL,
     defaultHeaders: {
       "HTTP-Referer": "https://vibe-francais.app",
@@ -24,9 +20,10 @@ function getClient(): OpenAI {
 export async function callLLM(
   system: string,
   user: string,
+  apiKey: string,
   options?: { model?: string; temperature?: number },
 ): Promise<string> {
-  const client = getClient();
+  const client = getClient(apiKey);
   const resp = await client.chat.completions.create({
     model: options?.model ?? DEFAULT_MODEL,
     temperature: options?.temperature ?? 0.7,

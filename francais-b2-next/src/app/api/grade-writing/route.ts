@@ -3,6 +3,11 @@ import { NextRequest, NextResponse } from "next/server";
 import { callLLM } from "@/lib/openrouter";
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
+  const apiKey = process.env.OPENROUTER_API_KEY;
+  if (!apiKey) {
+    return NextResponse.json({ error: "OPENROUTER_API_KEY not configured" }, { status: 500 });
+  }
+
   try {
     const body = await req.json();
     const { text, theme } = body as { text?: string; theme?: string };
@@ -37,7 +42,7 @@ Provide:
 
 Format your response clearly with headers.`;
 
-    const grade = await callLLM(system, text);
+    const grade = await callLLM(system, text, apiKey);
     return NextResponse.json({ grade });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown error";

@@ -4,6 +4,11 @@ import { callLLM, parseJsonResponse } from "@/lib/openrouter";
 import type { ExamCEData } from "@/lib/types";
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
+  const apiKey = process.env.OPENROUTER_API_KEY;
+  if (!apiKey) {
+    return NextResponse.json({ error: "OPENROUTER_API_KEY not configured" }, { status: 500 });
+  }
+
   try {
     const body = await req.json();
     const { theme } = body as { theme?: string };
@@ -39,7 +44,7 @@ Requirements:
 - All in French. Difficulty: DELF B2
 - Return ONLY valid JSON, no markdown fences.`;
 
-    const raw = await callLLM(system, theme, { temperature: 0.8 });
+    const raw = await callLLM(system, theme, apiKey, { temperature: 0.8 });
     const data = parseJsonResponse(raw) as ExamCEData;
     return NextResponse.json(data);
   } catch (error) {
