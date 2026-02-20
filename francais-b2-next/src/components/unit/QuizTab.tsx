@@ -213,14 +213,18 @@ function ExprSection({ questions, answers, onAnswer }: ExprSectionProps): React.
       <div className="space-y-5">
         {questions.map((q, i) => {
           const hint = q.hint ?? "";
-          const blanked = hint ? blankExpression(hint, q.answer) : q.prompt;
+          const blanked = hint ? blankExpression(hint, q.answer) : "";
+          // 如果 blanking 失败（句子未变化），不显示原句——避免答案暴露
+          const showSentence = blanked && blanked !== hint;
 
           return (
             <div key={i} className="space-y-2">
               <p className="text-xs italic text-apple-secondary">{q.prompt}</p>
-              <p className="rounded-[10px] bg-apple-bg px-3 py-2 text-sm text-apple-text">
-                {blanked}
-              </p>
+              {showSentence && (
+                <p className="rounded-[10px] bg-apple-bg px-3 py-2 text-sm text-apple-text">
+                  {blanked}
+                </p>
+              )}
               <select
                 value={answers[`expr-${i}`] ?? ""}
                 onChange={(e) => onAnswer(i, e.target.value)}
