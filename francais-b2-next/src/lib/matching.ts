@@ -120,17 +120,21 @@ function sequenceMatcherRatio(a: string, b: string): number {
  * 7. 其他 → 无提示
  */
 export function matchAnswer(userAnswer: string, expected: string): [boolean, string] {
+  // 先统一撇号（iOS 输入 U+2019，数据用 U+0027）
+  const user = normalizeApostrophe(userAnswer);
+  const exp = normalizeApostrophe(expected);
+
   // 1. 完全匹配
-  if (userAnswer === expected) return [true, ""];
+  if (user === exp) return [true, ""];
 
   // 2. casefold 匹配
-  const userCf = userAnswer.toLowerCase();
-  const expectedCf = expected.toLowerCase();
+  const userCf = user.toLowerCase();
+  const expectedCf = exp.toLowerCase();
   if (userCf === expectedCf) return [true, ""];
 
   // 3. 标准化空格 + casefold
-  const userNorm = normalizeWhitespace(userAnswer).toLowerCase();
-  const expectedNorm = normalizeWhitespace(expected).toLowerCase();
+  const userNorm = normalizeWhitespace(user).toLowerCase();
+  const expectedNorm = normalizeWhitespace(exp).toLowerCase();
   if (userNorm === expectedNorm) return [true, ""];
 
   // 4. 去掉所有句子标点后匹配
