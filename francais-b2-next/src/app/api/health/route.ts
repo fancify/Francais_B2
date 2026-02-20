@@ -1,5 +1,8 @@
 import { NextResponse } from "next/server";
 
+// 必须在运行时读 env，不要被 Next.js 静态缓存（否则永远显示 build 时的值）
+export const dynamic = "force-dynamic";
+
 export async function GET(): Promise<NextResponse> {
   const key = process.env.OPENROUTER_API_KEY ?? "";
   return NextResponse.json({

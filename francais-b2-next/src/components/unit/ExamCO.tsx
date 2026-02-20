@@ -12,6 +12,7 @@ interface ExamCOProps {
 export function ExamCO({ unit, onScore }: ExamCOProps): React.ReactElement {
   const [loading, setLoading] = useState(false);
   const [exam, setExam] = useState<ExamCOData | null>(null);
+  const [error, setError] = useState<string | null>(null);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [playing, setPlaying] = useState(false);
   const [transcriptOpen, setTranscriptOpen] = useState(false);
@@ -22,18 +23,30 @@ export function ExamCO({ unit, onScore }: ExamCOProps): React.ReactElement {
   async function handleGenerate(): Promise<void> {
     setLoading(true);
     setExam(null);
+    setError(null);
     setAnswers({});
     setSubmitted(false);
 
-    const res = await fetch("/api/generate-exam-co", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ theme: unit.theme }),
-    });
+    try {
+      const res = await fetch("/api/generate-exam-co", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ theme: unit.theme }),
+      });
 
-    const data = (await res.json()) as ExamCOData;
-    setExam(data);
-    setLoading(false);
+      if (!res.ok) {
+        const errData = (await res.json().catch(() => ({}))) as { error?: string };
+        throw new Error(errData.error || `Erreur serveur (${res.status})`);
+      }
+
+      const data = (await res.json()) as ExamCOData;
+      if (!data.questions) throw new Error("Réponse invalide du serveur");
+      setExam(data);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Erreur inconnue");
+    } finally {
+      setLoading(false);
+    }
   }
 
   function handlePlay(): void {
@@ -96,6 +109,12 @@ export function ExamCO({ unit, onScore }: ExamCOProps): React.ReactElement {
         <p className="text-sm text-apple-secondary">
           Écoutez le document sonore et répondez aux questions.
         </p>
+        {error && (
+          <div className="rounded-[14px] border border-red-200 bg-red-50 p-4 text-left">
+            <p className="text-sm font-medium text-red-800">Erreur : {error}</p>
+            <p className="mt-1 text-xs text-red-600">Veuillez réessayer.</p>
+          </div>
+        )}
         <button
           type="button"
           onClick={handleGenerate}

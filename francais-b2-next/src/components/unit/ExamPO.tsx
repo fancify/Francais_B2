@@ -30,6 +30,7 @@ export function ExamPO({ unit, onScore }: ExamPOProps): React.ReactElement {
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
   const [criteriaOpen, setCriteriaOpen] = useState(false);
 
   async function handleEvaluate(): Promise<void> {
@@ -37,23 +38,34 @@ export function ExamPO({ unit, onScore }: ExamPOProps): React.ReactElement {
 
     setLoading(true);
     setResult(null);
+    setError(null);
 
-    const res = await fetch("/api/grade-oral", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text, theme: unit.theme }),
-    });
+    try {
+      const res = await fetch("/api/grade-oral", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text, theme: unit.theme }),
+      });
 
-    const data = (await res.json()) as { grade: string };
-    setResult(data.grade);
+      if (!res.ok) {
+        const errData = (await res.json().catch(() => ({}))) as { error?: string };
+        throw new Error(errData.error || `Erreur serveur (${res.status})`);
+      }
 
-    // 提取分数
-    const scoreMatch = data.grade.match(/SCORE_TOTAL\s*:\s*(\d+(?:\.\d+)?)/);
-    if (scoreMatch) {
-      onScore?.(parseFloat(scoreMatch[1]));
+      const data = (await res.json()) as { grade: string };
+      if (!data.grade) throw new Error("Réponse vide du serveur");
+      setResult(data.grade);
+
+      // 提取分数
+      const scoreMatch = data.grade.match(/SCORE_TOTAL\s*:\s*(\d+(?:\.\d+)?)/);
+      if (scoreMatch) {
+        onScore?.(parseFloat(scoreMatch[1]));
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Erreur inconnue");
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
   }
 
   return (
@@ -107,6 +119,13 @@ export function ExamPO({ unit, onScore }: ExamPOProps): React.ReactElement {
           </button>
         </div>
       </div>
+
+      {error && (
+        <div className="rounded-[14px] border border-red-200 bg-red-50 p-4">
+          <p className="text-sm font-medium text-red-800">Erreur : {error}</p>
+          <p className="mt-1 text-xs text-red-600">Veuillez réessayer.</p>
+        </div>
+      )}
 
       {loading && (
         <div className="flex justify-center py-8">

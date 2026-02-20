@@ -23,6 +23,7 @@ export function ExamPE({ unit, onScore }: ExamPEProps): React.ReactElement {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<string | null>(null);
   const [warning, setWarning] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   function wordCount(): number {
     return text.trim() === "" ? 0 : text.trim().split(/\s+/).length;
@@ -39,23 +40,34 @@ export function ExamPE({ unit, onScore }: ExamPEProps): React.ReactElement {
 
     setLoading(true);
     setResult(null);
+    setError(null);
 
-    const res = await fetch("/api/grade-exam-writing", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text, prompt }),
-    });
+    try {
+      const res = await fetch("/api/grade-exam-writing", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text, prompt }),
+      });
 
-    const data = (await res.json()) as { grade: string };
-    setResult(data.grade);
+      if (!res.ok) {
+        const errData = (await res.json().catch(() => ({}))) as { error?: string };
+        throw new Error(errData.error || `Erreur serveur (${res.status})`);
+      }
 
-    // 提取分数（从 AI 回复中提取 SCORE_TOTAL: N/25 或 N/50）
-    const scoreMatch = data.grade.match(/SCORE_TOTAL\s*:\s*(\d+(?:\.\d+)?)/);
-    if (scoreMatch) {
-      onScore?.(parseFloat(scoreMatch[1]));
+      const data = (await res.json()) as { grade: string };
+      if (!data.grade) throw new Error("Réponse vide du serveur");
+      setResult(data.grade);
+
+      // 提取分数（从 AI 回复中提取 SCORE_TOTAL: N/25 或 N/50）
+      const scoreMatch = data.grade.match(/SCORE_TOTAL\s*:\s*(\d+(?:\.\d+)?)/);
+      if (scoreMatch) {
+        onScore?.(parseFloat(scoreMatch[1]));
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Erreur inconnue");
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
   }
 
   return (
@@ -92,6 +104,13 @@ export function ExamPE({ unit, onScore }: ExamPEProps): React.ReactElement {
 
       {warning && (
         <p className="text-sm font-medium text-apple-orange">{warning}</p>
+      )}
+
+      {error && (
+        <div className="rounded-[14px] border border-red-200 bg-red-50 p-4">
+          <p className="text-sm font-medium text-red-800">Erreur : {error}</p>
+          <p className="mt-1 text-xs text-red-600">Veuillez réessayer.</p>
+        </div>
       )}
 
       {loading && (
