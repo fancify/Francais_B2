@@ -2,686 +2,3375 @@
   {
     "unit_number": 1,
     "theme": "Se mettre au vert",
-    "grammar_focus": ["Échanger des opinions", "Exprimer son accord ou son désaccord", "Argumenter"],
-    "vocabulary_list": ["acheter en vrac", "bannir les objets à usage unique", "emballages réutilisables", "recycler", "trier ses déchets", "biodiversité", "déforestation", "extinction", "techniques de pêche", "espèces marines", "gaspillage", "ressources précieuses", "écologique", "urgence écologique", "pratiques polluantes", "sensibilisation", "dégradation de l'environnement", "animaux sauvages", "écoféminisme", "écogestes", "espèces menacées", "indignation", "pratiques écologiques", "protection de l'environnement", "engagement associatif", "fonds marins", "tortues marines", "expérience unique", "habitat naturel", "site naturel"],
+    "grammar_focus": [
+      "Échanger des opinions",
+      "Exprimer son accord ou son désaccord",
+      "Argumenter"
+    ],
+    "vocabulary_list": [
+      "acheter en vrac",
+      "bannir les objets à usage unique",
+      "emballages réutilisables",
+      "recycler",
+      "trier ses déchets",
+      "biodiversité",
+      "déforestation",
+      "extinction",
+      "techniques de pêche",
+      "espèces marines",
+      "gaspillage",
+      "ressources précieuses",
+      "écologique",
+      "urgence écologique",
+      "pratiques polluantes",
+      "sensibilisation",
+      "dégradation de l'environnement",
+      "animaux sauvages",
+      "écoféminisme",
+      "écogestes",
+      "espèces menacées",
+      "indignation",
+      "pratiques écologiques",
+      "protection de l'environnement",
+      "engagement associatif",
+      "fonds marins",
+      "tortues marines",
+      "expérience unique",
+      "habitat naturel",
+      "site naturel"
+    ],
     "b2_expression_focus": "Connecteurs logiques (Cause, conséquence, addition, illustration)",
     "vocabulary": [
-      { "word": "gaspillage", "definition": "Action de dépenser ou d'utiliser de manière excessive et inutile", "answer": "gaspillage", "article": "le" },
-      { "word": "biodiversité", "definition": "Diversité des espèces vivantes dans un milieu naturel", "answer": "biodiversité", "article": "la" },
-      { "word": "déforestation", "definition": "Destruction massive des forêts par l'activité humaine", "answer": "déforestation", "article": "la" },
-      { "word": "empreinte carbone", "definition": "Quantité de gaz à effet de serre émise par une activité humaine", "answer": "empreinte carbone", "article": "l'" },
-      { "word": "développement durable", "definition": "Mode de développement répondant aux besoins du présent sans compromettre ceux des générations futures", "answer": "développement durable", "article": "le" },
-      { "word": "écosystème", "definition": "Ensemble formé par une communauté d'êtres vivants et son environnement naturel", "answer": "écosystème", "article": "l'" },
-      { "word": "sensibilisation", "definition": "Action d'informer le public pour le rendre conscient d'un problème", "answer": "sensibilisation", "article": "la" },
-      { "word": "réchauffement climatique", "definition": "Augmentation progressive de la température moyenne de la Terre", "answer": "réchauffement climatique", "article": "le" },
-      { "word": "énergies renouvelables", "definition": "Sources d'énergie naturelles et inépuisables comme le soleil ou le vent", "answer": "énergies renouvelables", "article": "les" },
-      { "word": "pesticide", "definition": "Substance chimique utilisée pour détruire les organismes nuisibles aux cultures", "answer": "pesticide", "article": "le" },
-      { "word": "militer", "definition": "S'engager activement pour défendre une cause", "answer": "militer", "article": "" },
-      { "word": "tri sélectif", "definition": "Séparation des déchets selon leur nature pour faciliter le recyclage", "answer": "tri sélectif", "article": "le" },
-      { "word": "nappe phréatique", "definition": "Réserve d'eau souterraine alimentant puits et sources", "answer": "nappe phréatique", "article": "la" },
-      { "word": "emballage", "definition": "Matériau utilisé pour protéger ou contenir un produit", "answer": "emballage", "article": "l'" },
-      { "word": "gaz à effet de serre", "definition": "Gaz présent dans l'atmosphère qui contribue au réchauffement climatique", "answer": "gaz à effet de serre", "article": "les" }
+      {
+        "word": "gaspillage",
+        "definition": "Action de dépenser ou d'utiliser de manière excessive et inutile",
+        "answer": "gaspillage",
+        "article": "le"
+      },
+      {
+        "word": "biodiversité",
+        "definition": "Diversité des espèces vivantes dans un milieu naturel",
+        "answer": "biodiversité",
+        "article": "la"
+      },
+      {
+        "word": "déforestation",
+        "definition": "Destruction massive des forêts par l'activité humaine",
+        "answer": "déforestation",
+        "article": "la"
+      },
+      {
+        "word": "empreinte carbone",
+        "definition": "Quantité de gaz à effet de serre émise par une activité humaine",
+        "answer": "empreinte carbone",
+        "article": "l'"
+      },
+      {
+        "word": "développement durable",
+        "definition": "Mode de développement répondant aux besoins du présent sans compromettre ceux des générations futures",
+        "answer": "développement durable",
+        "article": "le"
+      },
+      {
+        "word": "écosystème",
+        "definition": "Ensemble formé par une communauté d'êtres vivants et son environnement naturel",
+        "answer": "écosystème",
+        "article": "l'"
+      },
+      {
+        "word": "sensibilisation",
+        "definition": "Action d'informer le public pour le rendre conscient d'un problème",
+        "answer": "sensibilisation",
+        "article": "la"
+      },
+      {
+        "word": "réchauffement climatique",
+        "definition": "Augmentation progressive de la température moyenne de la Terre",
+        "answer": "réchauffement climatique",
+        "article": "le"
+      },
+      {
+        "word": "énergies renouvelables",
+        "definition": "Sources d'énergie naturelles et inépuisables comme le soleil ou le vent",
+        "answer": "énergies renouvelables",
+        "article": "les"
+      },
+      {
+        "word": "pesticide",
+        "definition": "Substance chimique utilisée pour détruire les organismes nuisibles aux cultures",
+        "answer": "pesticide",
+        "article": "le"
+      },
+      {
+        "word": "militer",
+        "definition": "S'engager activement pour défendre une cause",
+        "answer": "militer",
+        "article": ""
+      },
+      {
+        "word": "tri sélectif",
+        "definition": "Séparation des déchets selon leur nature pour faciliter le recyclage",
+        "answer": "tri sélectif",
+        "article": "le"
+      },
+      {
+        "word": "nappe phréatique",
+        "definition": "Réserve d'eau souterraine alimentant puits et sources",
+        "answer": "nappe phréatique",
+        "article": "la"
+      },
+      {
+        "word": "emballage",
+        "definition": "Matériau utilisé pour protéger ou contenir un produit",
+        "answer": "emballage",
+        "article": "l'"
+      },
+      {
+        "word": "gaz à effet de serre",
+        "definition": "Gaz présent dans l'atmosphère qui contribue au réchauffement climatique",
+        "answer": "gaz à effet de serre",
+        "article": "les"
+      }
     ],
     "expressions": [
-      { "expression": "Il va de soi que", "usage": "Introduire une évidence", "example": "Il va de soi que nous devons protéger l'environnement." },
-      { "expression": "Force est de constater que", "usage": "Affirmer un fait indéniable", "example": "Force est de constater que la biodiversité diminue." },
-      { "expression": "À condition que", "usage": "Exprimer une condition (+ subjonctif)", "example": "Le recyclage sera efficace à condition que chacun y participe." },
-      { "expression": "En dépit de", "usage": "Exprimer la concession", "example": "En dépit des avertissements, la déforestation se poursuit." },
-      { "expression": "C'est pourquoi", "usage": "Introduire une conséquence logique", "example": "Les océans se réchauffent, c'est pourquoi les espèces migrent." },
-      { "expression": "Il est primordial de", "usage": "Exprimer l'importance (+ infinitif)", "example": "Il est primordial de réduire notre empreinte carbone." },
-      { "expression": "Quoi qu'il en soit", "usage": "Conclure malgré des arguments contraires", "example": "Quoi qu'il en soit, l'urgence écologique est réelle." },
-      { "expression": "D'autant plus que", "usage": "Renforcer un argument", "example": "Il faut agir vite, d'autant plus que les glaciers fondent." },
-      { "expression": "Certes... mais", "usage": "Concéder un point avant de nuancer", "example": "Certes le recyclage a un coût, mais il reste indispensable." },
-      { "expression": "Non seulement... mais aussi", "usage": "Ajouter et renforcer un argument", "example": "Non seulement la pollution détruit les habitats, mais elle menace aussi notre santé." },
-      { "expression": "En revanche", "usage": "Opposer deux idées", "example": "Les énergies fossiles polluent ; en revanche, le solaire est propre." },
-      { "expression": "Il n'en demeure pas moins que", "usage": "Maintenir un argument malgré une concession", "example": "Il n'en demeure pas moins que les efforts restent insuffisants." }
+      {
+        "expression": "Il va de soi que",
+        "usage": "Introduire une évidence",
+        "example": "Il va de soi que nous devons protéger l'environnement."
+      },
+      {
+        "expression": "Force est de constater que",
+        "usage": "Affirmer un fait indéniable",
+        "example": "Force est de constater que la biodiversité diminue."
+      },
+      {
+        "expression": "À condition que",
+        "usage": "Exprimer une condition (+ subjonctif)",
+        "example": "Le recyclage sera efficace à condition que chacun y participe."
+      },
+      {
+        "expression": "En dépit de",
+        "usage": "Exprimer la concession",
+        "example": "En dépit des avertissements, la déforestation se poursuit."
+      },
+      {
+        "expression": "C'est pourquoi",
+        "usage": "Introduire une conséquence logique",
+        "example": "Les océans se réchauffent, c'est pourquoi les espèces migrent."
+      },
+      {
+        "expression": "Il est primordial de",
+        "usage": "Exprimer l'importance (+ infinitif)",
+        "example": "Il est primordial de réduire notre empreinte carbone."
+      },
+      {
+        "expression": "Quoi qu'il en soit",
+        "usage": "Conclure malgré des arguments contraires",
+        "example": "Quoi qu'il en soit, l'urgence écologique est réelle."
+      },
+      {
+        "expression": "D'autant plus que",
+        "usage": "Renforcer un argument",
+        "example": "Il faut agir vite, d'autant plus que les glaciers fondent."
+      },
+      {
+        "expression": "Certes... mais",
+        "usage": "Concéder un point avant de nuancer",
+        "example": "Certes le recyclage a un coût, mais il reste indispensable."
+      },
+      {
+        "expression": "Non seulement... mais aussi",
+        "usage": "Ajouter et renforcer un argument",
+        "example": "Non seulement la pollution détruit les habitats, mais aussi elle menace notre santé."
+      },
+      {
+        "expression": "En revanche",
+        "usage": "Opposer deux idées",
+        "example": "Les énergies fossiles polluent ; en revanche, le solaire est propre."
+      },
+      {
+        "expression": "Il n'en demeure pas moins que",
+        "usage": "Maintenir un argument malgré une concession",
+        "example": "Il n'en demeure pas moins que les efforts restent insuffisants."
+      }
     ],
     "conjugation_list": [
-      { "verb": "protéger", "tense": "Subjonctif présent", "person": "il", "answer": "protège" },
-      { "verb": "détruire", "tense": "Subjonctif présent", "person": "nous", "answer": "détruisions" },
-      { "verb": "préserver", "tense": "Conditionnel passé", "person": "nous", "answer": "aurions préservé" },
-      { "verb": "disparaître", "tense": "Conditionnel passé", "person": "elles", "answer": "auraient disparu" },
-      { "verb": "gaspiller", "tense": "Plus-que-parfait", "person": "vous", "answer": "aviez gaspillé" },
-      { "verb": "interdire", "tense": "Plus-que-parfait", "person": "on", "answer": "avait interdit" },
-      { "verb": "recycler", "tense": "Futur antérieur", "person": "nous", "answer": "aurons recyclé" },
-      { "verb": "résoudre", "tense": "Futur antérieur", "person": "ils", "answer": "auront résolu" }
+      {
+        "verb": "protéger",
+        "tense": "Subjonctif présent",
+        "person": "il",
+        "answer": "protège"
+      },
+      {
+        "verb": "détruire",
+        "tense": "Subjonctif présent",
+        "person": "nous",
+        "answer": "détruisions"
+      },
+      {
+        "verb": "préserver",
+        "tense": "Conditionnel passé",
+        "person": "nous",
+        "answer": "aurions préservé"
+      },
+      {
+        "verb": "disparaître",
+        "tense": "Conditionnel passé",
+        "person": "elles",
+        "answer": "auraient disparu"
+      },
+      {
+        "verb": "gaspiller",
+        "tense": "Plus-que-parfait",
+        "person": "vous",
+        "answer": "aviez gaspillé"
+      },
+      {
+        "verb": "interdire",
+        "tense": "Plus-que-parfait",
+        "person": "on",
+        "answer": "avait interdit"
+      },
+      {
+        "verb": "recycler",
+        "tense": "Futur antérieur",
+        "person": "nous",
+        "answer": "aurons recyclé"
+      },
+      {
+        "verb": "résoudre",
+        "tense": "Futur antérieur",
+        "person": "ils",
+        "answer": "auront résolu"
+      }
     ],
     "grammar_transforms": [
-      { "type": "Voix passive", "source": "Le gouvernement a interdit les sacs plastiques.", "answer": "Les sacs plastiques ont été interdits par le gouvernement." },
-      { "type": "Cause (puisque)", "source": "Les espèces disparaissent. La déforestation s'accélère.", "answer": "Les espèces disparaissent puisque la déforestation s'accélère." },
-      { "type": "Conséquence (si bien que)", "source": "La pollution augmente. Les écosystèmes sont menacés.", "answer": "La pollution augmente si bien que les écosystèmes sont menacés." },
-      { "type": "Nominalisation", "source": "Les forêts sont détruites massivement.", "answer": "La destruction massive des forêts" },
-      { "type": "Bien que + subjonctif", "source": "Il pleut. Les manifestants restent dans la rue.", "answer": "Bien qu'il pleuve, les manifestants restent dans la rue." },
-      { "type": "Afin que + subjonctif", "source": "Nous recyclons. Les ressources seront préservées.", "answer": "Nous recyclons afin que les ressources soient préservées." },
-      { "type": "Malgré + nom", "source": "Les avertissements sont nombreux. La pollution continue.", "answer": "Malgré les nombreux avertissements, la pollution continue." },
-      { "type": "À cause de", "source": "Le réchauffement climatique provoque la fonte des glaciers.", "answer": "À cause du réchauffement climatique, les glaciers fondent." }
+      {
+        "type": "Voix passive",
+        "source": "Le gouvernement a interdit les sacs plastiques.",
+        "answer": "Les sacs plastiques ont été interdits par le gouvernement."
+      },
+      {
+        "type": "Cause (puisque)",
+        "source": "Les espèces disparaissent. La déforestation s'accélère.",
+        "answer": "Les espèces disparaissent puisque la déforestation s'accélère."
+      },
+      {
+        "type": "Conséquence (si bien que)",
+        "source": "La pollution augmente. Les écosystèmes sont menacés.",
+        "answer": "La pollution augmente si bien que les écosystèmes sont menacés."
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Les forêts sont détruites massivement.",
+        "answer": "La destruction massive des forêts"
+      },
+      {
+        "type": "Bien que + subjonctif",
+        "source": "Il pleut. Les manifestants restent dans la rue.",
+        "answer": "Bien qu'il pleuve, les manifestants restent dans la rue."
+      },
+      {
+        "type": "Afin que + subjonctif",
+        "source": "Nous recyclons. Les ressources seront préservées.",
+        "answer": "Nous recyclons afin que les ressources soient préservées."
+      },
+      {
+        "type": "Malgré + nom",
+        "source": "Les avertissements sont nombreux. La pollution continue.",
+        "answer": "Malgré les nombreux avertissements, la pollution continue."
+      },
+      {
+        "type": "À cause de",
+        "source": "Le réchauffement climatique provoque la fonte des glaciers.",
+        "answer": "À cause du réchauffement climatique, les glaciers fondent."
+      }
     ]
   },
   {
     "unit_number": 2,
     "theme": "Être ou avoir ?",
-    "grammar_focus": ["Les doubles pronoms", "Indicatif ou subjonctif ?", "Les verbes et les prépositions"],
-    "vocabulary_list": ["argent liquide", "billet", "carte bleue", "distributeur", "encaisser", "paiement dématérialisé", "paiement sans contact", "payer comptant", "payer à crédit", "pièce", "rendre la monnaie", "virement bancaire", "acheter au détail", "être un panier percé", "jeter l'argent par les fenêtres", "prix de gros", "par souci d'économie", "payer le prix fort", "crise économique", "croissance", "demande", "fixer un prix", "gestion budgétaire", "inflation", "offre", "pouvoir d'achat", "rentabilité économique", "obsolescence programmée", "chiner", "superflu"],
+    "grammar_focus": [
+      "Les doubles pronoms",
+      "Indicatif ou subjonctif ?",
+      "Les verbes et les prépositions"
+    ],
+    "vocabulary_list": [
+      "argent liquide",
+      "billet",
+      "carte bleue",
+      "distributeur",
+      "encaisser",
+      "paiement dématérialisé",
+      "paiement sans contact",
+      "payer comptant",
+      "payer à crédit",
+      "pièce",
+      "rendre la monnaie",
+      "virement bancaire",
+      "acheter au détail",
+      "être un panier percé",
+      "jeter l'argent par les fenêtres",
+      "prix de gros",
+      "par souci d'économie",
+      "payer le prix fort",
+      "crise économique",
+      "croissance",
+      "demande",
+      "fixer un prix",
+      "gestion budgétaire",
+      "inflation",
+      "offre",
+      "pouvoir d'achat",
+      "rentabilité économique",
+      "obsolescence programmée",
+      "chiner",
+      "superflu"
+    ],
     "b2_expression_focus": "Placement des doubles pronoms",
     "vocabulary": [
-      { "word": "inflation", "definition": "Hausse générale et durable des prix réduisant le pouvoir d'achat", "answer": "inflation", "article": "l'" },
-      { "word": "pouvoir d'achat", "definition": "Capacité financière d'un ménage à acquérir des biens et services", "answer": "pouvoir d'achat", "article": "le" },
-      { "word": "épargne", "definition": "Somme d'argent mise de côté en vue d'une utilisation future", "answer": "épargne", "article": "l'" },
-      { "word": "endettement", "definition": "Fait de contracter des dettes dépassant sa capacité de remboursement", "answer": "endettement", "article": "l'" },
-      { "word": "rentabilité", "definition": "Capacité d'un investissement à produire un bénéfice", "answer": "rentabilité", "article": "la" },
-      { "word": "surendettement", "definition": "Situation dans laquelle une personne ne peut plus faire face à ses dettes", "answer": "surendettement", "article": "le" },
-      { "word": "patrimoine", "definition": "Ensemble des biens et des avoirs possédés par une personne", "answer": "patrimoine", "article": "le" },
-      { "word": "spéculation", "definition": "Opération financière visant à tirer profit des variations de prix", "answer": "spéculation", "article": "la" },
-      { "word": "obsolescence programmée", "definition": "Stratégie visant à réduire la durée de vie d'un produit pour en accélérer le renouvellement", "answer": "obsolescence programmée", "article": "l'" },
-      { "word": "décroissance", "definition": "Courant de pensée prônant la réduction de la production et de la consommation", "answer": "décroissance", "article": "la" }
+      {
+        "word": "inflation",
+        "definition": "Hausse générale et durable des prix réduisant le pouvoir d'achat",
+        "answer": "inflation",
+        "article": "l'"
+      },
+      {
+        "word": "pouvoir d'achat",
+        "definition": "Capacité financière d'un ménage à acquérir des biens et services",
+        "answer": "pouvoir d'achat",
+        "article": "le"
+      },
+      {
+        "word": "épargne",
+        "definition": "Somme d'argent mise de côté en vue d'une utilisation future",
+        "answer": "épargne",
+        "article": "l'"
+      },
+      {
+        "word": "endettement",
+        "definition": "Fait de contracter des dettes dépassant sa capacité de remboursement",
+        "answer": "endettement",
+        "article": "l'"
+      },
+      {
+        "word": "rentabilité",
+        "definition": "Capacité d'un investissement à produire un bénéfice",
+        "answer": "rentabilité",
+        "article": "la"
+      },
+      {
+        "word": "surendettement",
+        "definition": "Situation dans laquelle une personne ne peut plus faire face à ses dettes",
+        "answer": "surendettement",
+        "article": "le"
+      },
+      {
+        "word": "patrimoine",
+        "definition": "Ensemble des biens et des avoirs possédés par une personne",
+        "answer": "patrimoine",
+        "article": "le"
+      },
+      {
+        "word": "spéculation",
+        "definition": "Opération financière visant à tirer profit des variations de prix",
+        "answer": "spéculation",
+        "article": "la"
+      },
+      {
+        "word": "obsolescence programmée",
+        "definition": "Stratégie visant à réduire la durée de vie d'un produit pour en accélérer le renouvellement",
+        "answer": "obsolescence programmée",
+        "article": "l'"
+      },
+      {
+        "word": "décroissance",
+        "definition": "Courant de pensée prônant la réduction de la production et de la consommation",
+        "answer": "décroissance",
+        "article": "la"
+      }
     ],
     "expressions": [
-      { "expression": "Être à découvert", "usage": "Avoir un solde bancaire négatif", "example": "À la fin du mois, il est souvent à découvert." },
-      { "expression": "Joindre les deux bouts", "usage": "Avoir juste assez pour vivre", "example": "Avec l'inflation, beaucoup de familles peinent à joindre les deux bouts." },
-      { "expression": "Mettre de l'argent de côté", "usage": "Épargner régulièrement", "example": "Il est prudent de mettre de l'argent de côté chaque mois." },
-      { "expression": "Coûter les yeux de la tête", "usage": "Être extrêmement cher", "example": "Cette voiture électrique coûte les yeux de la tête." },
-      { "expression": "Ne pas avoir un sou", "usage": "Être totalement sans argent", "example": "Après ses études, il n'avait pas un sou." },
-      { "expression": "Faire des économies de bout de chandelle", "usage": "Économiser sur des détails insignifiants", "example": "Couper le chauffage en hiver, c'est faire des économies de bout de chandelle." },
-      { "expression": "L'argent ne fait pas le bonheur", "usage": "Proverbe sur les limites de la richesse", "example": "L'argent ne fait pas le bonheur, mais il y contribue." },
-      { "expression": "Avoir les moyens de", "usage": "Pouvoir se permettre financièrement", "example": "Tout le monde n'a pas les moyens de s'offrir un logement décent." }
+      {
+        "expression": "Être à découvert",
+        "usage": "Avoir un solde bancaire négatif",
+        "example": "À la fin du mois, il est souvent à découvert."
+      },
+      {
+        "expression": "Joindre les deux bouts",
+        "usage": "Avoir juste assez pour vivre",
+        "example": "Avec l'inflation, beaucoup de familles peinent à joindre les deux bouts."
+      },
+      {
+        "expression": "Mettre de l'argent de côté",
+        "usage": "Épargner régulièrement",
+        "example": "Il est prudent de mettre de l'argent de côté chaque mois."
+      },
+      {
+        "expression": "Coûter les yeux de la tête",
+        "usage": "Être extrêmement cher",
+        "example": "Cette voiture électrique coûte les yeux de la tête."
+      },
+      {
+        "expression": "Ne pas avoir un sou",
+        "usage": "Être totalement sans argent",
+        "example": "Après ses études, il n'avait pas un sou."
+      },
+      {
+        "expression": "Faire des économies de bout de chandelle",
+        "usage": "Économiser sur des détails insignifiants",
+        "example": "Couper le chauffage en hiver, c'est faire des économies de bout de chandelle."
+      },
+      {
+        "expression": "L'argent ne fait pas le bonheur",
+        "usage": "Proverbe sur les limites de la richesse",
+        "example": "L'argent ne fait pas le bonheur, mais il y contribue."
+      },
+      {
+        "expression": "Avoir les moyens de",
+        "usage": "Pouvoir se permettre financièrement",
+        "example": "Tout le monde n'a pas les moyens de s'offrir un logement décent."
+      }
     ],
     "conjugation_list": [
-      { "verb": "acquérir", "tense": "Subjonctif présent", "person": "je", "answer": "acquière" },
-      { "verb": "devoir", "tense": "Subjonctif présent", "person": "nous", "answer": "devions" },
-      { "verb": "recevoir", "tense": "Subjonctif présent", "person": "ils", "answer": "reçoivent" },
-      { "verb": "valoir", "tense": "Subjonctif présent", "person": "il", "answer": "vaille" },
-      { "verb": "investir", "tense": "Conditionnel passé", "person": "vous", "answer": "auriez investi" },
-      { "verb": "perdre", "tense": "Conditionnel passé", "person": "je", "answer": "aurais perdu" },
-      { "verb": "acquérir", "tense": "Conditionnel passé", "person": "nous", "answer": "aurions acquis" },
-      { "verb": "dépenser", "tense": "Plus-que-parfait", "person": "elle", "answer": "avait dépensé" },
-      { "verb": "vendre", "tense": "Plus-que-parfait", "person": "nous", "answer": "avions vendu" },
-      { "verb": "s'enrichir", "tense": "Plus-que-parfait", "person": "il", "answer": "s'était enrichi" },
-      { "verb": "rembourser", "tense": "Futur antérieur", "person": "tu", "answer": "auras remboursé" },
-      { "verb": "obtenir", "tense": "Futur antérieur", "person": "ils", "answer": "auront obtenu" }
+      {
+        "verb": "acquérir",
+        "tense": "Subjonctif présent",
+        "person": "je",
+        "answer": "acquière"
+      },
+      {
+        "verb": "devoir",
+        "tense": "Subjonctif présent",
+        "person": "nous",
+        "answer": "devions"
+      },
+      {
+        "verb": "recevoir",
+        "tense": "Subjonctif présent",
+        "person": "ils",
+        "answer": "reçoivent"
+      },
+      {
+        "verb": "valoir",
+        "tense": "Subjonctif présent",
+        "person": "il",
+        "answer": "vaille"
+      },
+      {
+        "verb": "investir",
+        "tense": "Conditionnel passé",
+        "person": "vous",
+        "answer": "auriez investi"
+      },
+      {
+        "verb": "perdre",
+        "tense": "Conditionnel passé",
+        "person": "je",
+        "answer": "aurais perdu"
+      },
+      {
+        "verb": "acquérir",
+        "tense": "Conditionnel passé",
+        "person": "nous",
+        "answer": "aurions acquis"
+      },
+      {
+        "verb": "dépenser",
+        "tense": "Plus-que-parfait",
+        "person": "elle",
+        "answer": "avait dépensé"
+      },
+      {
+        "verb": "vendre",
+        "tense": "Plus-que-parfait",
+        "person": "nous",
+        "answer": "avions vendu"
+      },
+      {
+        "verb": "s'enrichir",
+        "tense": "Plus-que-parfait",
+        "person": "il",
+        "answer": "s'était enrichi"
+      },
+      {
+        "verb": "rembourser",
+        "tense": "Futur antérieur",
+        "person": "tu",
+        "answer": "auras remboursé"
+      },
+      {
+        "verb": "obtenir",
+        "tense": "Futur antérieur",
+        "person": "ils",
+        "answer": "auront obtenu"
+      }
     ],
     "grammar_transforms": [
-      { "type": "Doubles pronoms", "source": "Il donne le livre à Marie.", "answer": "Il le lui donne." },
-      { "type": "Doubles pronoms", "source": "Nous envoyons les documents aux clients.", "answer": "Nous les leur envoyons." },
-      { "type": "Doubles pronoms (impératif)", "source": "Donne-moi le reçu.", "answer": "Donne-le-moi." },
-      { "type": "Indicatif → Subjonctif", "source": "Je pense qu'il a raison.", "answer": "Je ne pense pas qu'il ait raison." },
-      { "type": "Indicatif → Subjonctif", "source": "Il est certain que nous pouvons rembourser.", "answer": "Il n'est pas certain que nous puissions rembourser." },
-      { "type": "Voix passive", "source": "La banque a refusé le prêt.", "answer": "Le prêt a été refusé par la banque." },
-      { "type": "Nominalisation", "source": "Les prix augmentent fortement.", "answer": "La forte augmentation des prix" },
-      { "type": "Cause (étant donné que)", "source": "L'inflation est forte. Le pouvoir d'achat diminue.", "answer": "Étant donné que l'inflation est forte, le pouvoir d'achat diminue." },
-      { "type": "Conséquence (de sorte que)", "source": "Les taux d'intérêt ont augmenté. Les emprunts sont plus chers.", "answer": "Les taux d'intérêt ont augmenté de sorte que les emprunts sont plus chers." },
-      { "type": "Concession (avoir beau)", "source": "Il économise beaucoup. Il n'arrive pas à rembourser ses dettes.", "answer": "Il a beau économiser beaucoup, il n'arrive pas à rembourser ses dettes." },
-      { "type": "Malgré + nom", "source": "Les mesures d'austérité sont sévères. L'endettement persiste.", "answer": "Malgré les sévères mesures d'austérité, l'endettement persiste." },
-      { "type": "Pour que + subjonctif", "source": "Le gouvernement baisse les impôts. Les ménages consomment davantage.", "answer": "Le gouvernement baisse les impôts pour que les ménages consomment davantage." }
+      {
+        "type": "Doubles pronoms",
+        "source": "Il donne le livre à Marie.",
+        "answer": "Il le lui donne."
+      },
+      {
+        "type": "Doubles pronoms",
+        "source": "Nous envoyons les documents aux clients.",
+        "answer": "Nous les leur envoyons."
+      },
+      {
+        "type": "Doubles pronoms (impératif)",
+        "source": "Donne-moi le reçu.",
+        "answer": "Donne-le-moi."
+      },
+      {
+        "type": "Indicatif → Subjonctif",
+        "source": "Je pense qu'il a raison.",
+        "answer": "Je ne pense pas qu'il ait raison."
+      },
+      {
+        "type": "Indicatif → Subjonctif",
+        "source": "Il est certain que nous pouvons rembourser.",
+        "answer": "Il n'est pas certain que nous puissions rembourser."
+      },
+      {
+        "type": "Voix passive",
+        "source": "La banque a refusé le prêt.",
+        "answer": "Le prêt a été refusé par la banque."
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Les prix augmentent fortement.",
+        "answer": "La forte augmentation des prix"
+      },
+      {
+        "type": "Cause (étant donné que)",
+        "source": "L'inflation est forte. Le pouvoir d'achat diminue.",
+        "answer": "Étant donné que l'inflation est forte, le pouvoir d'achat diminue."
+      },
+      {
+        "type": "Conséquence (de sorte que)",
+        "source": "Les taux d'intérêt ont augmenté. Les emprunts sont plus chers.",
+        "answer": "Les taux d'intérêt ont augmenté de sorte que les emprunts sont plus chers."
+      },
+      {
+        "type": "Concession (avoir beau)",
+        "source": "Il économise beaucoup. Il n'arrive pas à rembourser ses dettes.",
+        "answer": "Il a beau économiser beaucoup, il n'arrive pas à rembourser ses dettes."
+      },
+      {
+        "type": "Malgré + nom",
+        "source": "Les mesures d'austérité sont sévères. L'endettement persiste.",
+        "answer": "Malgré les sévères mesures d'austérité, l'endettement persiste."
+      },
+      {
+        "type": "Pour que + subjonctif",
+        "source": "Le gouvernement baisse les impôts. Les ménages consomment davantage.",
+        "answer": "Le gouvernement baisse les impôts pour que les ménages consomment davantage."
+      }
     ]
   },
   {
     "unit_number": 3,
     "theme": "Chercher sa voie",
-    "grammar_focus": ["Exprimer le but", "L'expression de l'hypothèse"],
-    "vocabulary_list": ["acquisition", "s'améliorer", "apprentissage", "autonomie", "se cultiver", "évoluer", "insertion professionnelle", "instruction", "s'instruire", "bourse", "capital culturel", "composition sociale", "cursus", "discrimination positive", "exonération", "mérite", "mixité sociale", "prépa", "grande école", "boursier", "stagiaire", "tuteur", "alternance", "contrat d'apprentissage", "cours magistral", "séminaire", "CDD", "CDI", "télétravail", "compétences"],
+    "grammar_focus": [
+      "Exprimer le but",
+      "L'expression de l'hypothèse"
+    ],
+    "vocabulary_list": [
+      "acquisition",
+      "s'améliorer",
+      "apprentissage",
+      "autonomie",
+      "se cultiver",
+      "évoluer",
+      "insertion professionnelle",
+      "instruction",
+      "s'instruire",
+      "bourse",
+      "capital culturel",
+      "composition sociale",
+      "cursus",
+      "discrimination positive",
+      "exonération",
+      "mérite",
+      "mixité sociale",
+      "prépa",
+      "grande école",
+      "boursier",
+      "stagiaire",
+      "tuteur",
+      "alternance",
+      "contrat d'apprentissage",
+      "cours magistral",
+      "séminaire",
+      "CDD",
+      "CDI",
+      "télétravail",
+      "compétences"
+    ],
     "b2_expression_focus": "Si + imparfait + conditionnel présent (Hypothèse)",
     "vocabulary": [
-      { "word": "cursus", "definition": "Ensemble des études suivies dans un parcours de formation", "answer": "cursus", "article": "le" },
-      { "word": "insertion professionnelle", "definition": "Processus d'entrée dans le monde du travail", "answer": "insertion professionnelle", "article": "l'" },
-      { "word": "alternance", "definition": "Formation combinant périodes en entreprise et cours théoriques", "answer": "alternance", "article": "l'" },
-      { "word": "discrimination positive", "definition": "Politique favorisant des groupes historiquement désavantagés", "answer": "discrimination positive", "article": "la" },
-      { "word": "exonération", "definition": "Dispense totale ou partielle du paiement d'une taxe ou de frais", "answer": "exonération", "article": "l'" },
-      { "word": "reconversion", "definition": "Changement d'orientation professionnelle vers un nouveau métier", "answer": "reconversion", "article": "la" },
-      { "word": "débouchés", "definition": "Possibilités d'emploi offertes par une formation ou un secteur", "answer": "débouchés", "article": "les" },
-      { "word": "stage", "definition": "Période de formation pratique en milieu professionnel", "answer": "stage", "article": "le" },
-      { "word": "bilan de compétences", "definition": "Évaluation des aptitudes et des motivations professionnelles d'une personne", "answer": "bilan de compétences", "article": "le" },
-      { "word": "précarité", "definition": "Situation d'instabilité sociale et économique liée à l'emploi", "answer": "précarité", "article": "la" },
-      { "word": "concours", "definition": "Épreuve sélective permettant d'accéder à une école ou un poste", "answer": "concours", "article": "le" },
-      { "word": "entrepreneuriat", "definition": "Démarche de création et de gestion d'une entreprise", "answer": "entrepreneuriat", "article": "l'" }
+      {
+        "word": "cursus",
+        "definition": "Ensemble des études suivies dans un parcours de formation",
+        "answer": "cursus",
+        "article": "le"
+      },
+      {
+        "word": "insertion professionnelle",
+        "definition": "Processus d'entrée dans le monde du travail",
+        "answer": "insertion professionnelle",
+        "article": "l'"
+      },
+      {
+        "word": "alternance",
+        "definition": "Formation combinant périodes en entreprise et cours théoriques",
+        "answer": "alternance",
+        "article": "l'"
+      },
+      {
+        "word": "discrimination positive",
+        "definition": "Politique favorisant des groupes historiquement désavantagés",
+        "answer": "discrimination positive",
+        "article": "la"
+      },
+      {
+        "word": "exonération",
+        "definition": "Dispense totale ou partielle du paiement d'une taxe ou de frais",
+        "answer": "exonération",
+        "article": "l'"
+      },
+      {
+        "word": "reconversion",
+        "definition": "Changement d'orientation professionnelle vers un nouveau métier",
+        "answer": "reconversion",
+        "article": "la"
+      },
+      {
+        "word": "débouchés",
+        "definition": "Possibilités d'emploi offertes par une formation ou un secteur",
+        "answer": "débouchés",
+        "article": "les"
+      },
+      {
+        "word": "stage",
+        "definition": "Période de formation pratique en milieu professionnel",
+        "answer": "stage",
+        "article": "le"
+      },
+      {
+        "word": "bilan de compétences",
+        "definition": "Évaluation des aptitudes et des motivations professionnelles d'une personne",
+        "answer": "bilan de compétences",
+        "article": "le"
+      },
+      {
+        "word": "précarité",
+        "definition": "Situation d'instabilité sociale et économique liée à l'emploi",
+        "answer": "précarité",
+        "article": "la"
+      },
+      {
+        "word": "concours",
+        "definition": "Épreuve sélective permettant d'accéder à une école ou un poste",
+        "answer": "concours",
+        "article": "le"
+      },
+      {
+        "word": "entrepreneuriat",
+        "definition": "Démarche de création et de gestion d'une entreprise",
+        "answer": "entrepreneuriat",
+        "article": "l'"
+      }
     ],
     "expressions": [
-      { "expression": "Avoir le profil pour", "usage": "Correspondre aux critères d'un poste", "example": "Elle a tout à fait le profil pour ce poste de responsable." },
-      { "expression": "Gravir les échelons", "usage": "Progresser dans la hiérarchie professionnelle", "example": "Il a gravi les échelons en dix ans." },
-      { "expression": "Être sur la corde raide", "usage": "Être dans une situation professionnelle incertaine", "example": "Avec un CDD, on est toujours sur la corde raide." },
-      { "expression": "Afin de + infinitif", "usage": "Exprimer le but", "example": "Il a suivi une formation afin de se reconvertir." },
-      { "expression": "Dans le but de", "usage": "Exprimer l'objectif visé", "example": "Elle s'est inscrite dans le but de décrocher un diplôme reconnu." },
-      { "expression": "À supposer que + subjonctif", "usage": "Formuler une hypothèse incertaine", "example": "À supposer que tu réussisses le concours, où irais-tu ?" },
-      { "expression": "Au cas où + conditionnel", "usage": "Exprimer une éventualité", "example": "Au cas où tu ne serais pas admis, prépare un plan B." },
-      { "expression": "Quand bien même + conditionnel", "usage": "Exprimer une concession forte", "example": "Quand bien même il aurait un master, il ne trouverait pas d'emploi." },
-      { "expression": "Mettre toutes les chances de son côté", "usage": "Maximiser ses possibilités de réussite", "example": "Pour mettre toutes les chances de son côté, elle a fait trois stages." },
-      { "expression": "Se remettre en question", "usage": "Réfléchir à ses choix et les réévaluer", "example": "Après son licenciement, il a dû se remettre en question." }
+      {
+        "expression": "Avoir le profil pour",
+        "usage": "Correspondre aux critères d'un poste",
+        "example": "Elle a tout à fait le profil pour ce poste de responsable."
+      },
+      {
+        "expression": "Gravir les échelons",
+        "usage": "Progresser dans la hiérarchie professionnelle",
+        "example": "Il a gravi les échelons en dix ans."
+      },
+      {
+        "expression": "Être sur la corde raide",
+        "usage": "Être dans une situation professionnelle incertaine",
+        "example": "Avec un CDD, on est toujours sur la corde raide."
+      },
+      {
+        "expression": "Afin de + infinitif",
+        "usage": "Exprimer le but",
+        "example": "Il a suivi une formation afin de se reconvertir."
+      },
+      {
+        "expression": "Dans le but de",
+        "usage": "Exprimer l'objectif visé",
+        "example": "Elle s'est inscrite dans le but de décrocher un diplôme reconnu."
+      },
+      {
+        "expression": "À supposer que + subjonctif",
+        "usage": "Formuler une hypothèse incertaine",
+        "example": "À supposer que tu réussisses le concours, où irais-tu ?"
+      },
+      {
+        "expression": "Au cas où + conditionnel",
+        "usage": "Exprimer une éventualité",
+        "example": "Au cas où tu ne serais pas admis, prépare un plan B."
+      },
+      {
+        "expression": "Quand bien même + conditionnel",
+        "usage": "Exprimer une concession forte",
+        "example": "Quand bien même il aurait un master, il ne trouverait pas d'emploi."
+      },
+      {
+        "expression": "Mettre toutes les chances de son côté",
+        "usage": "Maximiser ses possibilités de réussite",
+        "example": "Pour mettre toutes les chances de son côté, elle a fait trois stages."
+      },
+      {
+        "expression": "Se remettre en question",
+        "usage": "Réfléchir à ses choix et les réévaluer",
+        "example": "Après son licenciement, il a dû se remettre en question."
+      }
     ],
     "conjugation_list": [
-      { "verb": "poursuivre", "tense": "Subjonctif présent", "person": "je", "answer": "poursuive" },
-      { "verb": "acquérir", "tense": "Subjonctif présent", "person": "vous", "answer": "acquériez" },
-      { "verb": "obtenir", "tense": "Subjonctif présent", "person": "elle", "answer": "obtienne" },
-      { "verb": "réussir", "tense": "Conditionnel passé", "person": "tu", "answer": "aurais réussi" },
-      { "verb": "suivre", "tense": "Conditionnel passé", "person": "nous", "answer": "aurions suivi" },
-      { "verb": "entreprendre", "tense": "Conditionnel passé", "person": "il", "answer": "aurait entrepris" },
-      { "verb": "admettre", "tense": "Plus-que-parfait", "person": "on", "answer": "avait admis" },
-      { "verb": "inscrire", "tense": "Plus-que-parfait", "person": "ils", "answer": "avaient inscrit" },
-      { "verb": "atteindre", "tense": "Futur antérieur", "person": "vous", "answer": "aurez atteint" },
-      { "verb": "devenir", "tense": "Futur antérieur", "person": "elle", "answer": "sera devenue" }
+      {
+        "verb": "poursuivre",
+        "tense": "Subjonctif présent",
+        "person": "je",
+        "answer": "poursuive"
+      },
+      {
+        "verb": "acquérir",
+        "tense": "Subjonctif présent",
+        "person": "vous",
+        "answer": "acquériez"
+      },
+      {
+        "verb": "obtenir",
+        "tense": "Subjonctif présent",
+        "person": "elle",
+        "answer": "obtienne"
+      },
+      {
+        "verb": "réussir",
+        "tense": "Conditionnel passé",
+        "person": "tu",
+        "answer": "aurais réussi"
+      },
+      {
+        "verb": "suivre",
+        "tense": "Conditionnel passé",
+        "person": "nous",
+        "answer": "aurions suivi"
+      },
+      {
+        "verb": "entreprendre",
+        "tense": "Conditionnel passé",
+        "person": "il",
+        "answer": "aurait entrepris"
+      },
+      {
+        "verb": "admettre",
+        "tense": "Plus-que-parfait",
+        "person": "on",
+        "answer": "avait admis"
+      },
+      {
+        "verb": "inscrire",
+        "tense": "Plus-que-parfait",
+        "person": "ils",
+        "answer": "avaient inscrit"
+      },
+      {
+        "verb": "atteindre",
+        "tense": "Futur antérieur",
+        "person": "vous",
+        "answer": "aurez atteint"
+      },
+      {
+        "verb": "devenir",
+        "tense": "Futur antérieur",
+        "person": "elle",
+        "answer": "sera devenue"
+      }
     ],
     "grammar_transforms": [
-      { "type": "Afin que + subjonctif", "source": "Les universités proposent des bourses. Les étudiants modestes accèdent aux études.", "answer": "Les universités proposent des bourses afin que les étudiants modestes accèdent aux études." },
-      { "type": "Pour que + subjonctif", "source": "L'État finance les formations. Les chômeurs retrouvent un emploi.", "answer": "L'État finance les formations pour que les chômeurs retrouvent un emploi." },
-      { "type": "Hypothèse (si + imparfait)", "source": "Tu travailles plus. Tu obtiens de meilleurs résultats.", "answer": "Si tu travaillais plus, tu obtiendrais de meilleurs résultats." },
-      { "type": "Hypothèse (si + plus-que-parfait)", "source": "Elle a fait une prépa. Elle a intégré une grande école.", "answer": "Si elle n'avait pas fait de prépa, elle n'aurait pas intégré de grande école." },
-      { "type": "Nominalisation", "source": "Les étudiants se mobilisent contre la réforme.", "answer": "La mobilisation des étudiants contre la réforme" },
-      { "type": "Voix passive", "source": "L'entreprise a embauché trente stagiaires.", "answer": "Trente stagiaires ont été embauchés par l'entreprise." },
-      { "type": "Bien que + subjonctif", "source": "Il n'a pas de diplôme. Il a décroché le poste.", "answer": "Bien qu'il n'ait pas de diplôme, il a décroché le poste." },
-      { "type": "Cause (puisque)", "source": "Tu as un CDI. Tu peux demander un prêt.", "answer": "Puisque tu as un CDI, tu peux demander un prêt." },
-      { "type": "Malgré + nom", "source": "Il a beaucoup d'expérience. Il n'a pas été retenu.", "answer": "Malgré son expérience, il n'a pas été retenu." },
-      { "type": "Quand bien même + conditionnel", "source": "Il aurait un doctorat. Il ne serait pas recruté sans expérience.", "answer": "Quand bien même il aurait un doctorat, il ne serait pas recruté sans expérience." }
+      {
+        "type": "Afin que + subjonctif",
+        "source": "Les universités proposent des bourses. Les étudiants modestes accèdent aux études.",
+        "answer": "Les universités proposent des bourses afin que les étudiants modestes accèdent aux études."
+      },
+      {
+        "type": "Pour que + subjonctif",
+        "source": "L'État finance les formations. Les chômeurs retrouvent un emploi.",
+        "answer": "L'État finance les formations pour que les chômeurs retrouvent un emploi."
+      },
+      {
+        "type": "Hypothèse (si + imparfait)",
+        "source": "Tu travailles plus. Tu obtiens de meilleurs résultats.",
+        "answer": "Si tu travaillais plus, tu obtiendrais de meilleurs résultats."
+      },
+      {
+        "type": "Hypothèse (si + plus-que-parfait)",
+        "source": "Elle a fait une prépa. Elle a intégré une grande école.",
+        "answer": "Si elle n'avait pas fait de prépa, elle n'aurait pas intégré de grande école."
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Les étudiants se mobilisent contre la réforme.",
+        "answer": "La mobilisation des étudiants contre la réforme"
+      },
+      {
+        "type": "Voix passive",
+        "source": "L'entreprise a embauché trente stagiaires.",
+        "answer": "Trente stagiaires ont été embauchés par l'entreprise."
+      },
+      {
+        "type": "Bien que + subjonctif",
+        "source": "Il n'a pas de diplôme. Il a décroché le poste.",
+        "answer": "Bien qu'il n'ait pas de diplôme, il a décroché le poste."
+      },
+      {
+        "type": "Cause (puisque)",
+        "source": "Tu as un CDI. Tu peux demander un prêt.",
+        "answer": "Puisque tu as un CDI, tu peux demander un prêt."
+      },
+      {
+        "type": "Malgré + nom",
+        "source": "Il a beaucoup d'expérience. Il n'a pas été retenu.",
+        "answer": "Malgré son expérience, il n'a pas été retenu."
+      },
+      {
+        "type": "Quand bien même + conditionnel",
+        "source": "Il aurait un doctorat. Il ne serait pas recruté sans expérience.",
+        "answer": "Quand bien même il aurait un doctorat, il ne serait pas recruté sans expérience."
+      }
     ]
   },
   {
     "unit_number": 4,
     "theme": "Être connecté ou ne pas être",
-    "grammar_focus": ["La cause", "Le discours rapporté au passé"],
-    "vocabulary_list": ["allusion", "aveu", "bavardage", "bégaiement", "commérage", "déclaration", "discours", "engueulade", "exclamation", "exposé", "injure", "interrogatoire", "promesse", "ragots", "réplique", "rumeur", "serment", "moulin à paroles", "mot sur le bout de la langue", "avoir la tchatche", "langue de vipère", "mettre les pieds dans le plat", "cyberdépendance", "illectronisme", "sauvegarde des documents", "dématérialisation", "émojis", "accro", "digital détox", "notifications"],
+    "grammar_focus": [
+      "La cause",
+      "Le discours rapporté au passé"
+    ],
+    "vocabulary_list": [
+      "allusion",
+      "aveu",
+      "bavardage",
+      "bégaiement",
+      "commérage",
+      "déclaration",
+      "discours",
+      "engueulade",
+      "exclamation",
+      "exposé",
+      "injure",
+      "interrogatoire",
+      "promesse",
+      "ragots",
+      "réplique",
+      "rumeur",
+      "serment",
+      "moulin à paroles",
+      "mot sur le bout de la langue",
+      "avoir la tchatche",
+      "langue de vipère",
+      "mettre les pieds dans le plat",
+      "cyberdépendance",
+      "illectronisme",
+      "sauvegarde des documents",
+      "dématérialisation",
+      "émojis",
+      "accro",
+      "digital détox",
+      "notifications"
+    ],
     "b2_expression_focus": "Les verbes déclaratifs",
     "vocabulary": [
-      { "word": "cyberdépendance", "definition": "Addiction aux activités numériques perturbant la vie quotidienne", "answer": "cyberdépendance", "article": "la" },
-      { "word": "illectronisme", "definition": "Difficulté d'une personne à utiliser les outils numériques courants", "answer": "illectronisme", "article": "l'" },
-      { "word": "dématérialisation", "definition": "Remplacement des supports physiques par des formats numériques", "answer": "dématérialisation", "article": "la" },
-      { "word": "fracture numérique", "definition": "Inégalité d'accès aux technologies de l'information", "answer": "fracture numérique", "article": "la" },
-      { "word": "données personnelles", "definition": "Informations permettant d'identifier directement ou indirectement une personne", "answer": "données personnelles", "article": "les" },
-      { "word": "infox", "definition": "Information mensongère diffusée dans le but de tromper", "answer": "infox", "article": "l'" },
-      { "word": "viralité", "definition": "Capacité d'un contenu à se propager rapidement sur les réseaux sociaux", "answer": "viralité", "article": "la" },
-      { "word": "désinformation", "definition": "Diffusion délibérée d'informations fausses ou trompeuses", "answer": "désinformation", "article": "la" },
-      { "word": "bulle de filtre", "definition": "Environnement numérique personnalisé limitant l'accès à des opinions diverses", "answer": "bulle de filtre", "article": "la" },
-      { "word": "algorithme", "definition": "Suite d'instructions permettant à un programme de traiter des données", "answer": "algorithme", "article": "l'" }
+      {
+        "word": "cyberdépendance",
+        "definition": "Addiction aux activités numériques perturbant la vie quotidienne",
+        "answer": "cyberdépendance",
+        "article": "la"
+      },
+      {
+        "word": "illectronisme",
+        "definition": "Difficulté d'une personne à utiliser les outils numériques courants",
+        "answer": "illectronisme",
+        "article": "l'"
+      },
+      {
+        "word": "dématérialisation",
+        "definition": "Remplacement des supports physiques par des formats numériques",
+        "answer": "dématérialisation",
+        "article": "la"
+      },
+      {
+        "word": "fracture numérique",
+        "definition": "Inégalité d'accès aux technologies de l'information",
+        "answer": "fracture numérique",
+        "article": "la"
+      },
+      {
+        "word": "données personnelles",
+        "definition": "Informations permettant d'identifier directement ou indirectement une personne",
+        "answer": "données personnelles",
+        "article": "les"
+      },
+      {
+        "word": "infox",
+        "definition": "Information mensongère diffusée dans le but de tromper",
+        "answer": "infox",
+        "article": "l'"
+      },
+      {
+        "word": "viralité",
+        "definition": "Capacité d'un contenu à se propager rapidement sur les réseaux sociaux",
+        "answer": "viralité",
+        "article": "la"
+      },
+      {
+        "word": "désinformation",
+        "definition": "Diffusion délibérée d'informations fausses ou trompeuses",
+        "answer": "désinformation",
+        "article": "la"
+      },
+      {
+        "word": "bulle de filtre",
+        "definition": "Environnement numérique personnalisé limitant l'accès à des opinions diverses",
+        "answer": "bulle de filtre",
+        "article": "la"
+      },
+      {
+        "word": "algorithme",
+        "definition": "Suite d'instructions permettant à un programme de traiter des données",
+        "answer": "algorithme",
+        "article": "l'"
+      }
     ],
     "expressions": [
-      { "expression": "Être accro à", "usage": "Être dépendant de quelque chose", "example": "Les adolescents sont accro aux réseaux sociaux." },
-      { "expression": "Faire le buzz", "usage": "Devenir viral et susciter l'attention médiatique", "example": "Cette vidéo a fait le buzz en quelques heures." },
-      { "expression": "Couper le cordon numérique", "usage": "Se déconnecter volontairement des écrans", "example": "Pendant les vacances, j'essaie de couper le cordon numérique." },
-      { "expression": "Prendre du recul", "usage": "S'éloigner pour mieux analyser une situation", "example": "Il faut prendre du recul par rapport aux informations en ligne." },
-      { "expression": "Étant donné que", "usage": "Introduire une cause établie", "example": "Étant donné que tout est en ligne, l'illectronisme est un vrai handicap." },
-      { "expression": "Sous prétexte que", "usage": "Indiquer une cause jugée fausse ou douteuse", "example": "Il refuse de voter en ligne sous prétexte que ce n'est pas sécurisé." },
-      { "expression": "Il m'a affirmé que", "usage": "Rapporter des propos au passé", "example": "Il m'a affirmé qu'il ne consultait jamais les réseaux sociaux." },
-      { "expression": "À force de + infinitif", "usage": "Exprimer une cause répétée menant à un résultat", "example": "À force de scroller, elle a perdu la notion du temps." }
+      {
+        "expression": "Être accro à",
+        "usage": "Être dépendant de quelque chose",
+        "example": "Les adolescents sont accro aux réseaux sociaux."
+      },
+      {
+        "expression": "Faire le buzz",
+        "usage": "Devenir viral et susciter l'attention médiatique",
+        "example": "Cette vidéo a fait le buzz en quelques heures."
+      },
+      {
+        "expression": "Couper le cordon numérique",
+        "usage": "Se déconnecter volontairement des écrans",
+        "example": "Pendant les vacances, j'essaie de couper le cordon numérique."
+      },
+      {
+        "expression": "Prendre du recul",
+        "usage": "S'éloigner pour mieux analyser une situation",
+        "example": "Il faut prendre du recul par rapport aux informations en ligne."
+      },
+      {
+        "expression": "Étant donné que",
+        "usage": "Introduire une cause établie",
+        "example": "Étant donné que tout est en ligne, l'illectronisme est un vrai handicap."
+      },
+      {
+        "expression": "Sous prétexte que",
+        "usage": "Indiquer une cause jugée fausse ou douteuse",
+        "example": "Il refuse de voter en ligne sous prétexte que ce n'est pas sécurisé."
+      },
+      {
+        "expression": "Il m'a affirmé que",
+        "usage": "Rapporter des propos au passé",
+        "example": "Il m'a affirmé qu'il ne consultait jamais les réseaux sociaux."
+      },
+      {
+        "expression": "À force de + infinitif",
+        "usage": "Exprimer une cause répétée menant à un résultat",
+        "example": "À force de scroller, elle a perdu la notion du temps."
+      }
     ],
     "conjugation_list": [
-      { "verb": "convaincre", "tense": "Subjonctif présent", "person": "tu", "answer": "convainques" },
-      { "verb": "comprendre", "tense": "Subjonctif présent", "person": "ils", "answer": "comprennent" },
-      { "verb": "éteindre", "tense": "Subjonctif présent", "person": "nous", "answer": "éteignions" },
-      { "verb": "prétendre", "tense": "Conditionnel passé", "person": "elle", "answer": "aurait prétendu" },
-      { "verb": "transmettre", "tense": "Conditionnel passé", "person": "vous", "answer": "auriez transmis" },
-      { "verb": "décevoir", "tense": "Conditionnel passé", "person": "je", "answer": "aurais déçu" },
-      { "verb": "découvrir", "tense": "Plus-que-parfait", "person": "nous", "answer": "avions découvert" },
-      { "verb": "promettre", "tense": "Plus-que-parfait", "person": "il", "answer": "avait promis" },
-      { "verb": "rejoindre", "tense": "Futur antérieur", "person": "tu", "answer": "auras rejoint" },
-      { "verb": "conclure", "tense": "Futur antérieur", "person": "nous", "answer": "aurons conclu" }
+      {
+        "verb": "convaincre",
+        "tense": "Subjonctif présent",
+        "person": "tu",
+        "answer": "convainques"
+      },
+      {
+        "verb": "comprendre",
+        "tense": "Subjonctif présent",
+        "person": "ils",
+        "answer": "comprennent"
+      },
+      {
+        "verb": "éteindre",
+        "tense": "Subjonctif présent",
+        "person": "nous",
+        "answer": "éteignions"
+      },
+      {
+        "verb": "prétendre",
+        "tense": "Conditionnel passé",
+        "person": "elle",
+        "answer": "aurait prétendu"
+      },
+      {
+        "verb": "transmettre",
+        "tense": "Conditionnel passé",
+        "person": "vous",
+        "answer": "auriez transmis"
+      },
+      {
+        "verb": "décevoir",
+        "tense": "Conditionnel passé",
+        "person": "je",
+        "answer": "aurais déçu"
+      },
+      {
+        "verb": "découvrir",
+        "tense": "Plus-que-parfait",
+        "person": "nous",
+        "answer": "avions découvert"
+      },
+      {
+        "verb": "promettre",
+        "tense": "Plus-que-parfait",
+        "person": "il",
+        "answer": "avait promis"
+      },
+      {
+        "verb": "rejoindre",
+        "tense": "Futur antérieur",
+        "person": "tu",
+        "answer": "auras rejoint"
+      },
+      {
+        "verb": "conclure",
+        "tense": "Futur antérieur",
+        "person": "nous",
+        "answer": "aurons conclu"
+      }
     ],
     "grammar_transforms": [
-      { "type": "Discours rapporté au passé", "source": "Il a dit : « Je suis connecté en permanence. »", "answer": "Il a dit qu'il était connecté en permanence." },
-      { "type": "Discours rapporté au passé", "source": "Ils ont annoncé : « Nous supprimerons notre compte demain. »", "answer": "Ils ont annoncé qu'ils supprimeraient leur compte le lendemain." },
-      { "type": "Discours rapporté au passé", "source": "Elle a expliqué : « J'ai découvert une fausse nouvelle hier. »", "answer": "Elle a expliqué qu'elle avait découvert une fausse nouvelle la veille." },
-      { "type": "Discours rapporté au passé", "source": "Il nous a recommandé : « Ne partagez pas vos données personnelles ! »", "answer": "Il nous a recommandé de ne pas partager nos données personnelles." },
-      { "type": "Discours rapporté au passé", "source": "Elle m'a demandé : « Est-ce que tu as vérifié cette information ? »", "answer": "Elle m'a demandé si j'avais vérifié cette information." },
-      { "type": "Discours rapporté au passé", "source": "L'expert a affirmé : « Les réseaux sociaux transformeront la démocratie. »", "answer": "L'expert a affirmé que les réseaux sociaux transformeraient la démocratie." },
-      { "type": "Cause (puisque)", "source": "Tu ne vérifies jamais tes sources. Tu es mal informé.", "answer": "Puisque tu ne vérifies jamais tes sources, tu es mal informé." },
-      { "type": "Cause (étant donné que)", "source": "Les algorithmes filtrent l'information. Nous vivons dans une bulle.", "answer": "Étant donné que les algorithmes filtrent l'information, nous vivons dans une bulle." },
-      { "type": "Cause (à force de)", "source": "Elle consultait son téléphone sans cesse. Elle a développé des troubles du sommeil.", "answer": "À force de consulter son téléphone sans cesse, elle a développé des troubles du sommeil." },
-      { "type": "Voix passive", "source": "Les hackers ont volé des millions de données personnelles.", "answer": "Des millions de données personnelles ont été volées par les hackers." },
-      { "type": "Nominalisation", "source": "Les internautes se désinforment de plus en plus.", "answer": "La désinformation croissante des internautes" },
-      { "type": "Concession (avoir beau)", "source": "Internet facilite l'accès à l'information. Les gens restent mal informés.", "answer": "Internet a beau faciliter l'accès à l'information, les gens restent mal informés." },
-      { "type": "Cause (du fait que)", "source": "Les réseaux sociaux sont omniprésents. La vie privée est menacée.", "answer": "Du fait que les réseaux sociaux sont omniprésents, la vie privée est menacée." },
-      { "type": "Conséquence (si... que)", "source": "La technologie évolue très vite. Certains se sentent dépassés.", "answer": "La technologie évolue si vite que certains se sentent dépassés." }
+      {
+        "type": "Discours rapporté au passé",
+        "source": "Il a dit : « Je suis connecté en permanence. »",
+        "answer": "Il a dit qu'il était connecté en permanence."
+      },
+      {
+        "type": "Discours rapporté au passé",
+        "source": "Ils ont annoncé : « Nous supprimerons notre compte demain. »",
+        "answer": "Ils ont annoncé qu'ils supprimeraient leur compte le lendemain."
+      },
+      {
+        "type": "Discours rapporté au passé",
+        "source": "Elle a expliqué : « J'ai découvert une fausse nouvelle hier. »",
+        "answer": "Elle a expliqué qu'elle avait découvert une fausse nouvelle la veille."
+      },
+      {
+        "type": "Discours rapporté au passé",
+        "source": "Il nous a recommandé : « Ne partagez pas vos données personnelles ! »",
+        "answer": "Il nous a recommandé de ne pas partager nos données personnelles."
+      },
+      {
+        "type": "Discours rapporté au passé",
+        "source": "Elle m'a demandé : « Est-ce que tu as vérifié cette information ? »",
+        "answer": "Elle m'a demandé si j'avais vérifié cette information."
+      },
+      {
+        "type": "Discours rapporté au passé",
+        "source": "L'expert a affirmé : « Les réseaux sociaux transformeront la démocratie. »",
+        "answer": "L'expert a affirmé que les réseaux sociaux transformeraient la démocratie."
+      },
+      {
+        "type": "Cause (puisque)",
+        "source": "Tu ne vérifies jamais tes sources. Tu es mal informé.",
+        "answer": "Puisque tu ne vérifies jamais tes sources, tu es mal informé."
+      },
+      {
+        "type": "Cause (étant donné que)",
+        "source": "Les algorithmes filtrent l'information. Nous vivons dans une bulle.",
+        "answer": "Étant donné que les algorithmes filtrent l'information, nous vivons dans une bulle."
+      },
+      {
+        "type": "Cause (à force de)",
+        "source": "Elle consultait son téléphone sans cesse. Elle a développé des troubles du sommeil.",
+        "answer": "À force de consulter son téléphone sans cesse, elle a développé des troubles du sommeil."
+      },
+      {
+        "type": "Voix passive",
+        "source": "Les hackers ont volé des millions de données personnelles.",
+        "answer": "Des millions de données personnelles ont été volées par les hackers."
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Les internautes se désinforment de plus en plus.",
+        "answer": "La désinformation croissante des internautes"
+      },
+      {
+        "type": "Concession (avoir beau)",
+        "source": "Internet facilite l'accès à l'information. Les gens restent mal informés.",
+        "answer": "Internet a beau faciliter l'accès à l'information, les gens restent mal informés."
+      },
+      {
+        "type": "Cause (du fait que)",
+        "source": "Les réseaux sociaux sont omniprésents. La vie privée est menacée.",
+        "answer": "Du fait que les réseaux sociaux sont omniprésents, la vie privée est menacée."
+      },
+      {
+        "type": "Conséquence (si... que)",
+        "source": "La technologie évolue très vite. Certains se sentent dépassés.",
+        "answer": "La technologie évolue si vite que certains se sentent dépassés."
+      }
     ]
   },
   {
     "unit_number": 5,
     "theme": "Histoire au passé et au présent",
-    "grammar_focus": ["Les temps du passé", "La concession et l'opposition"],
-    "vocabulary_list": ["héros", "seconde guerre mondiale", "droit de vote", "immigré", "communauté française à l'étranger", "figure historique", "biographie", "centre d'accueil pour migrants", "engagement", "obstacles naturels", "migrants de l'intérieur", "secteur", "ère industrielle", "citoyen", "amertume", "prestigieuse", "chevalier servant", "dépenses pharaoniques", "monter sur le trône", "perdre le fil de l'histoire", "vie de château", "reconstruction", "monuments", "esclavage", "généalogie", "ancêtres", "parcours", "expatrier", "master", "réfugié"],
+    "grammar_focus": [
+      "Les temps du passé",
+      "La concession et l'opposition"
+    ],
+    "vocabulary_list": [
+      "héros",
+      "seconde guerre mondiale",
+      "droit de vote",
+      "immigré",
+      "communauté française à l'étranger",
+      "figure historique",
+      "biographie",
+      "centre d'accueil pour migrants",
+      "engagement",
+      "obstacles naturels",
+      "migrants de l'intérieur",
+      "secteur",
+      "ère industrielle",
+      "citoyen",
+      "amertume",
+      "prestigieuse",
+      "chevalier servant",
+      "dépenses pharaoniques",
+      "monter sur le trône",
+      "perdre le fil de l'histoire",
+      "vie de château",
+      "reconstruction",
+      "monuments",
+      "esclavage",
+      "généalogie",
+      "ancêtres",
+      "parcours",
+      "expatrier",
+      "master",
+      "réfugié"
+    ],
     "b2_expression_focus": "Expressions pour situer dans le temps",
     "vocabulary": [
-      { "word": "patrimoine", "definition": "Ensemble des biens culturels et historiques transmis par les générations précédentes", "answer": "patrimoine", "article": "le" },
-      { "word": "commémoration", "definition": "Cérémonie organisée pour rappeler le souvenir d'un événement historique", "answer": "commémoration", "article": "la" },
-      { "word": "esclavage", "definition": "Système dans lequel des êtres humains sont privés de liberté et exploités comme propriété", "answer": "esclavage", "article": "l'" },
-      { "word": "colonisation", "definition": "Processus par lequel un pays prend le contrôle d'un territoire étranger", "answer": "colonisation", "article": "la" },
-      { "word": "abolition", "definition": "Suppression officielle d'une loi, d'une pratique ou d'une institution", "answer": "abolition", "article": "l'" },
-      { "word": "résistance", "definition": "Mouvement d'opposition organisé contre une occupation ou un régime oppressif", "answer": "résistance", "article": "la" },
-      { "word": "émancipation", "definition": "Processus par lequel un individu ou un groupe acquiert son autonomie et ses droits", "answer": "émancipation", "article": "l'" },
-      { "word": "monarchie", "definition": "Régime politique dans lequel le pouvoir est exercé par un souverain héréditaire", "answer": "monarchie", "article": "la" },
-      { "word": "révolution", "definition": "Renversement brutal d'un régime politique par un mouvement populaire", "answer": "révolution", "article": "la" },
-      { "word": "armistice", "definition": "Accord conclu entre des belligérants pour cesser les combats", "answer": "armistice", "article": "l'" }
+      {
+        "word": "patrimoine",
+        "definition": "Ensemble des biens culturels et historiques transmis par les générations précédentes",
+        "answer": "patrimoine",
+        "article": "le"
+      },
+      {
+        "word": "commémoration",
+        "definition": "Cérémonie organisée pour rappeler le souvenir d'un événement historique",
+        "answer": "commémoration",
+        "article": "la"
+      },
+      {
+        "word": "esclavage",
+        "definition": "Système dans lequel des êtres humains sont privés de liberté et exploités comme propriété",
+        "answer": "esclavage",
+        "article": "l'"
+      },
+      {
+        "word": "colonisation",
+        "definition": "Processus par lequel un pays prend le contrôle d'un territoire étranger",
+        "answer": "colonisation",
+        "article": "la"
+      },
+      {
+        "word": "abolition",
+        "definition": "Suppression officielle d'une loi, d'une pratique ou d'une institution",
+        "answer": "abolition",
+        "article": "l'"
+      },
+      {
+        "word": "résistance",
+        "definition": "Mouvement d'opposition organisé contre une occupation ou un régime oppressif",
+        "answer": "résistance",
+        "article": "la"
+      },
+      {
+        "word": "émancipation",
+        "definition": "Processus par lequel un individu ou un groupe acquiert son autonomie et ses droits",
+        "answer": "émancipation",
+        "article": "l'"
+      },
+      {
+        "word": "monarchie",
+        "definition": "Régime politique dans lequel le pouvoir est exercé par un souverain héréditaire",
+        "answer": "monarchie",
+        "article": "la"
+      },
+      {
+        "word": "révolution",
+        "definition": "Renversement brutal d'un régime politique par un mouvement populaire",
+        "answer": "révolution",
+        "article": "la"
+      },
+      {
+        "word": "armistice",
+        "definition": "Accord conclu entre des belligérants pour cesser les combats",
+        "answer": "armistice",
+        "article": "l'"
+      }
     ],
     "expressions": [
-      { "expression": "À l'époque de", "usage": "Situer dans une période historique", "example": "À l'époque de la Révolution, les droits fondamentaux ont été proclamés." },
-      { "expression": "Au fil des siècles", "usage": "Exprimer une évolution progressive dans le temps", "example": "Au fil des siècles, les mentalités ont profondément évolué." },
-      { "expression": "Bien que + subjonctif", "usage": "Exprimer la concession", "example": "Bien que la guerre ait été terrible, elle a renforcé la solidarité nationale." },
-      { "expression": "Avoir beau + infinitif", "usage": "Exprimer une concession forte", "example": "Il avait beau protester, personne ne l'écoutait." },
-      { "expression": "Toutefois", "usage": "Introduire une opposition nuancée", "example": "La monarchie semblait solide ; toutefois, le mécontentement grandissait." },
-      { "expression": "Néanmoins", "usage": "Marquer une opposition après une concession", "example": "L'esclavage a été aboli ; néanmoins, les discriminations ont persisté." },
-      { "expression": "En dépit du fait que", "usage": "Exprimer la concession de manière formelle", "example": "En dépit du fait que l'armistice ait été signé, les tensions restaient vives." },
-      { "expression": "Alors que", "usage": "Opposer deux faits simultanés", "example": "Alors que la guerre faisait rage, des résistants s'organisaient dans l'ombre." }
+      {
+        "expression": "À l'époque de",
+        "usage": "Situer dans une période historique",
+        "example": "À l'époque de la Révolution, les droits fondamentaux ont été proclamés."
+      },
+      {
+        "expression": "Au fil des siècles",
+        "usage": "Exprimer une évolution progressive dans le temps",
+        "example": "Au fil des siècles, les mentalités ont profondément évolué."
+      },
+      {
+        "expression": "Bien que + subjonctif",
+        "usage": "Exprimer la concession",
+        "example": "Bien que la guerre ait été terrible, elle a renforcé la solidarité nationale."
+      },
+      {
+        "expression": "Avoir beau + infinitif",
+        "usage": "Exprimer une concession forte",
+        "example": "Il avait beau protester, personne ne l'écoutait."
+      },
+      {
+        "expression": "Toutefois",
+        "usage": "Introduire une opposition nuancée",
+        "example": "La monarchie semblait solide ; toutefois, le mécontentement grandissait."
+      },
+      {
+        "expression": "Néanmoins",
+        "usage": "Marquer une opposition après une concession",
+        "example": "L'esclavage a été aboli ; néanmoins, les discriminations ont persisté."
+      },
+      {
+        "expression": "En dépit du fait que",
+        "usage": "Exprimer la concession de manière formelle",
+        "example": "En dépit du fait que l'armistice ait été signé, les tensions restaient vives."
+      },
+      {
+        "expression": "Alors que",
+        "usage": "Opposer deux faits simultanés",
+        "example": "Alors que la guerre faisait rage, des résistants s'organisaient dans l'ombre."
+      }
     ],
     "conjugation_list": [
-      { "verb": "conquérir", "tense": "Subjonctif présent", "person": "ils", "answer": "conquièrent" },
-      { "verb": "combattre", "tense": "Subjonctif présent", "person": "nous", "answer": "combattions" },
-      { "verb": "vaincre", "tense": "Subjonctif présent", "person": "il", "answer": "vainque" },
-      { "verb": "fuir", "tense": "Subjonctif présent", "person": "vous", "answer": "fuyiez" },
-      { "verb": "naître", "tense": "Conditionnel passé", "person": "elle", "answer": "serait née" },
-      { "verb": "périr", "tense": "Conditionnel passé", "person": "ils", "answer": "auraient péri" },
-      { "verb": "construire", "tense": "Conditionnel passé", "person": "nous", "answer": "aurions construit" },
-      { "verb": "survivre", "tense": "Plus-que-parfait", "person": "il", "answer": "avait survécu" },
-      { "verb": "envahir", "tense": "Plus-que-parfait", "person": "elles", "answer": "avaient envahi" },
-      { "verb": "élire", "tense": "Plus-que-parfait", "person": "on", "answer": "avait élu" },
-      { "verb": "parvenir", "tense": "Futur antérieur", "person": "nous", "answer": "serons parvenus" },
-      { "verb": "abolir", "tense": "Futur antérieur", "person": "ils", "answer": "auront aboli" }
+      {
+        "verb": "conquérir",
+        "tense": "Subjonctif présent",
+        "person": "ils",
+        "answer": "conquièrent"
+      },
+      {
+        "verb": "combattre",
+        "tense": "Subjonctif présent",
+        "person": "nous",
+        "answer": "combattions"
+      },
+      {
+        "verb": "vaincre",
+        "tense": "Subjonctif présent",
+        "person": "il",
+        "answer": "vainque"
+      },
+      {
+        "verb": "fuir",
+        "tense": "Subjonctif présent",
+        "person": "vous",
+        "answer": "fuyiez"
+      },
+      {
+        "verb": "naître",
+        "tense": "Conditionnel passé",
+        "person": "elle",
+        "answer": "serait née"
+      },
+      {
+        "verb": "périr",
+        "tense": "Conditionnel passé",
+        "person": "ils",
+        "answer": "auraient péri"
+      },
+      {
+        "verb": "construire",
+        "tense": "Conditionnel passé",
+        "person": "nous",
+        "answer": "aurions construit"
+      },
+      {
+        "verb": "survivre",
+        "tense": "Plus-que-parfait",
+        "person": "il",
+        "answer": "avait survécu"
+      },
+      {
+        "verb": "envahir",
+        "tense": "Plus-que-parfait",
+        "person": "elles",
+        "answer": "avaient envahi"
+      },
+      {
+        "verb": "élire",
+        "tense": "Plus-que-parfait",
+        "person": "on",
+        "answer": "avait élu"
+      },
+      {
+        "verb": "parvenir",
+        "tense": "Futur antérieur",
+        "person": "nous",
+        "answer": "serons parvenus"
+      },
+      {
+        "verb": "abolir",
+        "tense": "Futur antérieur",
+        "person": "ils",
+        "answer": "auront aboli"
+      }
     ],
     "grammar_transforms": [
-      { "type": "Bien que + subjonctif", "source": "La Révolution a été violente. Elle a fondé les droits de l'homme.", "answer": "Bien que la Révolution ait été violente, elle a fondé les droits de l'homme." },
-      { "type": "Concession (avoir beau)", "source": "Les esclaves se révoltaient. Le système persistait.", "answer": "Les esclaves avaient beau se révolter, le système persistait." },
-      { "type": "Opposition (alors que)", "source": "Le roi vivait dans le luxe. Le peuple souffrait de la famine.", "answer": "Alors que le roi vivait dans le luxe, le peuple souffrait de la famine." },
-      { "type": "Concession (quoique + subjonctif)", "source": "Il était jeune. Il est devenu un héros de la Résistance.", "answer": "Quoiqu'il ait été jeune, il est devenu un héros de la Résistance." },
-      { "type": "Opposition (tandis que)", "source": "Les nobles vivaient dans l'opulence. Les paysans travaillaient sans relâche.", "answer": "Les nobles vivaient dans l'opulence tandis que les paysans travaillaient sans relâche." },
-      { "type": "Voix passive", "source": "Napoléon a conquis une grande partie de l'Europe.", "answer": "Une grande partie de l'Europe a été conquise par Napoléon." },
-      { "type": "Nominalisation", "source": "Les colonies se sont libérées progressivement.", "answer": "La libération progressive des colonies" },
-      { "type": "Malgré + nom", "source": "La guerre a causé d'immenses souffrances. Le pays s'est reconstruit.", "answer": "Malgré les immenses souffrances causées par la guerre, le pays s'est reconstruit." },
-      { "type": "Cause (puisque)", "source": "Le peuple avait faim. La révolution a éclaté.", "answer": "Puisque le peuple avait faim, la révolution a éclaté." },
-      { "type": "Hypothèse (si + plus-que-parfait)", "source": "La Résistance a existé. La France a été libérée.", "answer": "Si la Résistance n'avait pas existé, la France n'aurait pas été libérée." },
-      { "type": "Conséquence (de sorte que)", "source": "L'industrialisation a transformé les villes. Des millions de paysans sont devenus ouvriers.", "answer": "L'industrialisation a transformé les villes de sorte que des millions de paysans sont devenus ouvriers." },
-      { "type": "Certes... mais", "source": "L'empire romain a apporté la civilisation. Il a aussi pratiqué l'esclavage.", "answer": "Certes, l'empire romain a apporté la civilisation, mais il a aussi pratiqué l'esclavage." }
+      {
+        "type": "Bien que + subjonctif",
+        "source": "La Révolution a été violente. Elle a fondé les droits de l'homme.",
+        "answer": "Bien que la Révolution ait été violente, elle a fondé les droits de l'homme."
+      },
+      {
+        "type": "Concession (avoir beau)",
+        "source": "Les esclaves se révoltaient. Le système persistait.",
+        "answer": "Les esclaves avaient beau se révolter, le système persistait."
+      },
+      {
+        "type": "Opposition (alors que)",
+        "source": "Le roi vivait dans le luxe. Le peuple souffrait de la famine.",
+        "answer": "Alors que le roi vivait dans le luxe, le peuple souffrait de la famine."
+      },
+      {
+        "type": "Concession (quoique + subjonctif)",
+        "source": "Il était jeune. Il est devenu un héros de la Résistance.",
+        "answer": "Quoiqu'il ait été jeune, il est devenu un héros de la Résistance."
+      },
+      {
+        "type": "Opposition (tandis que)",
+        "source": "Les nobles vivaient dans l'opulence. Les paysans travaillaient sans relâche.",
+        "answer": "Les nobles vivaient dans l'opulence tandis que les paysans travaillaient sans relâche."
+      },
+      {
+        "type": "Voix passive",
+        "source": "Napoléon a conquis une grande partie de l'Europe.",
+        "answer": "Une grande partie de l'Europe a été conquise par Napoléon."
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Les colonies se sont libérées progressivement.",
+        "answer": "La libération progressive des colonies"
+      },
+      {
+        "type": "Malgré + nom",
+        "source": "La guerre a causé d'immenses souffrances. Le pays s'est reconstruit.",
+        "answer": "Malgré les immenses souffrances causées par la guerre, le pays s'est reconstruit."
+      },
+      {
+        "type": "Cause (puisque)",
+        "source": "Le peuple avait faim. La révolution a éclaté.",
+        "answer": "Puisque le peuple avait faim, la révolution a éclaté."
+      },
+      {
+        "type": "Hypothèse (si + plus-que-parfait)",
+        "source": "La Résistance a existé. La France a été libérée.",
+        "answer": "Si la Résistance n'avait pas existé, la France n'aurait pas été libérée."
+      },
+      {
+        "type": "Conséquence (de sorte que)",
+        "source": "L'industrialisation a transformé les villes. Des millions de paysans sont devenus ouvriers.",
+        "answer": "L'industrialisation a transformé les villes de sorte que des millions de paysans sont devenus ouvriers."
+      },
+      {
+        "type": "Certes... mais",
+        "source": "L'empire romain a apporté la civilisation. Il a aussi pratiqué l'esclavage.",
+        "answer": "Certes, l'empire romain a apporté la civilisation, mais il a aussi pratiqué l'esclavage."
+      }
     ]
   },
   {
     "unit_number": 6,
     "theme": "Lever l'ancre",
-    "grammar_focus": ["Exprimer le lieu", "Nuancer une comparaison"],
-    "vocabulary_list": ["alpage", "altitude", "avalanche", "glacier", "massif", "pâturage", "pic", "plateau", "sommet", "vallée", "versant", "beffroi", "château féodal", "lavoir", "mur en pierre de taille", "restaurer", "ruelle escarpée", "ruines", "ombragé", "forestier", "insulaire", "marin", "côtier", "fluvial", "boisé", "lâcher prise", "se ressourcer", "méditer", "en baver", "endurer"],
+    "grammar_focus": [
+      "Exprimer le lieu",
+      "Nuancer une comparaison"
+    ],
+    "vocabulary_list": [
+      "alpage",
+      "altitude",
+      "avalanche",
+      "glacier",
+      "massif",
+      "pâturage",
+      "pic",
+      "plateau",
+      "sommet",
+      "vallée",
+      "versant",
+      "beffroi",
+      "château féodal",
+      "lavoir",
+      "mur en pierre de taille",
+      "restaurer",
+      "ruelle escarpée",
+      "ruines",
+      "ombragé",
+      "forestier",
+      "insulaire",
+      "marin",
+      "côtier",
+      "fluvial",
+      "boisé",
+      "lâcher prise",
+      "se ressourcer",
+      "méditer",
+      "en baver",
+      "endurer"
+    ],
     "b2_expression_focus": "Expressions de lieu",
     "vocabulary": [
-      { "word": "itinéraire", "definition": "Chemin ou parcours prévu pour se rendre d'un lieu à un autre", "answer": "itinéraire", "article": "l'" },
-      { "word": "escale", "definition": "Arrêt dans un lieu au cours d'un voyage", "answer": "escale", "article": "l'" },
-      { "word": "dépaysement", "definition": "Sensation de changement agréable provoquée par un environnement nouveau", "answer": "dépaysement", "article": "le" },
-      { "word": "randonnée", "definition": "Longue marche en pleine nature suivant un itinéraire balisé", "answer": "randonnée", "article": "la" },
-      { "word": "patrimoine architectural", "definition": "Ensemble des constructions historiques présentant un intérêt culturel", "answer": "patrimoine architectural", "article": "le" },
-      { "word": "panorama", "definition": "Vue d'ensemble d'un paysage observé depuis un point élevé", "answer": "panorama", "article": "le" },
-      { "word": "croisière", "definition": "Voyage touristique à bord d'un navire faisant plusieurs escales", "answer": "croisière", "article": "la" },
-      { "word": "auberge de jeunesse", "definition": "Hébergement collectif à bas prix destiné principalement aux jeunes voyageurs", "answer": "auberge de jeunesse", "article": "l'" },
-      { "word": "autochtone", "definition": "Personne originaire du lieu où elle habite", "answer": "autochtone", "article": "l'" },
-      { "word": "périple", "definition": "Long voyage comportant de nombreuses étapes", "answer": "périple", "article": "le" },
-      { "word": "vestiges", "definition": "Restes matériels d'une construction ou d'une civilisation ancienne", "answer": "vestiges", "article": "les" },
-      { "word": "pittoresque", "definition": "Qui charme par son originalité ou son caractère typique", "answer": "pittoresque", "article": "" },
-      { "word": "tourisme de masse", "definition": "Phénomène touristique caractérisé par un afflux important de visiteurs", "answer": "tourisme de masse", "article": "le" },
-      { "word": "écotourisme", "definition": "Forme de tourisme respectueuse de l'environnement et des populations locales", "answer": "écotourisme", "article": "l'" }
+      {
+        "word": "itinéraire",
+        "definition": "Chemin ou parcours prévu pour se rendre d'un lieu à un autre",
+        "answer": "itinéraire",
+        "article": "l'"
+      },
+      {
+        "word": "escale",
+        "definition": "Arrêt dans un lieu au cours d'un voyage",
+        "answer": "escale",
+        "article": "l'"
+      },
+      {
+        "word": "dépaysement",
+        "definition": "Sensation de changement agréable provoquée par un environnement nouveau",
+        "answer": "dépaysement",
+        "article": "le"
+      },
+      {
+        "word": "randonnée",
+        "definition": "Longue marche en pleine nature suivant un itinéraire balisé",
+        "answer": "randonnée",
+        "article": "la"
+      },
+      {
+        "word": "patrimoine architectural",
+        "definition": "Ensemble des constructions historiques présentant un intérêt culturel",
+        "answer": "patrimoine architectural",
+        "article": "le"
+      },
+      {
+        "word": "panorama",
+        "definition": "Vue d'ensemble d'un paysage observé depuis un point élevé",
+        "answer": "panorama",
+        "article": "le"
+      },
+      {
+        "word": "croisière",
+        "definition": "Voyage touristique à bord d'un navire faisant plusieurs escales",
+        "answer": "croisière",
+        "article": "la"
+      },
+      {
+        "word": "auberge de jeunesse",
+        "definition": "Hébergement collectif à bas prix destiné principalement aux jeunes voyageurs",
+        "answer": "auberge de jeunesse",
+        "article": "l'"
+      },
+      {
+        "word": "autochtone",
+        "definition": "Personne originaire du lieu où elle habite",
+        "answer": "autochtone",
+        "article": "l'"
+      },
+      {
+        "word": "périple",
+        "definition": "Long voyage comportant de nombreuses étapes",
+        "answer": "périple",
+        "article": "le"
+      },
+      {
+        "word": "vestiges",
+        "definition": "Restes matériels d'une construction ou d'une civilisation ancienne",
+        "answer": "vestiges",
+        "article": "les"
+      },
+      {
+        "word": "pittoresque",
+        "definition": "Qui charme par son originalité ou son caractère typique",
+        "answer": "pittoresque",
+        "article": ""
+      },
+      {
+        "word": "tourisme de masse",
+        "definition": "Phénomène touristique caractérisé par un afflux important de visiteurs",
+        "answer": "tourisme de masse",
+        "article": "le"
+      },
+      {
+        "word": "écotourisme",
+        "definition": "Forme de tourisme respectueuse de l'environnement et des populations locales",
+        "answer": "écotourisme",
+        "article": "l'"
+      }
     ],
     "expressions": [
-      { "expression": "Prendre le large", "usage": "Partir en voyage, s'éloigner", "example": "Après des mois de travail, il a décidé de prendre le large." },
-      { "expression": "Sortir des sentiers battus", "usage": "Explorer des lieux peu connus", "example": "Elle préfère sortir des sentiers battus plutôt que de suivre un guide." },
-      { "expression": "Être en terrain connu", "usage": "Se retrouver dans un lieu familier", "example": "Après trois voyages à Rome, il est en terrain connu." },
-      { "expression": "Avoir la bougeotte", "usage": "Avoir constamment envie de voyager", "example": "Depuis l'enfance, elle a la bougeotte." },
-      { "expression": "D'autant plus... que", "usage": "Renforcer une comparaison", "example": "Le sommet est d'autant plus impressionnant qu'on l'atteint après une longue marche." },
-      { "expression": "Bien moins... que", "usage": "Nuancer une comparaison par infériorité", "example": "Ce village est bien moins touristique que la côte." },
-      { "expression": "Autant... autant", "usage": "Comparer deux réalités opposées", "example": "Autant la plaine est monotone, autant la montagne est spectaculaire." },
-      { "expression": "Contrairement à", "usage": "Introduire un contraste", "example": "Contrairement à ce qu'on imagine, le désert est riche en biodiversité." },
-      { "expression": "Aux alentours de", "usage": "Indiquer la proximité géographique", "example": "Aux alentours du village, on trouve de nombreux sentiers de randonnée." },
-      { "expression": "Au cœur de", "usage": "Situer au centre d'un espace", "example": "L'auberge se trouve au cœur de la forêt." },
-      { "expression": "À flanc de montagne", "usage": "Situer sur le versant d'une montagne", "example": "Le village est construit à flanc de montagne." },
-      { "expression": "Faire escale", "usage": "S'arrêter brièvement au cours d'un voyage", "example": "Le navire a fait escale dans trois ports méditerranéens." }
+      {
+        "expression": "Prendre le large",
+        "usage": "Partir en voyage, s'éloigner",
+        "example": "Après des mois de travail, il a décidé de prendre le large."
+      },
+      {
+        "expression": "Sortir des sentiers battus",
+        "usage": "Explorer des lieux peu connus",
+        "example": "Elle préfère sortir des sentiers battus plutôt que de suivre un guide."
+      },
+      {
+        "expression": "Être en terrain connu",
+        "usage": "Se retrouver dans un lieu familier",
+        "example": "Après trois voyages à Rome, il est en terrain connu."
+      },
+      {
+        "expression": "Avoir la bougeotte",
+        "usage": "Avoir constamment envie de voyager",
+        "example": "Depuis l'enfance, elle a la bougeotte."
+      },
+      {
+        "expression": "D'autant plus... que",
+        "usage": "Renforcer une comparaison",
+        "example": "Le sommet est d'autant plus impressionnant que l'effort pour l'atteindre a été long."
+      },
+      {
+        "expression": "Bien moins... que",
+        "usage": "Nuancer une comparaison par infériorité",
+        "example": "Ce village est bien moins touristique que la côte."
+      },
+      {
+        "expression": "Autant... autant",
+        "usage": "Comparer deux réalités opposées",
+        "example": "Autant la plaine est monotone, autant la montagne est spectaculaire."
+      },
+      {
+        "expression": "Contrairement à",
+        "usage": "Introduire un contraste",
+        "example": "Contrairement à ce qu'on imagine, le désert est riche en biodiversité."
+      },
+      {
+        "expression": "Aux alentours de",
+        "usage": "Indiquer la proximité géographique",
+        "example": "Aux alentours du village, on trouve de nombreux sentiers de randonnée."
+      },
+      {
+        "expression": "Au cœur de",
+        "usage": "Situer au centre d'un espace",
+        "example": "L'auberge se trouve au cœur de la forêt."
+      },
+      {
+        "expression": "À flanc de montagne",
+        "usage": "Situer sur le versant d'une montagne",
+        "example": "Le village est construit à flanc de montagne."
+      },
+      {
+        "expression": "Faire escale",
+        "usage": "S'arrêter brièvement au cours d'un voyage",
+        "example": "Le navire a fait escale dans trois ports méditerranéens."
+      }
     ],
     "conjugation_list": [
-      { "verb": "parcourir", "tense": "Subjonctif présent", "person": "nous", "answer": "parcourions" },
-      { "verb": "découvrir", "tense": "Subjonctif présent", "person": "tu", "answer": "découvres" },
-      { "verb": "revenir", "tense": "Conditionnel passé", "person": "il", "answer": "serait revenu" },
-      { "verb": "atteindre", "tense": "Conditionnel passé", "person": "nous", "answer": "aurions atteint" },
-      { "verb": "séjourner", "tense": "Plus-que-parfait", "person": "vous", "answer": "aviez séjourné" },
-      { "verb": "partir", "tense": "Plus-que-parfait", "person": "elles", "answer": "étaient parties" },
-      { "verb": "apercevoir", "tense": "Futur antérieur", "person": "tu", "answer": "auras aperçu" },
-      { "verb": "gravir", "tense": "Futur antérieur", "person": "on", "answer": "aura gravi" }
+      {
+        "verb": "parcourir",
+        "tense": "Subjonctif présent",
+        "person": "nous",
+        "answer": "parcourions"
+      },
+      {
+        "verb": "découvrir",
+        "tense": "Subjonctif présent",
+        "person": "tu",
+        "answer": "découvres"
+      },
+      {
+        "verb": "revenir",
+        "tense": "Conditionnel passé",
+        "person": "il",
+        "answer": "serait revenu"
+      },
+      {
+        "verb": "atteindre",
+        "tense": "Conditionnel passé",
+        "person": "nous",
+        "answer": "aurions atteint"
+      },
+      {
+        "verb": "séjourner",
+        "tense": "Plus-que-parfait",
+        "person": "vous",
+        "answer": "aviez séjourné"
+      },
+      {
+        "verb": "partir",
+        "tense": "Plus-que-parfait",
+        "person": "elles",
+        "answer": "étaient parties"
+      },
+      {
+        "verb": "apercevoir",
+        "tense": "Futur antérieur",
+        "person": "tu",
+        "answer": "auras aperçu"
+      },
+      {
+        "verb": "gravir",
+        "tense": "Futur antérieur",
+        "person": "on",
+        "answer": "aura gravi"
+      }
     ],
     "grammar_transforms": [
-      { "type": "Comparaison nuancée", "source": "Paris est grand. Tokyo est plus grand.", "answer": "Tokyo est bien plus grand que Paris." },
-      { "type": "Comparaison (autant... autant)", "source": "La plage est calme. La ville est bruyante.", "answer": "Autant la plage est calme, autant la ville est bruyante." },
-      { "type": "Voix passive", "source": "Les touristes ont envahi les ruelles du vieux port.", "answer": "Les ruelles du vieux port ont été envahies par les touristes." },
-      { "type": "Nominalisation", "source": "Les monuments historiques sont restaurés avec soin.", "answer": "La restauration soigneuse des monuments historiques" },
-      { "type": "Bien que + subjonctif", "source": "Le sentier est difficile. La vue au sommet en vaut la peine.", "answer": "Bien que le sentier soit difficile, la vue au sommet en vaut la peine." },
-      { "type": "Malgré + nom", "source": "Le mauvais temps persiste. Les randonneurs continuent l'ascension.", "answer": "Malgré le mauvais temps, les randonneurs continuent l'ascension." },
-      { "type": "Grâce à", "source": "L'écotourisme se développe. Les sites naturels sont mieux protégés.", "answer": "Grâce au développement de l'écotourisme, les sites naturels sont mieux protégés." },
-      { "type": "Conséquence (si bien que)", "source": "Le tourisme de masse s'est intensifié. Les prix des logements ont explosé.", "answer": "Le tourisme de masse s'est intensifié si bien que les prix des logements ont explosé." }
+      {
+        "type": "Comparaison nuancée",
+        "source": "Paris est grand. Tokyo est plus grand.",
+        "answer": "Tokyo est bien plus grand que Paris."
+      },
+      {
+        "type": "Comparaison (autant... autant)",
+        "source": "La plage est calme. La ville est bruyante.",
+        "answer": "Autant la plage est calme, autant la ville est bruyante."
+      },
+      {
+        "type": "Voix passive",
+        "source": "Les touristes ont envahi les ruelles du vieux port.",
+        "answer": "Les ruelles du vieux port ont été envahies par les touristes."
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Les monuments historiques sont restaurés avec soin.",
+        "answer": "La restauration soigneuse des monuments historiques"
+      },
+      {
+        "type": "Bien que + subjonctif",
+        "source": "Le sentier est difficile. La vue au sommet en vaut la peine.",
+        "answer": "Bien que le sentier soit difficile, la vue au sommet en vaut la peine."
+      },
+      {
+        "type": "Malgré + nom",
+        "source": "Le mauvais temps persiste. Les randonneurs continuent l'ascension.",
+        "answer": "Malgré le mauvais temps, les randonneurs continuent l'ascension."
+      },
+      {
+        "type": "Grâce à",
+        "source": "L'écotourisme se développe. Les sites naturels sont mieux protégés.",
+        "answer": "Grâce au développement de l'écotourisme, les sites naturels sont mieux protégés."
+      },
+      {
+        "type": "Conséquence (si bien que)",
+        "source": "Le tourisme de masse s'est intensifié. Les prix des logements ont explosé.",
+        "answer": "Le tourisme de masse s'est intensifié si bien que les prix des logements ont explosé."
+      }
     ]
   },
   {
     "unit_number": 7,
     "theme": "Le sens de l'actu",
-    "grammar_focus": ["Les indéfinis", "La nominalisation"],
-    "vocabulary_list": ["flux", "instantanéité", "profusion de l'information", "couverture médiatique", "conférence de presse", "flash info", "JT", "liberté d'information", "matinale", "chroniqueur", "déformer des propos", "comprendre de travers", "malentendu", "quiproquo", "sous-entendre", "insinuer", "actualité mondiale", "critiquer", "fiabilité", "rumeur", "podcast", "dessin de presse", "liberté d'expression", "média", "rédaction", "médiatisation", "agence de presse", "antenne", "plateau télé", "journal télé"],
+    "grammar_focus": [
+      "Les indéfinis",
+      "La nominalisation"
+    ],
+    "vocabulary_list": [
+      "flux",
+      "instantanéité",
+      "profusion de l'information",
+      "couverture médiatique",
+      "conférence de presse",
+      "flash info",
+      "JT",
+      "liberté d'information",
+      "matinale",
+      "chroniqueur",
+      "déformer des propos",
+      "comprendre de travers",
+      "malentendu",
+      "quiproquo",
+      "sous-entendre",
+      "insinuer",
+      "actualité mondiale",
+      "critiquer",
+      "fiabilité",
+      "rumeur",
+      "podcast",
+      "dessin de presse",
+      "liberté d'expression",
+      "média",
+      "rédaction",
+      "médiatisation",
+      "agence de presse",
+      "antenne",
+      "plateau télé",
+      "journal télé"
+    ],
     "b2_expression_focus": "Manifester son incompréhension",
     "vocabulary": [
-      { "word": "chroniqueur", "definition": "Journaliste qui rédige régulièrement des commentaires sur l'actualité", "answer": "chroniqueur", "article": "le" },
-      { "word": "éditorial", "definition": "Article de presse exprimant la position officielle d'un journal", "answer": "éditorial", "article": "l'" },
-      { "word": "déontologie", "definition": "Ensemble des règles morales régissant l'exercice d'une profession", "answer": "déontologie", "article": "la" },
-      { "word": "censure", "definition": "Contrôle exercé par une autorité sur les informations diffusées au public", "answer": "censure", "article": "la" },
-      { "word": "objectivité", "definition": "Qualité d'un traitement de l'information exempt de parti pris personnel", "answer": "objectivité", "article": "l'" },
-      { "word": "lanceur d'alerte", "definition": "Personne qui signale publiquement des pratiques illégales ou dangereuses", "answer": "lanceur d'alerte", "article": "le" },
-      { "word": "source anonyme", "definition": "Informateur dont l'identité n'est pas révélée au public", "answer": "source anonyme", "article": "la" },
-      { "word": "ligne éditoriale", "definition": "Orientation idéologique et thématique choisie par un média", "answer": "ligne éditoriale", "article": "la" },
-      { "word": "fact-checking", "definition": "Vérification systématique de l'exactitude des informations publiées", "answer": "fact-checking", "article": "le" },
-      { "word": "droit de réponse", "definition": "Possibilité légale de contester publiquement une information publiée", "answer": "droit de réponse", "article": "le" }
+      {
+        "word": "chroniqueur",
+        "definition": "Journaliste qui rédige régulièrement des commentaires sur l'actualité",
+        "answer": "chroniqueur",
+        "article": "le"
+      },
+      {
+        "word": "éditorial",
+        "definition": "Article de presse exprimant la position officielle d'un journal",
+        "answer": "éditorial",
+        "article": "l'"
+      },
+      {
+        "word": "déontologie",
+        "definition": "Ensemble des règles morales régissant l'exercice d'une profession",
+        "answer": "déontologie",
+        "article": "la"
+      },
+      {
+        "word": "censure",
+        "definition": "Contrôle exercé par une autorité sur les informations diffusées au public",
+        "answer": "censure",
+        "article": "la"
+      },
+      {
+        "word": "objectivité",
+        "definition": "Qualité d'un traitement de l'information exempt de parti pris personnel",
+        "answer": "objectivité",
+        "article": "l'"
+      },
+      {
+        "word": "lanceur d'alerte",
+        "definition": "Personne qui signale publiquement des pratiques illégales ou dangereuses",
+        "answer": "lanceur d'alerte",
+        "article": "le"
+      },
+      {
+        "word": "source anonyme",
+        "definition": "Informateur dont l'identité n'est pas révélée au public",
+        "answer": "source anonyme",
+        "article": "la"
+      },
+      {
+        "word": "ligne éditoriale",
+        "definition": "Orientation idéologique et thématique choisie par un média",
+        "answer": "ligne éditoriale",
+        "article": "la"
+      },
+      {
+        "word": "fact-checking",
+        "definition": "Vérification systématique de l'exactitude des informations publiées",
+        "answer": "fact-checking",
+        "article": "le"
+      },
+      {
+        "word": "droit de réponse",
+        "definition": "Possibilité légale de contester publiquement une information publiée",
+        "answer": "droit de réponse",
+        "article": "le"
+      }
     ],
     "expressions": [
-      { "expression": "Faire la une", "usage": "Être en première page d'un journal", "example": "Le scandale a fait la une de tous les journaux." },
-      { "expression": "Relayer une information", "usage": "Transmettre et diffuser une nouvelle", "example": "Les réseaux sociaux relaient l'information en temps réel." },
-      { "expression": "Mettre en lumière", "usage": "Révéler un fait au grand public", "example": "L'enquête a mis en lumière des pratiques frauduleuses." },
-      { "expression": "Passer sous silence", "usage": "Ne pas mentionner volontairement", "example": "Les médias ont passé sous silence cet événement." },
-      { "expression": "Quoi que + subjonctif", "usage": "Exprimer une concession totale", "example": "Quoi que disent les médias, il faut vérifier les sources." },
-      { "expression": "Quel que soit + subjonctif", "usage": "Exprimer l'indifférence face aux circonstances", "example": "Quelle que soit la source, il faut la vérifier." },
-      { "expression": "Où que + subjonctif", "usage": "Exprimer l'indifférence de lieu", "example": "Où que vous soyez, l'information vous parvient instantanément." },
-      { "expression": "Qui que + subjonctif", "usage": "Exprimer l'indifférence de personne", "example": "Qui que vous soyez, vous avez le droit à une information fiable." }
+      {
+        "expression": "Faire la une",
+        "usage": "Être en première page d'un journal",
+        "example": "Le scandale a fait la une de tous les journaux."
+      },
+      {
+        "expression": "Relayer une information",
+        "usage": "Transmettre et diffuser une nouvelle",
+        "example": "Les réseaux sociaux relaient l'information en temps réel."
+      },
+      {
+        "expression": "Mettre en lumière",
+        "usage": "Révéler un fait au grand public",
+        "example": "L'enquête a mis en lumière des pratiques frauduleuses."
+      },
+      {
+        "expression": "Passer sous silence",
+        "usage": "Ne pas mentionner volontairement",
+        "example": "Les médias ont passé sous silence cet événement."
+      },
+      {
+        "expression": "Quoi que + subjonctif",
+        "usage": "Exprimer une concession totale",
+        "example": "Quoi que disent les médias, il faut vérifier les sources."
+      },
+      {
+        "expression": "Quel que soit + subjonctif",
+        "usage": "Exprimer l'indifférence face aux circonstances",
+        "example": "Quelle que soit la source, il faut la vérifier."
+      },
+      {
+        "expression": "Où que + subjonctif",
+        "usage": "Exprimer l'indifférence de lieu",
+        "example": "Où que vous soyez, l'information vous parvient instantanément."
+      },
+      {
+        "expression": "Qui que + subjonctif",
+        "usage": "Exprimer l'indifférence de personne",
+        "example": "Qui que vous soyez, vous avez le droit à une information fiable."
+      }
     ],
     "conjugation_list": [
-      { "verb": "paraître", "tense": "Subjonctif présent", "person": "il", "answer": "paraisse" },
-      { "verb": "lire", "tense": "Subjonctif présent", "person": "nous", "answer": "lisions" },
-      { "verb": "savoir", "tense": "Subjonctif présent", "person": "vous", "answer": "sachiez" },
-      { "verb": "croire", "tense": "Subjonctif présent", "person": "ils", "answer": "croient" },
-      { "verb": "diffuser", "tense": "Conditionnel passé", "person": "tu", "answer": "aurais diffusé" },
-      { "verb": "écrire", "tense": "Conditionnel passé", "person": "elle", "answer": "aurait écrit" },
-      { "verb": "rédiger", "tense": "Plus-que-parfait", "person": "nous", "answer": "avions rédigé" },
-      { "verb": "apprendre", "tense": "Plus-que-parfait", "person": "on", "answer": "avait appris" },
-      { "verb": "transmettre", "tense": "Futur antérieur", "person": "vous", "answer": "aurez transmis" },
-      { "verb": "publier", "tense": "Futur antérieur", "person": "ils", "answer": "auront publié" }
+      {
+        "verb": "paraître",
+        "tense": "Subjonctif présent",
+        "person": "il",
+        "answer": "paraisse"
+      },
+      {
+        "verb": "lire",
+        "tense": "Subjonctif présent",
+        "person": "nous",
+        "answer": "lisions"
+      },
+      {
+        "verb": "savoir",
+        "tense": "Subjonctif présent",
+        "person": "vous",
+        "answer": "sachiez"
+      },
+      {
+        "verb": "croire",
+        "tense": "Subjonctif présent",
+        "person": "ils",
+        "answer": "croient"
+      },
+      {
+        "verb": "diffuser",
+        "tense": "Conditionnel passé",
+        "person": "tu",
+        "answer": "aurais diffusé"
+      },
+      {
+        "verb": "écrire",
+        "tense": "Conditionnel passé",
+        "person": "elle",
+        "answer": "aurait écrit"
+      },
+      {
+        "verb": "rédiger",
+        "tense": "Plus-que-parfait",
+        "person": "nous",
+        "answer": "avions rédigé"
+      },
+      {
+        "verb": "apprendre",
+        "tense": "Plus-que-parfait",
+        "person": "on",
+        "answer": "avait appris"
+      },
+      {
+        "verb": "transmettre",
+        "tense": "Futur antérieur",
+        "person": "vous",
+        "answer": "aurez transmis"
+      },
+      {
+        "verb": "publier",
+        "tense": "Futur antérieur",
+        "person": "ils",
+        "answer": "auront publié"
+      }
     ],
     "grammar_transforms": [
-      { "type": "Nominalisation", "source": "Le journaliste enquête sur le scandale.", "answer": "L'enquête du journaliste sur le scandale" },
-      { "type": "Nominalisation", "source": "Les médias se sont concentrés excessivement sur ce sujet.", "answer": "La concentration excessive des médias sur ce sujet" },
-      { "type": "Nominalisation", "source": "Les citoyens participent activement au débat.", "answer": "La participation active des citoyens au débat" },
-      { "type": "Nominalisation", "source": "Le gouvernement a censuré le reportage brutalement.", "answer": "La censure brutale du reportage par le gouvernement" },
-      { "type": "Indéfinis (quel que soit)", "source": "La source n'a pas d'importance. Il faut toujours vérifier.", "answer": "Quelle que soit la source, il faut toujours vérifier." },
-      { "type": "Indéfinis (quoi que)", "source": "Les critiques sont nombreuses. Le journal maintient sa position.", "answer": "Quoi que disent les critiques, le journal maintient sa position." },
-      { "type": "Indéfinis (où que)", "source": "Le lieu n'a pas d'importance. L'information circule en temps réel.", "answer": "Où que l'on soit, l'information circule en temps réel." },
-      { "type": "Voix passive", "source": "Le rédacteur en chef a publié un éditorial.", "answer": "Un éditorial a été publié par le rédacteur en chef." },
-      { "type": "Bien que + subjonctif", "source": "Le reportage est controversé. Il a été diffusé en prime time.", "answer": "Bien que le reportage soit controversé, il a été diffusé en prime time." },
-      { "type": "Cause (puisque)", "source": "Les sources ne sont pas vérifiées. L'article n'est pas fiable.", "answer": "Puisque les sources ne sont pas vérifiées, l'article n'est pas fiable." },
-      { "type": "Concession (avoir beau)", "source": "Le journal s'excuse. Le mal est fait.", "answer": "Le journal a beau s'excuser, le mal est fait." },
-      { "type": "Malgré + nom", "source": "Les pressions politiques sont fortes. Le journaliste refuse de révéler sa source.", "answer": "Malgré les fortes pressions politiques, le journaliste refuse de révéler sa source." },
-      { "type": "Conséquence (de sorte que)", "source": "Les réseaux sociaux amplifient tout. Les fausses nouvelles deviennent virales.", "answer": "Les réseaux sociaux amplifient tout de sorte que les fausses nouvelles deviennent virales." },
-      { "type": "À cause de", "source": "La désinformation se répand. La confiance dans les médias diminue.", "answer": "À cause de la désinformation, la confiance dans les médias diminue." }
+      {
+        "type": "Nominalisation",
+        "source": "Le journaliste enquête sur le scandale.",
+        "answer": "L'enquête du journaliste sur le scandale"
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Les médias se sont concentrés excessivement sur ce sujet.",
+        "answer": "La concentration excessive des médias sur ce sujet"
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Les citoyens participent activement au débat.",
+        "answer": "La participation active des citoyens au débat"
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Le gouvernement a censuré le reportage brutalement.",
+        "answer": "La censure brutale du reportage par le gouvernement"
+      },
+      {
+        "type": "Indéfinis (quel que soit)",
+        "source": "La source n'a pas d'importance. Il faut toujours vérifier.",
+        "answer": "Quelle que soit la source, il faut toujours vérifier."
+      },
+      {
+        "type": "Indéfinis (quoi que)",
+        "source": "Les critiques sont nombreuses. Le journal maintient sa position.",
+        "answer": "Quoi que disent les critiques, le journal maintient sa position."
+      },
+      {
+        "type": "Indéfinis (où que)",
+        "source": "Le lieu n'a pas d'importance. L'information circule en temps réel.",
+        "answer": "Où que l'on soit, l'information circule en temps réel."
+      },
+      {
+        "type": "Voix passive",
+        "source": "Le rédacteur en chef a publié un éditorial.",
+        "answer": "Un éditorial a été publié par le rédacteur en chef."
+      },
+      {
+        "type": "Bien que + subjonctif",
+        "source": "Le reportage est controversé. Il a été diffusé en prime time.",
+        "answer": "Bien que le reportage soit controversé, il a été diffusé en prime time."
+      },
+      {
+        "type": "Cause (puisque)",
+        "source": "Les sources ne sont pas vérifiées. L'article n'est pas fiable.",
+        "answer": "Puisque les sources ne sont pas vérifiées, l'article n'est pas fiable."
+      },
+      {
+        "type": "Concession (avoir beau)",
+        "source": "Le journal s'excuse. Le mal est fait.",
+        "answer": "Le journal a beau s'excuser, le mal est fait."
+      },
+      {
+        "type": "Malgré + nom",
+        "source": "Les pressions politiques sont fortes. Le journaliste refuse de révéler sa source.",
+        "answer": "Malgré les fortes pressions politiques, le journaliste refuse de révéler sa source."
+      },
+      {
+        "type": "Conséquence (de sorte que)",
+        "source": "Les réseaux sociaux amplifient tout. Les fausses nouvelles deviennent virales.",
+        "answer": "Les réseaux sociaux amplifient tout de sorte que les fausses nouvelles deviennent virales."
+      },
+      {
+        "type": "À cause de",
+        "source": "La désinformation se répand. La confiance dans les médias diminue.",
+        "answer": "À cause de la désinformation, la confiance dans les médias diminue."
+      }
     ]
   },
   {
     "unit_number": 8,
     "theme": "Prenez soin de vous !",
-    "grammar_focus": ["Les propositions temporelles", "La mise en relief"],
-    "vocabulary_list": ["clavicule", "côte", "crâne", "hanche", "omoplate", "mâchoire", "rotule", "tibia", "vertèbre", "cerveau", "cœur", "estomac", "foie", "intestin", "pancréas", "poumon", "rein", "à cœur ouvert", "avoir le cœur à", "avoir le cœur gros", "avoir un cœur de pierre", "en avoir le cœur net", "mal de chien", "gélule", "pommade", "remède", "antibiotique", "diagnostic", "synesthète", "silhouette"],
+    "grammar_focus": [
+      "Les propositions temporelles",
+      "La mise en relief"
+    ],
+    "vocabulary_list": [
+      "clavicule",
+      "côte",
+      "crâne",
+      "hanche",
+      "omoplate",
+      "mâchoire",
+      "rotule",
+      "tibia",
+      "vertèbre",
+      "cerveau",
+      "cœur",
+      "estomac",
+      "foie",
+      "intestin",
+      "pancréas",
+      "poumon",
+      "rein",
+      "à cœur ouvert",
+      "avoir le cœur à",
+      "avoir le cœur gros",
+      "avoir un cœur de pierre",
+      "en avoir le cœur net",
+      "mal de chien",
+      "gélule",
+      "pommade",
+      "remède",
+      "antibiotique",
+      "diagnostic",
+      "synesthète",
+      "silhouette"
+    ],
     "b2_expression_focus": "Mise en relief (C'est... qui/que)",
     "vocabulary": [
-      { "word": "diagnostic", "definition": "Identification d'une maladie à partir de ses symptômes", "answer": "diagnostic", "article": "le" },
-      { "word": "ordonnance", "definition": "Document médical prescrivant un traitement au patient", "answer": "ordonnance", "article": "l'" },
-      { "word": "pathologie", "definition": "Maladie ou ensemble de troubles affectant un organe ou un système", "answer": "pathologie", "article": "la" },
-      { "word": "symptôme", "definition": "Manifestation physique ou psychique révélant une maladie", "answer": "symptôme", "article": "le" },
-      { "word": "prévention", "definition": "Ensemble des mesures visant à éviter l'apparition d'une maladie", "answer": "prévention", "article": "la" },
-      { "word": "rééducation", "definition": "Ensemble de soins visant à restaurer une fonction corporelle altérée", "answer": "rééducation", "article": "la" },
-      { "word": "posologie", "definition": "Indication de la dose et de la fréquence de prise d'un médicament", "answer": "posologie", "article": "la" },
-      { "word": "effet secondaire", "definition": "Réaction indésirable provoquée par un médicament", "answer": "effet secondaire", "article": "l'" },
-      { "word": "médecine douce", "definition": "Pratique thérapeutique alternative à la médecine conventionnelle", "answer": "médecine douce", "article": "la" },
-      { "word": "convalescence", "definition": "Période de repos nécessaire au rétablissement après une maladie", "answer": "convalescence", "article": "la" },
-      { "word": "automédication", "definition": "Fait de se soigner soi-même sans consultation médicale", "answer": "automédication", "article": "l'" },
-      { "word": "épidémie", "definition": "Propagation rapide d'une maladie contagieuse dans une population", "answer": "épidémie", "article": "l'" }
+      {
+        "word": "diagnostic",
+        "definition": "Identification d'une maladie à partir de ses symptômes",
+        "answer": "diagnostic",
+        "article": "le"
+      },
+      {
+        "word": "ordonnance",
+        "definition": "Document médical prescrivant un traitement au patient",
+        "answer": "ordonnance",
+        "article": "l'"
+      },
+      {
+        "word": "pathologie",
+        "definition": "Maladie ou ensemble de troubles affectant un organe ou un système",
+        "answer": "pathologie",
+        "article": "la"
+      },
+      {
+        "word": "symptôme",
+        "definition": "Manifestation physique ou psychique révélant une maladie",
+        "answer": "symptôme",
+        "article": "le"
+      },
+      {
+        "word": "prévention",
+        "definition": "Ensemble des mesures visant à éviter l'apparition d'une maladie",
+        "answer": "prévention",
+        "article": "la"
+      },
+      {
+        "word": "rééducation",
+        "definition": "Ensemble de soins visant à restaurer une fonction corporelle altérée",
+        "answer": "rééducation",
+        "article": "la"
+      },
+      {
+        "word": "posologie",
+        "definition": "Indication de la dose et de la fréquence de prise d'un médicament",
+        "answer": "posologie",
+        "article": "la"
+      },
+      {
+        "word": "effet secondaire",
+        "definition": "Réaction indésirable provoquée par un médicament",
+        "answer": "effet secondaire",
+        "article": "l'"
+      },
+      {
+        "word": "médecine douce",
+        "definition": "Pratique thérapeutique alternative à la médecine conventionnelle",
+        "answer": "médecine douce",
+        "article": "la"
+      },
+      {
+        "word": "convalescence",
+        "definition": "Période de repos nécessaire au rétablissement après une maladie",
+        "answer": "convalescence",
+        "article": "la"
+      },
+      {
+        "word": "automédication",
+        "definition": "Fait de se soigner soi-même sans consultation médicale",
+        "answer": "automédication",
+        "article": "l'"
+      },
+      {
+        "word": "épidémie",
+        "definition": "Propagation rapide d'une maladie contagieuse dans une population",
+        "answer": "épidémie",
+        "article": "l'"
+      }
     ],
     "expressions": [
-      { "expression": "Avoir une santé de fer", "usage": "Être rarement malade", "example": "Malgré son âge, elle a une santé de fer." },
-      { "expression": "Être sur pied", "usage": "Être rétabli après une maladie", "example": "Après deux semaines de repos, il est de nouveau sur pied." },
-      { "expression": "Se porter comme un charme", "usage": "Être en excellente santé", "example": "Après l'opération, il se porte comme un charme." },
-      { "expression": "Garder le moral", "usage": "Rester optimiste malgré la difficulté", "example": "Même hospitalisé, il garde le moral." },
-      { "expression": "C'est... qui (mise en relief)", "usage": "Mettre en relief le sujet", "example": "C'est la prévention qui sauve le plus de vies." },
-      { "expression": "C'est... que (mise en relief)", "usage": "Mettre en relief le complément", "example": "C'est à l'hôpital qu'il a été soigné." },
-      { "expression": "Dès que + indicatif", "usage": "Exprimer une action immédiate", "example": "Dès qu'il a ressenti la douleur, il a consulté un médecin." },
-      { "expression": "Avant que + subjonctif", "usage": "Exprimer l'antériorité", "example": "Consultez un médecin avant que les symptômes ne s'aggravent." },
-      { "expression": "Depuis que", "usage": "Exprimer un point de départ temporel", "example": "Depuis qu'il pratique le yoga, ses douleurs ont diminué." },
-      { "expression": "Jusqu'à ce que + subjonctif", "usage": "Exprimer une limite temporelle", "example": "Prenez ce médicament jusqu'à ce que la fièvre disparaisse." }
+      {
+        "expression": "Avoir une santé de fer",
+        "usage": "Être rarement malade",
+        "example": "Malgré son âge, elle a une santé de fer."
+      },
+      {
+        "expression": "Être sur pied",
+        "usage": "Être rétabli après une maladie",
+        "example": "Après deux semaines de repos, il est de nouveau sur pied."
+      },
+      {
+        "expression": "Se porter comme un charme",
+        "usage": "Être en excellente santé",
+        "example": "Après l'opération, il se porte comme un charme."
+      },
+      {
+        "expression": "Garder le moral",
+        "usage": "Rester optimiste malgré la difficulté",
+        "example": "Même hospitalisé, il garde le moral."
+      },
+      {
+        "expression": "C'est... qui (mise en relief)",
+        "usage": "Mettre en relief le sujet",
+        "example": "C'est la prévention qui sauve le plus de vies."
+      },
+      {
+        "expression": "C'est... que (mise en relief)",
+        "usage": "Mettre en relief le complément",
+        "example": "C'est à l'hôpital que le blessé a été soigné."
+      },
+      {
+        "expression": "Dès que + indicatif",
+        "usage": "Exprimer une action immédiate",
+        "example": "Dès qu'il a ressenti la douleur, il a consulté un médecin."
+      },
+      {
+        "expression": "Avant que + subjonctif",
+        "usage": "Exprimer l'antériorité",
+        "example": "Consultez un médecin avant que les symptômes ne s'aggravent."
+      },
+      {
+        "expression": "Depuis que",
+        "usage": "Exprimer un point de départ temporel",
+        "example": "Depuis qu'il pratique le yoga, ses douleurs ont diminué."
+      },
+      {
+        "expression": "Jusqu'à ce que + subjonctif",
+        "usage": "Exprimer une limite temporelle",
+        "example": "Prenez ce médicament jusqu'à ce que la fièvre disparaisse."
+      }
     ],
     "conjugation_list": [
-      { "verb": "guérir", "tense": "Subjonctif présent", "person": "il", "answer": "guérisse" },
-      { "verb": "souffrir", "tense": "Subjonctif présent", "person": "nous", "answer": "souffrions" },
-      { "verb": "se plaindre", "tense": "Subjonctif présent", "person": "ils", "answer": "se plaignent" },
-      { "verb": "maintenir", "tense": "Conditionnel passé", "person": "vous", "answer": "auriez maintenu" },
-      { "verb": "prévenir", "tense": "Conditionnel passé", "person": "elle", "answer": "aurait prévenu" },
-      { "verb": "prescrire", "tense": "Conditionnel passé", "person": "il", "answer": "aurait prescrit" },
-      { "verb": "ressentir", "tense": "Plus-que-parfait", "person": "nous", "answer": "avions ressenti" },
-      { "verb": "se rétablir", "tense": "Plus-que-parfait", "person": "il", "answer": "s'était rétabli" },
-      { "verb": "survivre", "tense": "Futur antérieur", "person": "tu", "answer": "auras survécu" },
-      { "verb": "contraindre", "tense": "Futur antérieur", "person": "ils", "answer": "auront contraint" }
+      {
+        "verb": "guérir",
+        "tense": "Subjonctif présent",
+        "person": "il",
+        "answer": "guérisse"
+      },
+      {
+        "verb": "souffrir",
+        "tense": "Subjonctif présent",
+        "person": "nous",
+        "answer": "souffrions"
+      },
+      {
+        "verb": "se plaindre",
+        "tense": "Subjonctif présent",
+        "person": "ils",
+        "answer": "se plaignent"
+      },
+      {
+        "verb": "maintenir",
+        "tense": "Conditionnel passé",
+        "person": "vous",
+        "answer": "auriez maintenu"
+      },
+      {
+        "verb": "prévenir",
+        "tense": "Conditionnel passé",
+        "person": "elle",
+        "answer": "aurait prévenu"
+      },
+      {
+        "verb": "prescrire",
+        "tense": "Conditionnel passé",
+        "person": "il",
+        "answer": "aurait prescrit"
+      },
+      {
+        "verb": "ressentir",
+        "tense": "Plus-que-parfait",
+        "person": "nous",
+        "answer": "avions ressenti"
+      },
+      {
+        "verb": "se rétablir",
+        "tense": "Plus-que-parfait",
+        "person": "il",
+        "answer": "s'était rétabli"
+      },
+      {
+        "verb": "survivre",
+        "tense": "Futur antérieur",
+        "person": "tu",
+        "answer": "auras survécu"
+      },
+      {
+        "verb": "contraindre",
+        "tense": "Futur antérieur",
+        "person": "ils",
+        "answer": "auront contraint"
+      }
     ],
     "grammar_transforms": [
-      { "type": "Mise en relief (c'est... qui)", "source": "La prévention sauve des vies.", "answer": "C'est la prévention qui sauve des vies." },
-      { "type": "Mise en relief (c'est... que)", "source": "Il a été opéré à l'hôpital Necker.", "answer": "C'est à l'hôpital Necker qu'il a été opéré." },
-      { "type": "Mise en relief (c'est... que)", "source": "On découvre les bienfaits du sport en vieillissant.", "answer": "C'est en vieillissant qu'on découvre les bienfaits du sport." },
-      { "type": "Proposition temporelle (avant que + subj)", "source": "Il faut agir. La maladie progresse.", "answer": "Il faut agir avant que la maladie ne progresse." },
-      { "type": "Proposition temporelle (jusqu'à ce que + subj)", "source": "Prenez ce traitement. Vous serez complètement guéri.", "answer": "Prenez ce traitement jusqu'à ce que vous soyez complètement guéri." },
-      { "type": "Voix passive", "source": "Le chirurgien a pratiqué une opération délicate.", "answer": "Une opération délicate a été pratiquée par le chirurgien." },
-      { "type": "Nominalisation", "source": "Le patient se rétablit progressivement.", "answer": "Le rétablissement progressif du patient" },
-      { "type": "Bien que + subjonctif", "source": "Ce remède est naturel. Il peut provoquer des effets secondaires.", "answer": "Bien que ce remède soit naturel, il peut provoquer des effets secondaires." },
-      { "type": "Cause (étant donné que)", "source": "L'épidémie se propage. Les hôpitaux sont saturés.", "answer": "Étant donné que l'épidémie se propage, les hôpitaux sont saturés." },
-      { "type": "Malgré + nom", "source": "Le traitement est contraignant. Le patient le suit rigoureusement.", "answer": "Malgré la contrainte du traitement, le patient le suit rigoureusement." }
+      {
+        "type": "Mise en relief (c'est... qui)",
+        "source": "La prévention sauve des vies.",
+        "answer": "C'est la prévention qui sauve des vies."
+      },
+      {
+        "type": "Mise en relief (c'est... que)",
+        "source": "Il a été opéré à l'hôpital Necker.",
+        "answer": "C'est à l'hôpital Necker qu'il a été opéré."
+      },
+      {
+        "type": "Mise en relief (c'est... que)",
+        "source": "On découvre les bienfaits du sport en vieillissant.",
+        "answer": "C'est en vieillissant qu'on découvre les bienfaits du sport."
+      },
+      {
+        "type": "Proposition temporelle (avant que + subj)",
+        "source": "Il faut agir. La maladie progresse.",
+        "answer": "Il faut agir avant que la maladie ne progresse."
+      },
+      {
+        "type": "Proposition temporelle (jusqu'à ce que + subj)",
+        "source": "Prenez ce traitement. Vous serez complètement guéri.",
+        "answer": "Prenez ce traitement jusqu'à ce que vous soyez complètement guéri."
+      },
+      {
+        "type": "Voix passive",
+        "source": "Le chirurgien a pratiqué une opération délicate.",
+        "answer": "Une opération délicate a été pratiquée par le chirurgien."
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Le patient se rétablit progressivement.",
+        "answer": "Le rétablissement progressif du patient"
+      },
+      {
+        "type": "Bien que + subjonctif",
+        "source": "Ce remède est naturel. Il peut provoquer des effets secondaires.",
+        "answer": "Bien que ce remède soit naturel, il peut provoquer des effets secondaires."
+      },
+      {
+        "type": "Cause (étant donné que)",
+        "source": "L'épidémie se propage. Les hôpitaux sont saturés.",
+        "answer": "Étant donné que l'épidémie se propage, les hôpitaux sont saturés."
+      },
+      {
+        "type": "Malgré + nom",
+        "source": "Le traitement est contraignant. Le patient le suit rigoureusement.",
+        "answer": "Malgré la contrainte du traitement, le patient le suit rigoureusement."
+      }
     ]
   },
   {
     "unit_number": 9,
     "theme": "La richesse en partage",
-    "grammar_focus": ["Le passif", "L'expression de la proportion"],
-    "vocabulary_list": ["aucun", "double", "triple", "rien", "total", "somme", "additionner", "soustraire", "multiplier", "diviser", "centaine", "dizaine", "millier", "environ", "foule", "flopée", "kyrielle", "montagne", "un tas", "dénuement", "infime", "raréfier", "hectare", "largeur", "longueur", "mètre carré", "tonne", "coliving", "tiers lieu", "vivre-ensemble"],
+    "grammar_focus": [
+      "Le passif",
+      "L'expression de la proportion"
+    ],
+    "vocabulary_list": [
+      "aucun",
+      "double",
+      "triple",
+      "rien",
+      "total",
+      "somme",
+      "additionner",
+      "soustraire",
+      "multiplier",
+      "diviser",
+      "centaine",
+      "dizaine",
+      "millier",
+      "environ",
+      "foule",
+      "flopée",
+      "kyrielle",
+      "montagne",
+      "un tas",
+      "dénuement",
+      "infime",
+      "raréfier",
+      "hectare",
+      "largeur",
+      "longueur",
+      "mètre carré",
+      "tonne",
+      "coliving",
+      "tiers lieu",
+      "vivre-ensemble"
+    ],
     "b2_expression_focus": "Expressions de la proportion",
     "vocabulary": [
-      { "word": "inégalité", "definition": "Différence de traitement ou de condition entre des individus ou des groupes", "answer": "inégalité", "article": "l'" },
-      { "word": "redistribution", "definition": "Répartition des richesses par l'État au moyen de prestations et d'impôts", "answer": "redistribution", "article": "la" },
-      { "word": "solidarité", "definition": "Lien d'entraide et de responsabilité entre les membres d'un groupe", "answer": "solidarité", "article": "la" },
-      { "word": "précarité", "definition": "Situation d'instabilité économique empêchant de subvenir à ses besoins", "answer": "précarité", "article": "la" },
-      { "word": "caritatif", "definition": "Qui a pour but de venir en aide aux personnes dans le besoin", "answer": "caritatif", "article": "" },
-      { "word": "philanthropie", "definition": "Engagement généreux visant à améliorer le bien-être de la société", "answer": "philanthropie", "article": "la" },
-      { "word": "bénévolat", "definition": "Activité exercée gratuitement au service d'une cause ou d'une organisation", "answer": "bénévolat", "article": "le" },
-      { "word": "microcrédit", "definition": "Prêt de faible montant accordé à des personnes exclues du système bancaire", "answer": "microcrédit", "article": "le" },
-      { "word": "mutualisation", "definition": "Mise en commun de ressources ou de services entre plusieurs acteurs", "answer": "mutualisation", "article": "la" },
-      { "word": "économie circulaire", "definition": "Modèle économique visant à réduire le gaspillage par le réemploi et le recyclage", "answer": "économie circulaire", "article": "l'" }
+      {
+        "word": "inégalité",
+        "definition": "Différence de traitement ou de condition entre des individus ou des groupes",
+        "answer": "inégalité",
+        "article": "l'"
+      },
+      {
+        "word": "redistribution",
+        "definition": "Répartition des richesses par l'État au moyen de prestations et d'impôts",
+        "answer": "redistribution",
+        "article": "la"
+      },
+      {
+        "word": "solidarité",
+        "definition": "Lien d'entraide et de responsabilité entre les membres d'un groupe",
+        "answer": "solidarité",
+        "article": "la"
+      },
+      {
+        "word": "précarité",
+        "definition": "Situation d'instabilité économique empêchant de subvenir à ses besoins",
+        "answer": "précarité",
+        "article": "la"
+      },
+      {
+        "word": "caritatif",
+        "definition": "Qui a pour but de venir en aide aux personnes dans le besoin",
+        "answer": "caritatif",
+        "article": ""
+      },
+      {
+        "word": "philanthropie",
+        "definition": "Engagement généreux visant à améliorer le bien-être de la société",
+        "answer": "philanthropie",
+        "article": "la"
+      },
+      {
+        "word": "bénévolat",
+        "definition": "Activité exercée gratuitement au service d'une cause ou d'une organisation",
+        "answer": "bénévolat",
+        "article": "le"
+      },
+      {
+        "word": "microcrédit",
+        "definition": "Prêt de faible montant accordé à des personnes exclues du système bancaire",
+        "answer": "microcrédit",
+        "article": "le"
+      },
+      {
+        "word": "mutualisation",
+        "definition": "Mise en commun de ressources ou de services entre plusieurs acteurs",
+        "answer": "mutualisation",
+        "article": "la"
+      },
+      {
+        "word": "économie circulaire",
+        "definition": "Modèle économique visant à réduire le gaspillage par le réemploi et le recyclage",
+        "answer": "économie circulaire",
+        "article": "l'"
+      }
     ],
     "expressions": [
-      { "expression": "La moitié de", "usage": "Exprimer une proportion", "example": "La moitié de la population mondiale vit avec moins de six dollars par jour." },
-      { "expression": "Un tiers des", "usage": "Exprimer une fraction", "example": "Un tiers des bénéfices est redistribué aux employés." },
-      { "expression": "Les trois quarts de", "usage": "Exprimer une large majorité", "example": "Les trois quarts des dons proviennent de particuliers." },
-      { "expression": "La quasi-totalité de", "usage": "Exprimer une proportion proche de l'intégralité", "example": "La quasi-totalité des fonds a été investie dans l'éducation." },
-      { "expression": "Être loin du compte", "usage": "Être très éloigné de l'objectif", "example": "En matière de redistribution, nous sommes encore loin du compte." },
-      { "expression": "Mettre en commun", "usage": "Partager des ressources collectivement", "example": "Les habitants ont décidé de mettre en commun leurs outils de jardinage." },
-      { "expression": "À hauteur de", "usage": "Indiquer un montant ou une proportion", "example": "L'État contribue à hauteur de 30 % du budget." },
-      { "expression": "Représenter une part de", "usage": "Quantifier une proportion", "example": "Le bénévolat représente une part importante de l'économie sociale." }
+      {
+        "expression": "La moitié de",
+        "usage": "Exprimer une proportion",
+        "example": "La moitié de la population mondiale vit avec moins de six dollars par jour."
+      },
+      {
+        "expression": "Un tiers des",
+        "usage": "Exprimer une fraction",
+        "example": "Un tiers des bénéfices est redistribué aux employés."
+      },
+      {
+        "expression": "Les trois quarts de",
+        "usage": "Exprimer une large majorité",
+        "example": "Les trois quarts des dons proviennent de particuliers."
+      },
+      {
+        "expression": "La quasi-totalité de",
+        "usage": "Exprimer une proportion proche de l'intégralité",
+        "example": "La quasi-totalité des fonds a été investie dans l'éducation."
+      },
+      {
+        "expression": "Être loin du compte",
+        "usage": "Être très éloigné de l'objectif",
+        "example": "En matière de redistribution, nous sommes encore loin du compte."
+      },
+      {
+        "expression": "Mettre en commun",
+        "usage": "Partager des ressources collectivement",
+        "example": "Les habitants ont décidé de mettre en commun leurs outils de jardinage."
+      },
+      {
+        "expression": "À hauteur de",
+        "usage": "Indiquer un montant ou une proportion",
+        "example": "L'État contribue à hauteur de 30 % du budget."
+      },
+      {
+        "expression": "Représenter une part de",
+        "usage": "Quantifier une proportion",
+        "example": "Le bénévolat représente une part importante de l'économie sociale."
+      }
     ],
     "conjugation_list": [
-      { "verb": "répartir", "tense": "Subjonctif présent", "person": "on", "answer": "répartisse" },
-      { "verb": "accroître", "tense": "Subjonctif présent", "person": "ils", "answer": "accroissent" },
-      { "verb": "soustraire", "tense": "Subjonctif présent", "person": "nous", "answer": "soustrayions" },
-      { "verb": "contribuer", "tense": "Conditionnel passé", "person": "elle", "answer": "aurait contribué" },
-      { "verb": "accueillir", "tense": "Conditionnel passé", "person": "vous", "answer": "auriez accueilli" },
-      { "verb": "réduire", "tense": "Conditionnel passé", "person": "nous", "answer": "aurions réduit" },
-      { "verb": "exclure", "tense": "Plus-que-parfait", "person": "ils", "answer": "avaient exclu" },
-      { "verb": "croître", "tense": "Plus-que-parfait", "person": "il", "answer": "avait crû" },
-      { "verb": "atteindre", "tense": "Futur antérieur", "person": "nous", "answer": "aurons atteint" },
-      { "verb": "produire", "tense": "Futur antérieur", "person": "on", "answer": "aura produit" }
+      {
+        "verb": "répartir",
+        "tense": "Subjonctif présent",
+        "person": "on",
+        "answer": "répartisse"
+      },
+      {
+        "verb": "accroître",
+        "tense": "Subjonctif présent",
+        "person": "ils",
+        "answer": "accroissent"
+      },
+      {
+        "verb": "soustraire",
+        "tense": "Subjonctif présent",
+        "person": "nous",
+        "answer": "soustrayions"
+      },
+      {
+        "verb": "contribuer",
+        "tense": "Conditionnel passé",
+        "person": "elle",
+        "answer": "aurait contribué"
+      },
+      {
+        "verb": "accueillir",
+        "tense": "Conditionnel passé",
+        "person": "vous",
+        "answer": "auriez accueilli"
+      },
+      {
+        "verb": "réduire",
+        "tense": "Conditionnel passé",
+        "person": "nous",
+        "answer": "aurions réduit"
+      },
+      {
+        "verb": "exclure",
+        "tense": "Plus-que-parfait",
+        "person": "ils",
+        "answer": "avaient exclu"
+      },
+      {
+        "verb": "croître",
+        "tense": "Plus-que-parfait",
+        "person": "il",
+        "answer": "avait crû"
+      },
+      {
+        "verb": "atteindre",
+        "tense": "Futur antérieur",
+        "person": "nous",
+        "answer": "aurons atteint"
+      },
+      {
+        "verb": "produire",
+        "tense": "Futur antérieur",
+        "person": "on",
+        "answer": "aura produit"
+      }
     ],
     "grammar_transforms": [
-      { "type": "Voix passive", "source": "L'État a distribué des aides aux familles modestes.", "answer": "Des aides ont été distribuées aux familles modestes par l'État." },
-      { "type": "Voix passive", "source": "L'association collecte les dons chaque mois.", "answer": "Les dons sont collectés chaque mois par l'association." },
-      { "type": "Voix passive", "source": "On construira de nouveaux logements sociaux.", "answer": "De nouveaux logements sociaux seront construits." },
-      { "type": "Voix passive", "source": "Les bénévoles ont récolté plus de dix mille euros.", "answer": "Plus de dix mille euros ont été récoltés par les bénévoles." },
-      { "type": "Voix passive", "source": "Le gouvernement a voté une loi contre la précarité.", "answer": "Une loi contre la précarité a été votée par le gouvernement." },
-      { "type": "Nominalisation", "source": "Les richesses sont redistribuées équitablement.", "answer": "La redistribution équitable des richesses" },
-      { "type": "Nominalisation", "source": "Les inégalités se creusent de façon alarmante.", "answer": "Le creusement alarmant des inégalités" },
-      { "type": "Bien que + subjonctif", "source": "Les dons augmentent. La pauvreté persiste.", "answer": "Bien que les dons augmentent, la pauvreté persiste." },
-      { "type": "Malgré + nom", "source": "Les efforts des bénévoles sont considérables. La précarité ne recule pas.", "answer": "Malgré les efforts considérables des bénévoles, la précarité ne recule pas." },
-      { "type": "Cause (puisque)", "source": "Les inégalités se creusent. Il faut repenser la redistribution.", "answer": "Puisque les inégalités se creusent, il faut repenser la redistribution." },
-      { "type": "Conséquence (de sorte que)", "source": "Le microcrédit se développe. Des milliers de personnes lancent leur activité.", "answer": "Le microcrédit se développe de sorte que des milliers de personnes lancent leur activité." },
-      { "type": "Pour que + subjonctif", "source": "Nous mutualisons nos ressources. Chacun en bénéficie.", "answer": "Nous mutualisons nos ressources pour que chacun en bénéficie." },
-      { "type": "Concession (avoir beau)", "source": "L'économie croît. Les inégalités ne se résorbent pas.", "answer": "L'économie a beau croître, les inégalités ne se résorbent pas." },
-      { "type": "Grâce à", "source": "La solidarité entre voisins existe. Les personnes âgées sont moins isolées.", "answer": "Grâce à la solidarité entre voisins, les personnes âgées sont moins isolées." }
+      {
+        "type": "Voix passive",
+        "source": "L'État a distribué des aides aux familles modestes.",
+        "answer": "Des aides ont été distribuées aux familles modestes par l'État."
+      },
+      {
+        "type": "Voix passive",
+        "source": "L'association collecte les dons chaque mois.",
+        "answer": "Les dons sont collectés chaque mois par l'association."
+      },
+      {
+        "type": "Voix passive",
+        "source": "On construira de nouveaux logements sociaux.",
+        "answer": "De nouveaux logements sociaux seront construits."
+      },
+      {
+        "type": "Voix passive",
+        "source": "Les bénévoles ont récolté plus de dix mille euros.",
+        "answer": "Plus de dix mille euros ont été récoltés par les bénévoles."
+      },
+      {
+        "type": "Voix passive",
+        "source": "Le gouvernement a voté une loi contre la précarité.",
+        "answer": "Une loi contre la précarité a été votée par le gouvernement."
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Les richesses sont redistribuées équitablement.",
+        "answer": "La redistribution équitable des richesses"
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Les inégalités se creusent de façon alarmante.",
+        "answer": "Le creusement alarmant des inégalités"
+      },
+      {
+        "type": "Bien que + subjonctif",
+        "source": "Les dons augmentent. La pauvreté persiste.",
+        "answer": "Bien que les dons augmentent, la pauvreté persiste."
+      },
+      {
+        "type": "Malgré + nom",
+        "source": "Les efforts des bénévoles sont considérables. La précarité ne recule pas.",
+        "answer": "Malgré les efforts considérables des bénévoles, la précarité ne recule pas."
+      },
+      {
+        "type": "Cause (puisque)",
+        "source": "Les inégalités se creusent. Il faut repenser la redistribution.",
+        "answer": "Puisque les inégalités se creusent, il faut repenser la redistribution."
+      },
+      {
+        "type": "Conséquence (de sorte que)",
+        "source": "Le microcrédit se développe. Des milliers de personnes lancent leur activité.",
+        "answer": "Le microcrédit se développe de sorte que des milliers de personnes lancent leur activité."
+      },
+      {
+        "type": "Pour que + subjonctif",
+        "source": "Nous mutualisons nos ressources. Chacun en bénéficie.",
+        "answer": "Nous mutualisons nos ressources pour que chacun en bénéficie."
+      },
+      {
+        "type": "Concession (avoir beau)",
+        "source": "L'économie croît. Les inégalités ne se résorbent pas.",
+        "answer": "L'économie a beau croître, les inégalités ne se résorbent pas."
+      },
+      {
+        "type": "Grâce à",
+        "source": "La solidarité entre voisins existe. Les personnes âgées sont moins isolées.",
+        "answer": "Grâce à la solidarité entre voisins, les personnes âgées sont moins isolées."
+      }
     ]
   },
   {
     "unit_number": 10,
     "theme": "Parlez-vous français ?",
-    "grammar_focus": ["Participe présent, gérondif et adjectif verbal", "Le participe passé et le participe composé"],
-    "vocabulary_list": ["anglicisme", "antonyme", "connotation", "expression idiomatique", "franglish", "homonyme", "jargon", "néologisme", "nuance", "synonyme", "accroche", "anecdote", "plan", "problématique", "questionnement", "transition", "éloquence", "analyser", "déduire", "synthétiser", "argot", "Bastoche", "pépites fleuries", "bilinguisme", "communautarisme", "glottophobie", "accent régional", "orthographe", "réforme", "syntaxe"],
+    "grammar_focus": [
+      "Participe présent, gérondif et adjectif verbal",
+      "Le participe passé et le participe composé"
+    ],
+    "vocabulary_list": [
+      "anglicisme",
+      "antonyme",
+      "connotation",
+      "expression idiomatique",
+      "franglish",
+      "homonyme",
+      "jargon",
+      "néologisme",
+      "nuance",
+      "synonyme",
+      "accroche",
+      "anecdote",
+      "plan",
+      "problématique",
+      "questionnement",
+      "transition",
+      "éloquence",
+      "analyser",
+      "déduire",
+      "synthétiser",
+      "argot",
+      "Bastoche",
+      "pépites fleuries",
+      "bilinguisme",
+      "communautarisme",
+      "glottophobie",
+      "accent régional",
+      "orthographe",
+      "réforme",
+      "syntaxe"
+    ],
     "b2_expression_focus": "Expressions pour structurer son propos",
     "vocabulary": [
-      { "word": "néologisme", "definition": "Mot ou expression de création récente introduit dans une langue", "answer": "néologisme", "article": "le" },
-      { "word": "anglicisme", "definition": "Mot ou tournure empruntée à la langue anglaise", "answer": "anglicisme", "article": "l'" },
-      { "word": "francophonie", "definition": "Ensemble des pays et des communautés ayant le français en partage", "answer": "francophonie", "article": "la" },
-      { "word": "dialecte", "definition": "Variété régionale d'une langue parlée dans une zone géographique limitée", "answer": "dialecte", "article": "le" },
-      { "word": "étymologie", "definition": "Étude de l'origine et de l'évolution historique des mots", "answer": "étymologie", "article": "l'" },
-      { "word": "registre de langue", "definition": "Niveau de langage adapté à une situation de communication", "answer": "registre de langue", "article": "le" },
-      { "word": "emprunt linguistique", "definition": "Mot ou expression adopté par une langue en provenance d'une autre", "answer": "emprunt linguistique", "article": "l'" },
-      { "word": "glottophobie", "definition": "Discrimination fondée sur la manière de parler ou l'accent d'une personne", "answer": "glottophobie", "article": "la" },
-      { "word": "orthographe", "definition": "Ensemble des règles régissant la manière correcte d'écrire les mots", "answer": "orthographe", "article": "l'" },
-      { "word": "bilinguisme", "definition": "Capacité d'une personne à s'exprimer couramment dans deux langues", "answer": "bilinguisme", "article": "le" }
+      {
+        "word": "néologisme",
+        "definition": "Mot ou expression de création récente introduit dans une langue",
+        "answer": "néologisme",
+        "article": "le"
+      },
+      {
+        "word": "anglicisme",
+        "definition": "Mot ou tournure empruntée à la langue anglaise",
+        "answer": "anglicisme",
+        "article": "l'"
+      },
+      {
+        "word": "francophonie",
+        "definition": "Ensemble des pays et des communautés ayant le français en partage",
+        "answer": "francophonie",
+        "article": "la"
+      },
+      {
+        "word": "dialecte",
+        "definition": "Variété régionale d'une langue parlée dans une zone géographique limitée",
+        "answer": "dialecte",
+        "article": "le"
+      },
+      {
+        "word": "étymologie",
+        "definition": "Étude de l'origine et de l'évolution historique des mots",
+        "answer": "étymologie",
+        "article": "l'"
+      },
+      {
+        "word": "registre de langue",
+        "definition": "Niveau de langage adapté à une situation de communication",
+        "answer": "registre de langue",
+        "article": "le"
+      },
+      {
+        "word": "emprunt linguistique",
+        "definition": "Mot ou expression adopté par une langue en provenance d'une autre",
+        "answer": "emprunt linguistique",
+        "article": "l'"
+      },
+      {
+        "word": "glottophobie",
+        "definition": "Discrimination fondée sur la manière de parler ou l'accent d'une personne",
+        "answer": "glottophobie",
+        "article": "la"
+      },
+      {
+        "word": "orthographe",
+        "definition": "Ensemble des règles régissant la manière correcte d'écrire les mots",
+        "answer": "orthographe",
+        "article": "l'"
+      },
+      {
+        "word": "bilinguisme",
+        "definition": "Capacité d'une personne à s'exprimer couramment dans deux langues",
+        "answer": "bilinguisme",
+        "article": "le"
+      }
     ],
     "expressions": [
-      { "expression": "Ne pas mâcher ses mots", "usage": "Parler avec franchise et sans détour", "example": "Le critique littéraire ne mâche pas ses mots." },
-      { "expression": "Avoir le mot juste", "usage": "Trouver l'expression la plus appropriée", "example": "L'orateur avait toujours le mot juste." },
-      { "expression": "Tourner autour du pot", "usage": "Éviter de dire clairement ce qu'on pense", "example": "Arrête de tourner autour du pot et dis ce que tu penses." },
-      { "expression": "Peser ses mots", "usage": "Choisir ses termes avec précaution", "example": "En diplomatie, il faut peser ses mots." },
-      { "expression": "En parlant de", "usage": "Introduire un sujet par association", "example": "En parlant de réforme, le projet de loi a été voté hier." },
-      { "expression": "D'une part... d'autre part", "usage": "Structurer deux arguments", "example": "D'une part, l'anglais domine ; d'autre part, les langues régionales disparaissent." },
-      { "expression": "En ce qui concerne", "usage": "Introduire le sujet traité", "example": "En ce qui concerne la francophonie, les enjeux sont considérables." },
-      { "expression": "Tout bien considéré", "usage": "Conclure après réflexion", "example": "Tout bien considéré, la diversité linguistique est une richesse." }
+      {
+        "expression": "Ne pas mâcher ses mots",
+        "usage": "Parler avec franchise et sans détour",
+        "example": "Le critique littéraire ne mâche pas ses mots."
+      },
+      {
+        "expression": "Avoir le mot juste",
+        "usage": "Trouver l'expression la plus appropriée",
+        "example": "L'orateur avait toujours le mot juste."
+      },
+      {
+        "expression": "Tourner autour du pot",
+        "usage": "Éviter de dire clairement ce qu'on pense",
+        "example": "Arrête de tourner autour du pot et dis ce que tu penses."
+      },
+      {
+        "expression": "Peser ses mots",
+        "usage": "Choisir ses termes avec précaution",
+        "example": "En diplomatie, il faut peser ses mots."
+      },
+      {
+        "expression": "En parlant de",
+        "usage": "Introduire un sujet par association",
+        "example": "En parlant de réforme, le projet de loi a été voté hier."
+      },
+      {
+        "expression": "D'une part... d'autre part",
+        "usage": "Structurer deux arguments",
+        "example": "D'une part, l'anglais domine ; d'autre part, les langues régionales disparaissent."
+      },
+      {
+        "expression": "En ce qui concerne",
+        "usage": "Introduire le sujet traité",
+        "example": "En ce qui concerne la francophonie, les enjeux sont considérables."
+      },
+      {
+        "expression": "Tout bien considéré",
+        "usage": "Conclure après réflexion",
+        "example": "Tout bien considéré, la diversité linguistique est une richesse."
+      }
     ],
     "conjugation_list": [
-      { "verb": "craindre", "tense": "Subjonctif présent", "person": "je", "answer": "craigne" },
-      { "verb": "écrire", "tense": "Subjonctif présent", "person": "vous", "answer": "écriviez" },
-      { "verb": "connaître", "tense": "Subjonctif présent", "person": "ils", "answer": "connaissent" },
-      { "verb": "traduire", "tense": "Subjonctif présent", "person": "elle", "answer": "traduise" },
-      { "verb": "corriger", "tense": "Conditionnel passé", "person": "tu", "answer": "aurais corrigé" },
-      { "verb": "transcrire", "tense": "Conditionnel passé", "person": "nous", "answer": "aurions transcrit" },
-      { "verb": "décroître", "tense": "Conditionnel passé", "person": "il", "answer": "aurait décru" },
-      { "verb": "apparaître", "tense": "Plus-que-parfait", "person": "elle", "answer": "avait apparu" },
-      { "verb": "enrichir", "tense": "Plus-que-parfait", "person": "nous", "answer": "avions enrichi" },
-      { "verb": "méconnaître", "tense": "Plus-que-parfait", "person": "on", "answer": "avait méconnu" },
-      { "verb": "promouvoir", "tense": "Futur antérieur", "person": "ils", "answer": "auront promu" },
-      { "verb": "convaincre", "tense": "Futur antérieur", "person": "vous", "answer": "aurez convaincu" }
+      {
+        "verb": "craindre",
+        "tense": "Subjonctif présent",
+        "person": "je",
+        "answer": "craigne"
+      },
+      {
+        "verb": "écrire",
+        "tense": "Subjonctif présent",
+        "person": "vous",
+        "answer": "écriviez"
+      },
+      {
+        "verb": "connaître",
+        "tense": "Subjonctif présent",
+        "person": "ils",
+        "answer": "connaissent"
+      },
+      {
+        "verb": "traduire",
+        "tense": "Subjonctif présent",
+        "person": "elle",
+        "answer": "traduise"
+      },
+      {
+        "verb": "corriger",
+        "tense": "Conditionnel passé",
+        "person": "tu",
+        "answer": "aurais corrigé"
+      },
+      {
+        "verb": "transcrire",
+        "tense": "Conditionnel passé",
+        "person": "nous",
+        "answer": "aurions transcrit"
+      },
+      {
+        "verb": "décroître",
+        "tense": "Conditionnel passé",
+        "person": "il",
+        "answer": "aurait décru"
+      },
+      {
+        "verb": "apparaître",
+        "tense": "Plus-que-parfait",
+        "person": "elle",
+        "answer": "avait apparu"
+      },
+      {
+        "verb": "enrichir",
+        "tense": "Plus-que-parfait",
+        "person": "nous",
+        "answer": "avions enrichi"
+      },
+      {
+        "verb": "méconnaître",
+        "tense": "Plus-que-parfait",
+        "person": "on",
+        "answer": "avait méconnu"
+      },
+      {
+        "verb": "promouvoir",
+        "tense": "Futur antérieur",
+        "person": "ils",
+        "answer": "auront promu"
+      },
+      {
+        "verb": "convaincre",
+        "tense": "Futur antérieur",
+        "person": "vous",
+        "answer": "aurez convaincu"
+      }
     ],
     "grammar_transforms": [
-      { "type": "Gérondif", "source": "Il lit le journal. Il apprend du vocabulaire.", "answer": "En lisant le journal, il apprend du vocabulaire." },
-      { "type": "Gérondif", "source": "On pratique régulièrement. On améliore sa prononciation.", "answer": "En pratiquant régulièrement, on améliore sa prononciation." },
-      { "type": "Participe présent", "source": "Les élèves qui maîtrisent deux langues ont un avantage.", "answer": "Les élèves maîtrisant deux langues ont un avantage." },
-      { "type": "Participe présent", "source": "Les étudiants qui apprennent le français à l'étranger progressent plus vite.", "answer": "Les étudiants apprenant le français à l'étranger progressent plus vite." },
-      { "type": "Participe composé", "source": "Comme il avait terminé ses études de linguistique, il a obtenu un poste.", "answer": "Ayant terminé ses études de linguistique, il a obtenu un poste." },
-      { "type": "Voix passive", "source": "L'Académie française a adopté la nouvelle orthographe.", "answer": "La nouvelle orthographe a été adoptée par l'Académie française." },
-      { "type": "Nominalisation", "source": "La langue française évolue constamment.", "answer": "L'évolution constante de la langue française" },
-      { "type": "Bien que + subjonctif", "source": "L'anglais domine. Le français reste une langue internationale.", "answer": "Bien que l'anglais domine, le français reste une langue internationale." },
-      { "type": "Malgré + nom", "source": "Les réformes sont nombreuses. L'orthographe reste complexe.", "answer": "Malgré les nombreuses réformes, l'orthographe reste complexe." },
-      { "type": "Cause (puisque)", "source": "Le français évolue. Il faut adapter l'enseignement.", "answer": "Puisque le français évolue, il faut adapter l'enseignement." },
-      { "type": "Gérondif (mise en relief)", "source": "Elle a surmonté sa glottophobie. Elle a pris des cours de diction.", "answer": "C'est en prenant des cours de diction qu'elle a surmonté sa glottophobie." },
-      { "type": "Concession (avoir beau)", "source": "L'argot se renouvelle constamment. Les puristes le rejettent.", "answer": "L'argot a beau se renouveler constamment, les puristes le rejettent." }
+      {
+        "type": "Gérondif",
+        "source": "Il lit le journal. Il apprend du vocabulaire.",
+        "answer": "En lisant le journal, il apprend du vocabulaire."
+      },
+      {
+        "type": "Gérondif",
+        "source": "On pratique régulièrement. On améliore sa prononciation.",
+        "answer": "En pratiquant régulièrement, on améliore sa prononciation."
+      },
+      {
+        "type": "Participe présent",
+        "source": "Les élèves qui maîtrisent deux langues ont un avantage.",
+        "answer": "Les élèves maîtrisant deux langues ont un avantage."
+      },
+      {
+        "type": "Participe présent",
+        "source": "Les étudiants qui apprennent le français à l'étranger progressent plus vite.",
+        "answer": "Les étudiants apprenant le français à l'étranger progressent plus vite."
+      },
+      {
+        "type": "Participe composé",
+        "source": "Comme il avait terminé ses études de linguistique, il a obtenu un poste.",
+        "answer": "Ayant terminé ses études de linguistique, il a obtenu un poste."
+      },
+      {
+        "type": "Voix passive",
+        "source": "L'Académie française a adopté la nouvelle orthographe.",
+        "answer": "La nouvelle orthographe a été adoptée par l'Académie française."
+      },
+      {
+        "type": "Nominalisation",
+        "source": "La langue française évolue constamment.",
+        "answer": "L'évolution constante de la langue française"
+      },
+      {
+        "type": "Bien que + subjonctif",
+        "source": "L'anglais domine. Le français reste une langue internationale.",
+        "answer": "Bien que l'anglais domine, le français reste une langue internationale."
+      },
+      {
+        "type": "Malgré + nom",
+        "source": "Les réformes sont nombreuses. L'orthographe reste complexe.",
+        "answer": "Malgré les nombreuses réformes, l'orthographe reste complexe."
+      },
+      {
+        "type": "Cause (puisque)",
+        "source": "Le français évolue. Il faut adapter l'enseignement.",
+        "answer": "Puisque le français évolue, il faut adapter l'enseignement."
+      },
+      {
+        "type": "Gérondif (mise en relief)",
+        "source": "Elle a surmonté sa glottophobie. Elle a pris des cours de diction.",
+        "answer": "C'est en prenant des cours de diction qu'elle a surmonté sa glottophobie."
+      },
+      {
+        "type": "Concession (avoir beau)",
+        "source": "L'argot se renouvelle constamment. Les puristes le rejettent.",
+        "answer": "L'argot a beau se renouveler constamment, les puristes le rejettent."
+      }
     ]
   },
   {
     "unit_number": 11,
     "theme": "Jusqu'où irons-nous ?",
-    "grammar_focus": ["Le futur", "Exprimer la manière"],
-    "vocabulary_list": ["algorithme", "intelligence artificielle", "imprimante 3D", "logiciel", "objet connecté", "pixel", "réalité virtuelle", "reconnaissance vocale", "robotique", "catastrophe naturelle", "climato-sceptique", "dérèglement climatique", "désertification", "énergies fossiles", "érosion", "exploitation des ressources", "accélération", "accroissement", "essor", "expansion", "intensification", "multiplication", "renforcement", "renouvellement", "rénovation", "détérioration", "métamorphose", "progrès", "conquête spatiale", "innovation"],
+    "grammar_focus": [
+      "Le futur",
+      "Exprimer la manière"
+    ],
+    "vocabulary_list": [
+      "algorithme",
+      "intelligence artificielle",
+      "imprimante 3D",
+      "logiciel",
+      "objet connecté",
+      "pixel",
+      "réalité virtuelle",
+      "reconnaissance vocale",
+      "robotique",
+      "catastrophe naturelle",
+      "climato-sceptique",
+      "dérèglement climatique",
+      "désertification",
+      "énergies fossiles",
+      "érosion",
+      "exploitation des ressources",
+      "accélération",
+      "accroissement",
+      "essor",
+      "expansion",
+      "intensification",
+      "multiplication",
+      "renforcement",
+      "renouvellement",
+      "rénovation",
+      "détérioration",
+      "métamorphose",
+      "progrès",
+      "conquête spatiale",
+      "innovation"
+    ],
     "b2_expression_focus": "Adverbes et locutions de manière (-ment)",
     "vocabulary": [
-      { "word": "intelligence artificielle", "definition": "Technologie permettant aux machines de simuler des capacités cognitives humaines", "answer": "intelligence artificielle", "article": "l'" },
-      { "word": "dérèglement climatique", "definition": "Perturbation durable du système climatique causée par les activités humaines", "answer": "dérèglement climatique", "article": "le" },
-      { "word": "robotique", "definition": "Science et technique de la conception et de la fabrication de robots", "answer": "robotique", "article": "la" },
-      { "word": "réalité virtuelle", "definition": "Environnement numérique immersif simulant une expérience sensorielle complète", "answer": "réalité virtuelle", "article": "la" },
-      { "word": "nanotechnologie", "definition": "Manipulation de la matière à l'échelle atomique et moléculaire", "answer": "nanotechnologie", "article": "la" },
-      { "word": "biotechnologie", "definition": "Application de techniques biologiques à la production industrielle et médicale", "answer": "biotechnologie", "article": "la" },
-      { "word": "obsolescence", "definition": "Processus par lequel un produit devient dépassé ou inutilisable", "answer": "obsolescence", "article": "l'" },
-      { "word": "empreinte écologique", "definition": "Mesure de la pression exercée par l'activité humaine sur les ressources naturelles", "answer": "empreinte écologique", "article": "l'" },
-      { "word": "transition énergétique", "definition": "Passage des énergies fossiles aux énergies renouvelables", "answer": "transition énergétique", "article": "la" },
-      { "word": "transhumanisme", "definition": "Mouvement prônant l'amélioration des capacités humaines par la technologie", "answer": "transhumanisme", "article": "le" },
-      { "word": "cyberattaque", "definition": "Action malveillante visant à endommager ou infiltrer un système informatique", "answer": "cyberattaque", "article": "la" },
-      { "word": "décarbonation", "definition": "Réduction des émissions de dioxyde de carbone dans les processus industriels", "answer": "décarbonation", "article": "la" },
-      { "word": "véhicule autonome", "definition": "Moyen de transport capable de circuler sans intervention humaine", "answer": "véhicule autonome", "article": "le" },
-      { "word": "bioéthique", "definition": "Réflexion morale sur les enjeux liés aux avancées des sciences du vivant", "answer": "bioéthique", "article": "la" }
+      {
+        "word": "intelligence artificielle",
+        "definition": "Technologie permettant aux machines de simuler des capacités cognitives humaines",
+        "answer": "intelligence artificielle",
+        "article": "l'"
+      },
+      {
+        "word": "dérèglement climatique",
+        "definition": "Perturbation durable du système climatique causée par les activités humaines",
+        "answer": "dérèglement climatique",
+        "article": "le"
+      },
+      {
+        "word": "robotique",
+        "definition": "Science et technique de la conception et de la fabrication de robots",
+        "answer": "robotique",
+        "article": "la"
+      },
+      {
+        "word": "réalité virtuelle",
+        "definition": "Environnement numérique immersif simulant une expérience sensorielle complète",
+        "answer": "réalité virtuelle",
+        "article": "la"
+      },
+      {
+        "word": "nanotechnologie",
+        "definition": "Manipulation de la matière à l'échelle atomique et moléculaire",
+        "answer": "nanotechnologie",
+        "article": "la"
+      },
+      {
+        "word": "biotechnologie",
+        "definition": "Application de techniques biologiques à la production industrielle et médicale",
+        "answer": "biotechnologie",
+        "article": "la"
+      },
+      {
+        "word": "obsolescence",
+        "definition": "Processus par lequel un produit devient dépassé ou inutilisable",
+        "answer": "obsolescence",
+        "article": "l'"
+      },
+      {
+        "word": "empreinte écologique",
+        "definition": "Mesure de la pression exercée par l'activité humaine sur les ressources naturelles",
+        "answer": "empreinte écologique",
+        "article": "l'"
+      },
+      {
+        "word": "transition énergétique",
+        "definition": "Passage des énergies fossiles aux énergies renouvelables",
+        "answer": "transition énergétique",
+        "article": "la"
+      },
+      {
+        "word": "transhumanisme",
+        "definition": "Mouvement prônant l'amélioration des capacités humaines par la technologie",
+        "answer": "transhumanisme",
+        "article": "le"
+      },
+      {
+        "word": "cyberattaque",
+        "definition": "Action malveillante visant à endommager ou infiltrer un système informatique",
+        "answer": "cyberattaque",
+        "article": "la"
+      },
+      {
+        "word": "décarbonation",
+        "definition": "Réduction des émissions de dioxyde de carbone dans les processus industriels",
+        "answer": "décarbonation",
+        "article": "la"
+      },
+      {
+        "word": "véhicule autonome",
+        "definition": "Moyen de transport capable de circuler sans intervention humaine",
+        "answer": "véhicule autonome",
+        "article": "le"
+      },
+      {
+        "word": "bioéthique",
+        "definition": "Réflexion morale sur les enjeux liés aux avancées des sciences du vivant",
+        "answer": "bioéthique",
+        "article": "la"
+      }
     ],
     "expressions": [
-      { "expression": "Aller de pair avec", "usage": "Être inséparable de", "example": "Le progrès technologique va de pair avec de nouveaux défis éthiques." },
-      { "expression": "Être à la pointe de", "usage": "Être à l'avant-garde", "example": "Ce laboratoire est à la pointe de la recherche en IA." },
-      { "expression": "Au détriment de", "usage": "Au préjudice de", "example": "L'automatisation progresse au détriment de certains emplois." },
-      { "expression": "Dans un avenir proche", "usage": "Dans un futur imminent", "example": "Dans un avenir proche, les voitures autonomes seront courantes." },
-      { "expression": "De manière significative", "usage": "De façon importante et notable", "example": "Les émissions de CO2 ont diminué de manière significative." },
-      { "expression": "Au fur et à mesure que", "usage": "Progressivement, en même temps que", "example": "Au fur et à mesure que la technologie avance, les questions éthiques se multiplient." },
-      { "expression": "D'ici à + horizon temporel", "usage": "Avant un moment futur", "example": "D'ici à 2050, les énergies fossiles devraient être abandonnées." },
-      { "expression": "À terme", "usage": "En fin de compte, dans le futur", "example": "À terme, l'intelligence artificielle transformera tous les secteurs." },
-      { "expression": "Progressivement", "usage": "De manière graduelle", "example": "Les énergies renouvelables remplaceront progressivement le pétrole." },
-      { "expression": "De façon exponentielle", "usage": "À un rythme de croissance de plus en plus rapide", "example": "La puissance des ordinateurs croît de façon exponentielle." },
-      { "expression": "En un clin d'œil", "usage": "Très rapidement", "example": "La technologie évolue en un clin d'œil." },
-      { "expression": "Pas à pas", "usage": "De manière progressive et prudente", "example": "La transition énergétique se fait pas à pas." }
+      {
+        "expression": "Aller de pair avec",
+        "usage": "Être inséparable de",
+        "example": "Le progrès technologique va de pair avec de nouveaux défis éthiques."
+      },
+      {
+        "expression": "Être à la pointe de",
+        "usage": "Être à l'avant-garde",
+        "example": "Ce laboratoire est à la pointe de la recherche en IA."
+      },
+      {
+        "expression": "Au détriment de",
+        "usage": "Au préjudice de",
+        "example": "L'automatisation progresse au détriment de certains emplois."
+      },
+      {
+        "expression": "Dans un avenir proche",
+        "usage": "Dans un futur imminent",
+        "example": "Dans un avenir proche, les voitures autonomes seront courantes."
+      },
+      {
+        "expression": "De manière significative",
+        "usage": "De façon importante et notable",
+        "example": "Les émissions de CO2 ont diminué de manière significative."
+      },
+      {
+        "expression": "Au fur et à mesure que",
+        "usage": "Progressivement, en même temps que",
+        "example": "Au fur et à mesure que la technologie avance, les questions éthiques se multiplient."
+      },
+      {
+        "expression": "D'ici à + horizon temporel",
+        "usage": "Avant un moment futur",
+        "example": "D'ici à 2050, les énergies fossiles devraient être abandonnées."
+      },
+      {
+        "expression": "À terme",
+        "usage": "En fin de compte, dans le futur",
+        "example": "À terme, l'intelligence artificielle transformera tous les secteurs."
+      },
+      {
+        "expression": "Progressivement",
+        "usage": "De manière graduelle",
+        "example": "Les énergies renouvelables remplaceront progressivement le pétrole."
+      },
+      {
+        "expression": "De façon exponentielle",
+        "usage": "À un rythme de croissance de plus en plus rapide",
+        "example": "La puissance des ordinateurs croît de façon exponentielle."
+      },
+      {
+        "expression": "En un clin d'œil",
+        "usage": "Très rapidement",
+        "example": "La technologie évolue en un clin d'œil."
+      },
+      {
+        "expression": "Pas à pas",
+        "usage": "De manière progressive et prudente",
+        "example": "La transition énergétique se fait pas à pas."
+      }
     ],
     "conjugation_list": [
-      { "verb": "résoudre", "tense": "Subjonctif présent", "person": "vous", "answer": "résolviez" },
-      { "verb": "craindre", "tense": "Subjonctif présent", "person": "nous", "answer": "craignions" },
-      { "verb": "conquérir", "tense": "Conditionnel passé", "person": "il", "answer": "aurait conquis" },
-      { "verb": "prédire", "tense": "Conditionnel passé", "person": "tu", "answer": "aurais prédit" },
-      { "verb": "concevoir", "tense": "Plus-que-parfait", "person": "on", "answer": "avait conçu" },
-      { "verb": "accroître", "tense": "Plus-que-parfait", "person": "elles", "answer": "avaient accru" },
-      { "verb": "produire", "tense": "Futur antérieur", "person": "nous", "answer": "aurons produit" },
-      { "verb": "construire", "tense": "Futur antérieur", "person": "vous", "answer": "aurez construit" }
+      {
+        "verb": "résoudre",
+        "tense": "Subjonctif présent",
+        "person": "vous",
+        "answer": "résolviez"
+      },
+      {
+        "verb": "craindre",
+        "tense": "Subjonctif présent",
+        "person": "nous",
+        "answer": "craignions"
+      },
+      {
+        "verb": "conquérir",
+        "tense": "Conditionnel passé",
+        "person": "il",
+        "answer": "aurait conquis"
+      },
+      {
+        "verb": "prédire",
+        "tense": "Conditionnel passé",
+        "person": "tu",
+        "answer": "aurais prédit"
+      },
+      {
+        "verb": "concevoir",
+        "tense": "Plus-que-parfait",
+        "person": "on",
+        "answer": "avait conçu"
+      },
+      {
+        "verb": "accroître",
+        "tense": "Plus-que-parfait",
+        "person": "elles",
+        "answer": "avaient accru"
+      },
+      {
+        "verb": "produire",
+        "tense": "Futur antérieur",
+        "person": "nous",
+        "answer": "aurons produit"
+      },
+      {
+        "verb": "construire",
+        "tense": "Futur antérieur",
+        "person": "vous",
+        "answer": "aurez construit"
+      }
     ],
     "grammar_transforms": [
-      { "type": "Adverbe de manière", "source": "Les robots travaillent avec efficacité.", "answer": "Les robots travaillent efficacement." },
-      { "type": "Gérondif (manière)", "source": "Il a programmé le robot. Il utilisait un langage innovant.", "answer": "Il a programmé le robot en utilisant un langage innovant." },
-      { "type": "Voix passive", "source": "Les scientifiques développeront des traitements révolutionnaires.", "answer": "Des traitements révolutionnaires seront développés par les scientifiques." },
-      { "type": "Nominalisation", "source": "Les températures augmentent de manière alarmante.", "answer": "L'augmentation alarmante des températures" },
-      { "type": "Bien que + subjonctif", "source": "L'IA progresse rapidement. Elle ne peut pas remplacer la créativité humaine.", "answer": "Bien que l'IA progresse rapidement, elle ne peut pas remplacer la créativité humaine." },
-      { "type": "Conséquence (si... que)", "source": "Les progrès sont rapides. On peine à suivre le rythme.", "answer": "Les progrès sont si rapides qu'on peine à suivre le rythme." },
-      { "type": "Grâce à", "source": "La biotechnologie avance. De nouvelles thérapies voient le jour.", "answer": "Grâce aux avancées de la biotechnologie, de nouvelles thérapies voient le jour." },
-      { "type": "Malgré + nom", "source": "Les risques de la technologie sont connus. La recherche continue.", "answer": "Malgré les risques connus de la technologie, la recherche continue." }
+      {
+        "type": "Adverbe de manière",
+        "source": "Les robots travaillent avec efficacité.",
+        "answer": "Les robots travaillent efficacement."
+      },
+      {
+        "type": "Gérondif (manière)",
+        "source": "Il a programmé le robot. Il utilisait un langage innovant.",
+        "answer": "Il a programmé le robot en utilisant un langage innovant."
+      },
+      {
+        "type": "Voix passive",
+        "source": "Les scientifiques développeront des traitements révolutionnaires.",
+        "answer": "Des traitements révolutionnaires seront développés par les scientifiques."
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Les températures augmentent de manière alarmante.",
+        "answer": "L'augmentation alarmante des températures"
+      },
+      {
+        "type": "Bien que + subjonctif",
+        "source": "L'IA progresse rapidement. Elle ne peut pas remplacer la créativité humaine.",
+        "answer": "Bien que l'IA progresse rapidement, elle ne peut pas remplacer la créativité humaine."
+      },
+      {
+        "type": "Conséquence (si... que)",
+        "source": "Les progrès sont rapides. On peine à suivre le rythme.",
+        "answer": "Les progrès sont si rapides qu'on peine à suivre le rythme."
+      },
+      {
+        "type": "Grâce à",
+        "source": "La biotechnologie avance. De nouvelles thérapies voient le jour.",
+        "answer": "Grâce aux avancées de la biotechnologie, de nouvelles thérapies voient le jour."
+      },
+      {
+        "type": "Malgré + nom",
+        "source": "Les risques de la technologie sont connus. La recherche continue.",
+        "answer": "Malgré les risques connus de la technologie, la recherche continue."
+      }
     ]
   },
   {
     "unit_number": 12,
     "theme": "La force des arts",
-    "grammar_focus": ["Indicatif, subjonctif ou infinitif", "Les pronoms relatifs"],
-    "vocabulary_list": ["grotesque", "kitsch", "laid", "lamentable", "moche", "scandaleux", "snob", "vulgaire", "croûte", "mauvais goût", "horreur", "s'emballer", "abattu", "accablé", "affligé", "désespéré", "avoir le cafard", "broyer du noir", "rire jaune", "être vert de rage", "faire grise mine", "art-thérapie", "prescription muséale", "Art brut", "marchandisation de l'art", "collectionneur", "vernissage", "chef-d'œuvre", "sculpture", "toile"],
+    "grammar_focus": [
+      "Indicatif, subjonctif ou infinitif",
+      "Les pronoms relatifs"
+    ],
+    "vocabulary_list": [
+      "grotesque",
+      "kitsch",
+      "laid",
+      "lamentable",
+      "moche",
+      "scandaleux",
+      "snob",
+      "vulgaire",
+      "croûte",
+      "mauvais goût",
+      "horreur",
+      "s'emballer",
+      "abattu",
+      "accablé",
+      "affligé",
+      "désespéré",
+      "avoir le cafard",
+      "broyer du noir",
+      "rire jaune",
+      "être vert de rage",
+      "faire grise mine",
+      "art-thérapie",
+      "prescription muséale",
+      "Art brut",
+      "marchandisation de l'art",
+      "collectionneur",
+      "vernissage",
+      "chef-d'œuvre",
+      "sculpture",
+      "toile"
+    ],
     "b2_expression_focus": "Exprimer une réaction personnelle à une œuvre",
     "vocabulary": [
-      { "word": "chef-d'œuvre", "definition": "Œuvre considérée comme la plus accomplie d'un artiste ou d'un courant", "answer": "chef-d'œuvre", "article": "le" },
-      { "word": "vernissage", "definition": "Réception inaugurale d'une exposition d'art", "answer": "vernissage", "article": "le" },
-      { "word": "mécénat", "definition": "Soutien financier apporté par une entreprise ou un particulier à la création artistique", "answer": "mécénat", "article": "le" },
-      { "word": "avant-garde", "definition": "Mouvement artistique qui rompt avec les conventions établies", "answer": "avant-garde", "article": "l'" },
-      { "word": "art contemporain", "definition": "Ensemble des productions artistiques réalisées depuis la seconde moitié du XXe siècle", "answer": "art contemporain", "article": "l'" },
-      { "word": "subversif", "definition": "Qui cherche à renverser les valeurs ou l'ordre établi par la provocation", "answer": "subversif", "article": "" },
-      { "word": "esthétique", "definition": "Qui relève de la perception et de l'appréciation du beau", "answer": "esthétique", "article": "" },
-      { "word": "installation", "definition": "Œuvre d'art tridimensionnelle conçue pour transformer un espace", "answer": "installation", "article": "l'" },
-      { "word": "courant artistique", "definition": "Mouvement regroupant des artistes partageant des principes esthétiques communs", "answer": "courant artistique", "article": "le" },
-      { "word": "figuratif", "definition": "Qui représente des formes reconnaissables du monde réel", "answer": "figuratif", "article": "" },
-      { "word": "abstrait", "definition": "Qui ne cherche pas à représenter la réalité visible", "answer": "abstrait", "article": "" },
-      { "word": "performance", "definition": "Forme d'expression artistique où l'action de l'artiste constitue l'œuvre elle-même", "answer": "performance", "article": "la" }
+      {
+        "word": "chef-d'œuvre",
+        "definition": "Œuvre considérée comme la plus accomplie d'un artiste ou d'un courant",
+        "answer": "chef-d'œuvre",
+        "article": "le"
+      },
+      {
+        "word": "vernissage",
+        "definition": "Réception inaugurale d'une exposition d'art",
+        "answer": "vernissage",
+        "article": "le"
+      },
+      {
+        "word": "mécénat",
+        "definition": "Soutien financier apporté par une entreprise ou un particulier à la création artistique",
+        "answer": "mécénat",
+        "article": "le"
+      },
+      {
+        "word": "avant-garde",
+        "definition": "Mouvement artistique qui rompt avec les conventions établies",
+        "answer": "avant-garde",
+        "article": "l'"
+      },
+      {
+        "word": "art contemporain",
+        "definition": "Ensemble des productions artistiques réalisées depuis la seconde moitié du XXe siècle",
+        "answer": "art contemporain",
+        "article": "l'"
+      },
+      {
+        "word": "subversif",
+        "definition": "Qui cherche à renverser les valeurs ou l'ordre établi par la provocation",
+        "answer": "subversif",
+        "article": ""
+      },
+      {
+        "word": "esthétique",
+        "definition": "Qui relève de la perception et de l'appréciation du beau",
+        "answer": "esthétique",
+        "article": ""
+      },
+      {
+        "word": "installation",
+        "definition": "Œuvre d'art tridimensionnelle conçue pour transformer un espace",
+        "answer": "installation",
+        "article": "l'"
+      },
+      {
+        "word": "courant artistique",
+        "definition": "Mouvement regroupant des artistes partageant des principes esthétiques communs",
+        "answer": "courant artistique",
+        "article": "le"
+      },
+      {
+        "word": "figuratif",
+        "definition": "Qui représente des formes reconnaissables du monde réel",
+        "answer": "figuratif",
+        "article": ""
+      },
+      {
+        "word": "abstrait",
+        "definition": "Qui ne cherche pas à représenter la réalité visible",
+        "answer": "abstrait",
+        "article": ""
+      },
+      {
+        "word": "performance",
+        "definition": "Forme d'expression artistique où l'action de l'artiste constitue l'œuvre elle-même",
+        "answer": "performance",
+        "article": "la"
+      }
     ],
     "expressions": [
-      { "expression": "Être touché par", "usage": "Ressentir une émotion face à une œuvre", "example": "J'ai été profondément touché par cette sculpture." },
-      { "expression": "Laisser indifférent", "usage": "Ne provoquer aucune émotion", "example": "Cette exposition ne m'a pas laissé indifférent." },
-      { "expression": "Avoir le souffle coupé", "usage": "Être saisi d'admiration", "example": "En entrant dans la chapelle Sixtine, j'ai eu le souffle coupé." },
-      { "expression": "Susciter la polémique", "usage": "Provoquer un débat vif", "example": "L'œuvre de cet artiste contemporain a suscité la polémique." },
-      { "expression": "En ce qui me concerne", "usage": "Donner son avis personnel", "example": "En ce qui me concerne, cet artiste est un génie." },
-      { "expression": "Il me semble que + indicatif", "usage": "Exprimer une opinion avec réserve", "example": "Il me semble que cette toile manque de profondeur." },
-      { "expression": "Quoi qu'on en dise", "usage": "Malgré les critiques", "example": "Quoi qu'on en dise, l'art contemporain a sa place dans les musées." },
-      { "expression": "Il est indéniable que", "usage": "Affirmer un fait incontestable", "example": "Il est indéniable que l'art influence la société." },
-      { "expression": "Pour peu que + subjonctif", "usage": "Exprimer une condition minimale", "example": "Pour peu qu'on s'y intéresse, l'art brut révèle une richesse insoupçonnée." },
-      { "expression": "N'en déplaise à", "usage": "Malgré le désaccord de", "example": "N'en déplaise aux puristes, le street art est un art à part entière." }
+      {
+        "expression": "Être touché par",
+        "usage": "Ressentir une émotion face à une œuvre",
+        "example": "J'ai été profondément touché par cette sculpture."
+      },
+      {
+        "expression": "Laisser indifférent",
+        "usage": "Ne provoquer aucune émotion",
+        "example": "Cette exposition ne m'a pas laissé indifférent."
+      },
+      {
+        "expression": "Avoir le souffle coupé",
+        "usage": "Être saisi d'admiration",
+        "example": "En entrant dans la chapelle Sixtine, j'ai eu le souffle coupé."
+      },
+      {
+        "expression": "Susciter la polémique",
+        "usage": "Provoquer un débat vif",
+        "example": "L'œuvre de cet artiste contemporain a suscité la polémique."
+      },
+      {
+        "expression": "En ce qui me concerne",
+        "usage": "Donner son avis personnel",
+        "example": "En ce qui me concerne, cet artiste est un génie."
+      },
+      {
+        "expression": "Il me semble que + indicatif",
+        "usage": "Exprimer une opinion avec réserve",
+        "example": "Il me semble que cette toile manque de profondeur."
+      },
+      {
+        "expression": "Quoi qu'on en dise",
+        "usage": "Malgré les critiques",
+        "example": "Quoi qu'on en dise, l'art contemporain a sa place dans les musées."
+      },
+      {
+        "expression": "Il est indéniable que",
+        "usage": "Affirmer un fait incontestable",
+        "example": "Il est indéniable que l'art influence la société."
+      },
+      {
+        "expression": "Pour peu que + subjonctif",
+        "usage": "Exprimer une condition minimale",
+        "example": "Pour peu qu'on s'y intéresse, l'art brut révèle une richesse insoupçonnée."
+      },
+      {
+        "expression": "N'en déplaise à",
+        "usage": "Malgré le désaccord de",
+        "example": "N'en déplaise aux puristes, le street art est un art à part entière."
+      }
     ],
     "conjugation_list": [
-      { "verb": "peindre", "tense": "Subjonctif présent", "person": "il", "answer": "peigne" },
-      { "verb": "plaire", "tense": "Subjonctif présent", "person": "elle", "answer": "plaise" },
-      { "verb": "émouvoir", "tense": "Subjonctif présent", "person": "nous", "answer": "émouvions" },
-      { "verb": "créer", "tense": "Conditionnel passé", "person": "ils", "answer": "auraient créé" },
-      { "verb": "produire", "tense": "Conditionnel passé", "person": "nous", "answer": "aurions produit" },
-      { "verb": "peindre", "tense": "Conditionnel passé", "person": "elle", "answer": "aurait peint" },
-      { "verb": "concevoir", "tense": "Plus-que-parfait", "person": "vous", "answer": "aviez conçu" },
-      { "verb": "émouvoir", "tense": "Plus-que-parfait", "person": "il", "answer": "avait ému" },
-      { "verb": "reconnaître", "tense": "Futur antérieur", "person": "tu", "answer": "auras reconnu" },
-      { "verb": "séduire", "tense": "Futur antérieur", "person": "on", "answer": "aura séduit" }
+      {
+        "verb": "peindre",
+        "tense": "Subjonctif présent",
+        "person": "il",
+        "answer": "peigne"
+      },
+      {
+        "verb": "plaire",
+        "tense": "Subjonctif présent",
+        "person": "elle",
+        "answer": "plaise"
+      },
+      {
+        "verb": "émouvoir",
+        "tense": "Subjonctif présent",
+        "person": "nous",
+        "answer": "émouvions"
+      },
+      {
+        "verb": "créer",
+        "tense": "Conditionnel passé",
+        "person": "ils",
+        "answer": "auraient créé"
+      },
+      {
+        "verb": "produire",
+        "tense": "Conditionnel passé",
+        "person": "nous",
+        "answer": "aurions produit"
+      },
+      {
+        "verb": "peindre",
+        "tense": "Conditionnel passé",
+        "person": "elle",
+        "answer": "aurait peint"
+      },
+      {
+        "verb": "concevoir",
+        "tense": "Plus-que-parfait",
+        "person": "vous",
+        "answer": "aviez conçu"
+      },
+      {
+        "verb": "émouvoir",
+        "tense": "Plus-que-parfait",
+        "person": "il",
+        "answer": "avait ému"
+      },
+      {
+        "verb": "reconnaître",
+        "tense": "Futur antérieur",
+        "person": "tu",
+        "answer": "auras reconnu"
+      },
+      {
+        "verb": "séduire",
+        "tense": "Futur antérieur",
+        "person": "on",
+        "answer": "aura séduit"
+      }
     ],
     "grammar_transforms": [
-      { "type": "Indicatif → Subjonctif", "source": "Je crois que cette œuvre est géniale.", "answer": "Je ne crois pas que cette œuvre soit géniale." },
-      { "type": "Indicatif → Subjonctif", "source": "Il est sûr que nous comprenons cette œuvre.", "answer": "Il n'est pas sûr que nous comprenions cette œuvre." },
-      { "type": "Pronom relatif (dont)", "source": "C'est un artiste. Je vous ai parlé de cet artiste.", "answer": "C'est l'artiste dont je vous ai parlé." },
-      { "type": "Pronom relatif (auquel)", "source": "C'est le courant artistique. Il s'intéresse à ce courant.", "answer": "C'est le courant artistique auquel il s'intéresse." },
-      { "type": "Pronom relatif (sans lequel)", "source": "Ce mécène a financé le projet. Sans lui, l'exposition n'aurait pas eu lieu.", "answer": "C'est le mécène sans lequel l'exposition n'aurait pas eu lieu." },
-      { "type": "Voix passive", "source": "Le musée a exposé une collection impressionnante.", "answer": "Une collection impressionnante a été exposée par le musée." },
-      { "type": "Nominalisation", "source": "Les œuvres sont restaurées minutieusement.", "answer": "La restauration minutieuse des œuvres" },
-      { "type": "Bien que + subjonctif", "source": "Cette sculpture est controversée. Elle attire des milliers de visiteurs.", "answer": "Bien que cette sculpture soit controversée, elle attire des milliers de visiteurs." },
-      { "type": "Malgré + nom", "source": "Les critiques ont été sévères. L'artiste continue de créer.", "answer": "Malgré les critiques sévères, l'artiste continue de créer." },
-      { "type": "Pour que + subjonctif", "source": "Le musée organise des ateliers gratuits. Les jeunes découvrent l'art.", "answer": "Le musée organise des ateliers gratuits pour que les jeunes découvrent l'art." }
+      {
+        "type": "Indicatif → Subjonctif",
+        "source": "Je crois que cette œuvre est géniale.",
+        "answer": "Je ne crois pas que cette œuvre soit géniale."
+      },
+      {
+        "type": "Indicatif → Subjonctif",
+        "source": "Il est sûr que nous comprenons cette œuvre.",
+        "answer": "Il n'est pas sûr que nous comprenions cette œuvre."
+      },
+      {
+        "type": "Pronom relatif (dont)",
+        "source": "C'est un artiste. Je vous ai parlé de cet artiste.",
+        "answer": "C'est l'artiste dont je vous ai parlé."
+      },
+      {
+        "type": "Pronom relatif (auquel)",
+        "source": "C'est le courant artistique. Il s'intéresse à ce courant.",
+        "answer": "C'est le courant artistique auquel il s'intéresse."
+      },
+      {
+        "type": "Pronom relatif (sans lequel)",
+        "source": "Ce mécène a financé le projet. Sans lui, l'exposition n'aurait pas eu lieu.",
+        "answer": "C'est le mécène sans lequel l'exposition n'aurait pas eu lieu."
+      },
+      {
+        "type": "Voix passive",
+        "source": "Le musée a exposé une collection impressionnante.",
+        "answer": "Une collection impressionnante a été exposée par le musée."
+      },
+      {
+        "type": "Nominalisation",
+        "source": "Les œuvres sont restaurées minutieusement.",
+        "answer": "La restauration minutieuse des œuvres"
+      },
+      {
+        "type": "Bien que + subjonctif",
+        "source": "Cette sculpture est controversée. Elle attire des milliers de visiteurs.",
+        "answer": "Bien que cette sculpture soit controversée, elle attire des milliers de visiteurs."
+      },
+      {
+        "type": "Malgré + nom",
+        "source": "Les critiques ont été sévères. L'artiste continue de créer.",
+        "answer": "Malgré les critiques sévères, l'artiste continue de créer."
+      },
+      {
+        "type": "Pour que + subjonctif",
+        "source": "Le musée organise des ateliers gratuits. Les jeunes découvrent l'art.",
+        "answer": "Le musée organise des ateliers gratuits pour que les jeunes découvrent l'art."
+      }
     ]
   }
 ]
