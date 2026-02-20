@@ -7,6 +7,8 @@ frontend:
         - npm ci
         - echo "OPENROUTER_API_KEY=$OPENROUTER_API_KEY" > .env.local
         - echo "NEXT_PUBLIC_APP_PASSWORD=$NEXT_PUBLIC_APP_PASSWORD" >> .env.local
+        # 清除 Next.js 编译缓存，确保 env var 重新内联进所有模块
+        - rm -rf .next/cache
     build:
       commands:
         - npm run build

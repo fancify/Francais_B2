@@ -5,11 +5,13 @@ import OpenAI from "openai";
 const OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1";
 const DEFAULT_MODEL = "google/gemini-2.0-flash-001";
 
+// 模块级别读取——webpack 会在构建时内联这个值
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY ?? "";
+
 function getClient(): OpenAI {
-  const apiKey = process.env.OPENROUTER_API_KEY;
-  if (!apiKey) throw new Error("OPENROUTER_API_KEY not configured");
+  if (!OPENROUTER_API_KEY) throw new Error("OPENROUTER_API_KEY not configured");
   return new OpenAI({
-    apiKey,
+    apiKey: OPENROUTER_API_KEY,
     baseURL: OPENROUTER_BASE_URL,
     defaultHeaders: {
       "HTTP-Referer": "https://vibe-francais.app",
