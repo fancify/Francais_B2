@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getSupabase } from "@/lib/supabase";
 
 /** GET /api/users — 返回所有用户 */
@@ -44,4 +44,23 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
   return NextResponse.json({ user: data }, { status: 201 });
+}
+
+/** DELETE /api/users?name=xxx — 删除用户及其进度 */
+export async function DELETE(req: NextRequest) {
+  const name = req.nextUrl.searchParams.get("name");
+  if (!name) {
+    return NextResponse.json({ error: "name is required" }, { status: 400 });
+  }
+
+  const sb = getSupabase();
+
+  // 先删 progress（FK 约束）
+  await sb.from("progress").delete().eq("user_name", name);
+
+  const { error } = await sb.from("users").delete().eq("name", name);
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+  return NextResponse.json({ ok: true });
 }

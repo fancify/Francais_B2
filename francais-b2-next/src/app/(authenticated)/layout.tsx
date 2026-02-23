@@ -14,7 +14,7 @@ export default function AuthenticatedLayout({
 }: {
   children: React.ReactNode;
 }): React.ReactElement | null {
-  const { authenticated, currentUser, selectUser, switchUser } = useApp();
+  const { authenticated, currentUser, lastUser, selectUser, switchUser } = useApp();
   const router = useRouter();
   const [units, setUnits] = useState<Unit[]>([]);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -31,7 +31,7 @@ export default function AuthenticatedLayout({
 
   // 已认证但未选择用户 → 显示 UserPicker
   if (!currentUser) {
-    return <UserPicker onSelect={selectUser} />;
+    return <UserPicker onSelect={selectUser} lastUser={lastUser} />;
   }
 
   return (

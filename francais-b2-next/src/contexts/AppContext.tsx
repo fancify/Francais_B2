@@ -28,6 +28,7 @@ interface AppState {
   scores: Scores;
   weakPoints: WeakPoint[];
   currentUser: string | null;
+  lastUser: string | null;
   login: (password: string) => boolean;
   logout: () => void;
   addScore: (unit: number, pct: number) => void;
@@ -46,40 +47,21 @@ export function AppProvider({ children }: { children: ReactNode }): React.ReactE
   const [scores, setScores] = useState<Scores>({});
   const [weakPoints, setWeakPoints] = useState<WeakPoint[]>([]);
   const [currentUser, setCurrentUser] = useState<string | null>(null);
+  // 上次使用的用户名（仅用于 UserPicker 高亮，不自动登录）
+  const [lastUser, setLastUser] = useState<string | null>(null);
   const [initialized, setInitialized] = useState(false);
 
   // 防止 Supabase sync 的 debounce timer
   const syncTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // 初始化：检查 localStorage 里的 currentUser，然后拉取进度
+  // 初始化：读 lastUser 用于高亮，但不自动选择
   useEffect(() => {
     const savedUser =
       typeof window !== "undefined"
         ? localStorage.getItem(USER_KEY)
         : null;
-
-    if (savedUser) {
-      setCurrentUser(savedUser);
-      // 优先从 Supabase 拉取
-      fetchSupabaseProgress(savedUser).then((remote) => {
-        if (remote && (Object.keys(remote.scores).length > 0 || remote.weak_points.length > 0)) {
-          setScores(remote.scores);
-          setWeakPoints(remote.weak_points);
-        } else {
-          // Supabase 无数据或失败，fallback 到 localStorage
-          const local = loadProgress();
-          setScores(local.scores);
-          setWeakPoints(local.weak_points);
-        }
-        setInitialized(true);
-      });
-    } else {
-      // 无用户，加载 localStorage 作为兜底（保持旧行为）
-      const local = loadProgress();
-      setScores(local.scores);
-      setWeakPoints(local.weak_points);
-      setInitialized(true);
-    }
+    setLastUser(savedUser);
+    setInitialized(true);
   }, []);
 
   // scores 或 weakPoints 变更时自动持久化
@@ -116,6 +98,7 @@ export function AppProvider({ children }: { children: ReactNode }): React.ReactE
       localStorage.setItem(USER_KEY, name);
     }
     setCurrentUser(name);
+    setLastUser(name);
 
     // 从 Supabase 拉取该用户的进度
     fetchSupabaseProgress(name).then((remote) => {
@@ -129,11 +112,8 @@ export function AppProvider({ children }: { children: ReactNode }): React.ReactE
     });
   }, []);
 
-  /** 切换用户：清除 currentUser 显示 UserPicker */
+  /** 切换用户：回到 UserPicker（保留 lastUser 用于高亮） */
   const switchUser = useCallback((): void => {
-    if (typeof window !== "undefined") {
-      localStorage.removeItem(USER_KEY);
-    }
     setCurrentUser(null);
   }, []);
 
@@ -193,6 +173,7 @@ export function AppProvider({ children }: { children: ReactNode }): React.ReactE
     scores,
     weakPoints,
     currentUser,
+    lastUser,
     login,
     logout,
     addScore,
