@@ -227,9 +227,8 @@ function ExprSection({ questions, answers, onAnswer }: ExprSectionProps): React.
         {questions.map((q, i) => {
           const hint = q.hint ?? "";
           const blanked = hint ? blankExpression(hint, q.answer) : "";
-          // blanking 成功时显示挖空句子；失败时仍显示原句作为上下文
-          // （失败说明 expression 不是逐字出现在例句中，不会泄露答案）
-          const showSentence = !!hint;
+          // 仅当 blanking 成功（句子有变化）时才显示；失败时隐藏以避免泄露答案
+          const showSentence = blanked !== "" && blanked !== hint;
 
           return (
             <div key={q._key} className="space-y-2">
