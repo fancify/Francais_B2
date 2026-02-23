@@ -204,13 +204,8 @@ export function generateUnitQuiz(
     nVocab,
     weakQuota(nVocab),
   );
-  const exprQs = splitWeakAndNormal(
-    expr,
-    exprKey,
-    weakKeysByType.expression,
-    nExpr,
-    weakQuota(nExpr),
-  );
+  // 表达题：全部纳入（不走 splitWeakAndNormal，避免 weakQuota 截断），只做洗牌
+  const exprQs = shuffle([...expr]);
   const conjQs = splitWeakAndNormal(
     conj,
     conjKey,
