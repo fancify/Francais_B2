@@ -49,8 +49,19 @@ export default function AuthenticatedLayout({
         }`}
       >
         <div className="mx-auto max-w-5xl px-6 py-8 pt-16 lg:pt-8">
-          <div className="mb-6">
+          <div className="mb-6 flex items-center justify-between">
             <Logo />
+            <button
+              type="button"
+              onClick={switchUser}
+              className="flex items-center gap-2 rounded-full border border-apple-border bg-apple-card px-3 py-1.5 text-sm font-medium text-apple-text shadow-sm transition-colors hover:bg-apple-bg"
+              title="Changer d'utilisateur"
+            >
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-apple-blue/10 text-xs font-semibold text-apple-blue">
+                {currentUser.charAt(0).toUpperCase()}
+              </span>
+              {currentUser}
+            </button>
           </div>
           {children}
         </div>
