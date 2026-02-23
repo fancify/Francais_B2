@@ -5,6 +5,8 @@ const nextConfig = {
   // OPENROUTER_API_KEY 只在 server-only 代码中引用，不会泄露到客户端 bundle。
   env: {
     OPENROUTER_API_KEY: process.env.OPENROUTER_API_KEY,
+    SUPABASE_URL: process.env.SUPABASE_URL,
+    SUPABASE_SERVICE_KEY: process.env.SUPABASE_SERVICE_KEY,
   },
 };
 

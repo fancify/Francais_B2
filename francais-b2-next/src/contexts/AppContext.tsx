@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * 全局状态 — 管理 auth（密码验证）、scores、weak_points。
+ * 全局状态 — 管理 auth（密码验证）、scores、weak_points、currentUser。
  */
 
 import {
@@ -10,20 +10,31 @@ import {
   useState,
   useEffect,
   useCallback,
+  useRef,
   type ReactNode,
 } from "react";
 import type { Scores, WeakPoint, WeakPointType } from "@/lib/types";
-import { loadProgress, saveProgress } from "@/lib/storage";
+import {
+  loadProgress,
+  saveProgress,
+  fetchSupabaseProgress,
+  syncToSupabase,
+} from "@/lib/storage";
+
+const USER_KEY = "vibe-francais-current-user";
 
 interface AppState {
   authenticated: boolean;
   scores: Scores;
   weakPoints: WeakPoint[];
+  currentUser: string | null;
   login: (password: string) => boolean;
   logout: () => void;
   addScore: (unit: number, pct: number) => void;
   addWeakPoint: (type: WeakPointType, unit: number, key: string, item: string) => void;
   reduceWeakPoint: (type: WeakPointType, unit: number, key: string) => void;
+  selectUser: (name: string) => void;
+  switchUser: () => void;
 }
 
 const AppContext = createContext<AppState | null>(null);
@@ -34,24 +45,58 @@ export function AppProvider({ children }: { children: ReactNode }): React.ReactE
   const [authenticated, setAuthenticated] = useState(false);
   const [scores, setScores] = useState<Scores>({});
   const [weakPoints, setWeakPoints] = useState<WeakPoint[]>([]);
+  const [currentUser, setCurrentUser] = useState<string | null>(null);
+  const [initialized, setInitialized] = useState(false);
 
-  // 初始化：从 localStorage 加载进度
+  // 防止 Supabase sync 的 debounce timer
+  const syncTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // 初始化：检查 localStorage 里的 currentUser，然后拉取进度
   useEffect(() => {
-    const data = loadProgress();
-    setScores(data.scores);
-    setWeakPoints(data.weak_points);
+    const savedUser =
+      typeof window !== "undefined"
+        ? localStorage.getItem(USER_KEY)
+        : null;
+
+    if (savedUser) {
+      setCurrentUser(savedUser);
+      // 优先从 Supabase 拉取
+      fetchSupabaseProgress(savedUser).then((remote) => {
+        if (remote && (Object.keys(remote.scores).length > 0 || remote.weak_points.length > 0)) {
+          setScores(remote.scores);
+          setWeakPoints(remote.weak_points);
+        } else {
+          // Supabase 无数据或失败，fallback 到 localStorage
+          const local = loadProgress();
+          setScores(local.scores);
+          setWeakPoints(local.weak_points);
+        }
+        setInitialized(true);
+      });
+    } else {
+      // 无用户，加载 localStorage 作为兜底（保持旧行为）
+      const local = loadProgress();
+      setScores(local.scores);
+      setWeakPoints(local.weak_points);
+      setInitialized(true);
+    }
   }, []);
 
   // scores 或 weakPoints 变更时自动持久化
-  // 用 ref 标记是否已完成初始加载，避免初始化时覆盖 localStorage
-  const [initialized, setInitialized] = useState(false);
   useEffect(() => {
-    if (!initialized) {
-      setInitialized(true);
-      return;
-    }
+    if (!initialized) return;
+
+    // 始终写 localStorage（即时）
     saveProgress(scores, weakPoints);
-  }, [scores, weakPoints, initialized]);
+
+    // 有用户时异步同步到 Supabase（debounce 1s）
+    if (currentUser) {
+      if (syncTimerRef.current) clearTimeout(syncTimerRef.current);
+      syncTimerRef.current = setTimeout(() => {
+        syncToSupabase(currentUser, scores, weakPoints);
+      }, 1000);
+    }
+  }, [scores, weakPoints, initialized, currentUser]);
 
   const login = useCallback((password: string): boolean => {
     if (password === APP_PASSWORD) {
@@ -63,6 +108,33 @@ export function AppProvider({ children }: { children: ReactNode }): React.ReactE
 
   const logout = useCallback((): void => {
     setAuthenticated(false);
+  }, []);
+
+  /** 选择用户后从 Supabase 加载进度 */
+  const selectUser = useCallback((name: string): void => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem(USER_KEY, name);
+    }
+    setCurrentUser(name);
+
+    // 从 Supabase 拉取该用户的进度
+    fetchSupabaseProgress(name).then((remote) => {
+      if (remote) {
+        setScores(remote.scores);
+        setWeakPoints(remote.weak_points);
+      } else {
+        setScores({});
+        setWeakPoints([]);
+      }
+    });
+  }, []);
+
+  /** 切换用户：清除 currentUser 显示 UserPicker */
+  const switchUser = useCallback((): void => {
+    if (typeof window !== "undefined") {
+      localStorage.removeItem(USER_KEY);
+    }
+    setCurrentUser(null);
   }, []);
 
   /** 追加百分比到 scores[unit]。 */
@@ -120,11 +192,14 @@ export function AppProvider({ children }: { children: ReactNode }): React.ReactE
     authenticated,
     scores,
     weakPoints,
+    currentUser,
     login,
     logout,
     addScore,
     addWeakPoint,
     reduceWeakPoint,
+    selectUser,
+    switchUser,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

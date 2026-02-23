@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useApp } from "@/contexts/AppContext";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { Logo } from "@/components/layout/Logo";
+import { UserPicker } from "@/components/UserPicker";
 import { loadUnits } from "@/lib/data";
 import type { Unit } from "@/lib/types";
 
@@ -13,7 +14,7 @@ export default function AuthenticatedLayout({
 }: {
   children: React.ReactNode;
 }): React.ReactElement | null {
-  const { authenticated } = useApp();
+  const { authenticated, currentUser, selectUser, switchUser } = useApp();
   const router = useRouter();
   const [units, setUnits] = useState<Unit[]>([]);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -28,12 +29,19 @@ export default function AuthenticatedLayout({
 
   if (!authenticated) return null;
 
+  // 已认证但未选择用户 → 显示 UserPicker
+  if (!currentUser) {
+    return <UserPicker onSelect={selectUser} />;
+  }
+
   return (
     <div className="min-h-screen bg-apple-bg">
       <Sidebar
         units={units.map((u) => ({ unit_number: u.unit_number, theme: u.theme }))}
         collapsed={sidebarCollapsed}
         onToggle={() => setSidebarCollapsed((v) => !v)}
+        currentUser={currentUser}
+        onSwitchUser={switchUser}
       />
       <main
         className={`transition-[padding] duration-300 ease-in-out ${

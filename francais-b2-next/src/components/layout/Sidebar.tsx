@@ -8,6 +8,8 @@ interface SidebarProps {
   units: { unit_number: number; theme: string }[];
   collapsed: boolean;
   onToggle: () => void;
+  currentUser: string;
+  onSwitchUser: () => void;
 }
 
 interface NavItem {
@@ -21,7 +23,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Examen Blanc", href: "/exam-blanc" },
 ];
 
-export function Sidebar({ units, collapsed, onToggle }: SidebarProps): React.ReactElement {
+export function Sidebar({ units, collapsed, onToggle, currentUser, onSwitchUser }: SidebarProps): React.ReactElement {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -148,6 +150,26 @@ export function Sidebar({ units, collapsed, onToggle }: SidebarProps): React.Rea
               </Link>
             );
           })}
+        </div>
+
+        {/* 底部用户区域 */}
+        <div className="border-t border-apple-border px-3 py-3">
+          <button
+            type="button"
+            onClick={onSwitchUser}
+            className="flex w-full items-center gap-3 rounded-[10px] px-3 py-2 transition-colors hover:bg-apple-bg"
+            title="Changer d'utilisateur"
+          >
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-apple-blue/10 text-sm font-semibold text-apple-blue">
+              {currentUser.charAt(0).toUpperCase()}
+            </span>
+            <span className="flex-1 truncate text-left text-sm font-medium text-apple-text">
+              {currentUser}
+            </span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="shrink-0 text-apple-secondary">
+              <path d="M6 3l2-2 2 2M6 13l2 2 2-2M8 1v14" />
+            </svg>
+          </button>
         </div>
       </aside>
     </>
