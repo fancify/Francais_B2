@@ -11,6 +11,7 @@ export interface ExpressionItem {
   expression: string;
   usage: string;
   example: string;
+  blanked_sentence?: string;
 }
 
 export interface ConjugationItem {

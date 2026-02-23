@@ -267,6 +267,7 @@ export function generateUnitQuiz(
     qtype: "fill" as const,
     prompt: e.usage,
     hint: e.example || undefined,
+    source: e.blanked_sentence || undefined,
     answer: e.expression,
     _key: exprKey(e),
   }));

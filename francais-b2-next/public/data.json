@@ -136,62 +136,74 @@
       {
         "expression": "Il va de soi que",
         "usage": "Introduire une évidence",
-        "example": "Il va de soi que nous devons protéger l'environnement."
+        "example": "Il va de soi que nous devons protéger l'environnement.",
+        "blanked_sentence": "{{Il va de soi que}} nous devons protéger l'environnement."
       },
       {
         "expression": "Force est de constater que",
         "usage": "Affirmer un fait indéniable",
-        "example": "Force est de constater que la biodiversité diminue."
+        "example": "Force est de constater que la biodiversité diminue.",
+        "blanked_sentence": "{{Force est de constater que}} la biodiversité diminue."
       },
       {
         "expression": "À condition que",
         "usage": "Exprimer une condition (+ subjonctif)",
-        "example": "Le recyclage sera efficace à condition que chacun y participe."
+        "example": "Le recyclage sera efficace à condition que chacun y participe.",
+        "blanked_sentence": "Le recyclage sera efficace {{à condition que}} chacun y participe."
       },
       {
         "expression": "En dépit de",
         "usage": "Exprimer la concession",
-        "example": "En dépit des avertissements, la déforestation se poursuit."
+        "example": "En dépit des avertissements, la déforestation se poursuit.",
+        "blanked_sentence": "{{En dépit des}} avertissements, la déforestation se poursuit."
       },
       {
         "expression": "C'est pourquoi",
         "usage": "Introduire une conséquence logique",
-        "example": "Les océans se réchauffent, c'est pourquoi les espèces migrent."
+        "example": "Les océans se réchauffent, c'est pourquoi les espèces migrent.",
+        "blanked_sentence": "Les océans se réchauffent, {{c'est pourquoi}} les espèces migrent."
       },
       {
         "expression": "Il est primordial de",
         "usage": "Exprimer l'importance (+ infinitif)",
-        "example": "Il est primordial de réduire notre empreinte carbone."
+        "example": "Il est primordial de réduire notre empreinte carbone.",
+        "blanked_sentence": "{{Il est primordial de}} réduire notre empreinte carbone."
       },
       {
         "expression": "Quoi qu'il en soit",
         "usage": "Conclure malgré des arguments contraires",
-        "example": "Quoi qu'il en soit, l'urgence écologique est réelle."
+        "example": "Quoi qu'il en soit, l'urgence écologique est réelle.",
+        "blanked_sentence": "{{Quoi qu'il en soit}}, l'urgence écologique est réelle."
       },
       {
         "expression": "D'autant plus que",
         "usage": "Renforcer un argument",
-        "example": "Il faut agir vite, d'autant plus que les glaciers fondent."
+        "example": "Il faut agir vite, d'autant plus que les glaciers fondent.",
+        "blanked_sentence": "Il faut agir vite, {{d'autant plus que}} les glaciers fondent."
       },
       {
         "expression": "Certes... mais",
         "usage": "Concéder un point avant de nuancer",
-        "example": "Certes le recyclage a un coût, mais il reste indispensable."
+        "example": "Certes le recyclage a un coût, mais il reste indispensable.",
+        "blanked_sentence": "{{Certes}} le recyclage a un coût, {{mais}} il reste indispensable."
       },
       {
         "expression": "Non seulement... mais aussi",
         "usage": "Ajouter et renforcer un argument",
-        "example": "Non seulement la pollution détruit les habitats, mais aussi elle menace notre santé."
+        "example": "Non seulement la pollution détruit les habitats, mais aussi elle menace notre santé.",
+        "blanked_sentence": "{{Non seulement}} la pollution détruit les habitats, {{mais aussi}} elle menace notre santé."
       },
       {
         "expression": "En revanche",
         "usage": "Opposer deux idées",
-        "example": "Les énergies fossiles polluent ; en revanche, le solaire est propre."
+        "example": "Les énergies fossiles polluent ; en revanche, le solaire est propre.",
+        "blanked_sentence": "Les énergies fossiles polluent ; {{en revanche}}, le solaire est propre."
       },
       {
         "expression": "Il n'en demeure pas moins que",
         "usage": "Maintenir un argument malgré une concession",
-        "example": "Il n'en demeure pas moins que les efforts restent insuffisants."
+        "example": "Il n'en demeure pas moins que les efforts restent insuffisants.",
+        "blanked_sentence": "{{Il n'en demeure pas moins que}} les efforts restent insuffisants."
       }
     ],
     "conjugation_list": [
@@ -394,42 +406,50 @@
       {
         "expression": "Être à découvert",
         "usage": "Avoir un solde bancaire négatif",
-        "example": "À la fin du mois, il est souvent à découvert."
+        "example": "À la fin du mois, il est souvent à découvert.",
+        "blanked_sentence": "À la fin du mois, il {{est}} souvent {{à découvert}}."
       },
       {
         "expression": "Joindre les deux bouts",
         "usage": "Avoir juste assez pour vivre",
-        "example": "Avec l'inflation, beaucoup de familles peinent à joindre les deux bouts."
+        "example": "Avec l'inflation, beaucoup de familles peinent à joindre les deux bouts.",
+        "blanked_sentence": "Avec l'inflation, beaucoup de familles peinent à {{joindre les deux bouts}}."
       },
       {
         "expression": "Mettre de l'argent de côté",
         "usage": "Épargner régulièrement",
-        "example": "Il est prudent de mettre de l'argent de côté chaque mois."
+        "example": "Il est prudent de mettre de l'argent de côté chaque mois.",
+        "blanked_sentence": "Il est prudent de {{mettre de l'argent de côté}} chaque mois."
       },
       {
         "expression": "Coûter les yeux de la tête",
         "usage": "Être extrêmement cher",
-        "example": "Cette voiture électrique coûte les yeux de la tête."
+        "example": "Cette voiture électrique coûte les yeux de la tête.",
+        "blanked_sentence": "Cette voiture électrique {{coûte les yeux de la tête}}."
       },
       {
         "expression": "Ne pas avoir un sou",
         "usage": "Être totalement sans argent",
-        "example": "Après ses études, il n'avait pas un sou."
+        "example": "Après ses études, il n'avait pas un sou.",
+        "blanked_sentence": "Après ses études, il {{n'avait pas un sou}}."
       },
       {
         "expression": "Faire des économies de bout de chandelle",
         "usage": "Économiser sur des détails insignifiants",
-        "example": "Couper le chauffage en hiver, c'est faire des économies de bout de chandelle."
+        "example": "Couper le chauffage en hiver, c'est faire des économies de bout de chandelle.",
+        "blanked_sentence": "Couper le chauffage en hiver, c'est {{faire des économies de bout de chandelle}}."
       },
       {
         "expression": "L'argent ne fait pas le bonheur",
         "usage": "Proverbe sur les limites de la richesse",
-        "example": "L'argent ne fait pas le bonheur, mais il y contribue."
+        "example": "L'argent ne fait pas le bonheur, mais il y contribue.",
+        "blanked_sentence": "{{L'argent ne fait pas le bonheur}}, mais il y contribue."
       },
       {
         "expression": "Avoir les moyens de",
         "usage": "Pouvoir se permettre financièrement",
-        "example": "Tout le monde n'a pas les moyens de s'offrir un logement décent."
+        "example": "Tout le monde n'a pas les moyens de s'offrir un logement décent.",
+        "blanked_sentence": "Tout le monde {{n'a pas les moyens de}} s'offrir un logement décent."
       }
     ],
     "conjugation_list": [
@@ -687,52 +707,62 @@
       {
         "expression": "Avoir le profil pour",
         "usage": "Correspondre aux critères d'un poste",
-        "example": "Elle a tout à fait le profil pour ce poste de responsable."
+        "example": "Elle a tout à fait le profil pour ce poste de responsable.",
+        "blanked_sentence": "Elle {{a}} tout à fait {{le profil pour}} ce poste de responsable."
       },
       {
         "expression": "Gravir les échelons",
         "usage": "Progresser dans la hiérarchie professionnelle",
-        "example": "Il a gravi les échelons en dix ans."
+        "example": "Il a gravi les échelons en dix ans.",
+        "blanked_sentence": "Il {{a gravi les échelons}} en dix ans."
       },
       {
         "expression": "Être sur la corde raide",
         "usage": "Être dans une situation professionnelle incertaine",
-        "example": "Avec un CDD, on est toujours sur la corde raide."
+        "example": "Avec un CDD, on est toujours sur la corde raide.",
+        "blanked_sentence": "Avec un CDD, on {{est}} toujours {{sur la corde raide}}."
       },
       {
         "expression": "Afin de + infinitif",
         "usage": "Exprimer le but",
-        "example": "Il a suivi une formation afin de se reconvertir."
+        "example": "Il a suivi une formation afin de se reconvertir.",
+        "blanked_sentence": "Il a suivi une formation {{afin de}} se reconvertir."
       },
       {
         "expression": "Dans le but de",
         "usage": "Exprimer l'objectif visé",
-        "example": "Elle s'est inscrite dans le but de décrocher un diplôme reconnu."
+        "example": "Elle s'est inscrite dans le but de décrocher un diplôme reconnu.",
+        "blanked_sentence": "Elle s'est inscrite {{dans le but de}} décrocher un diplôme reconnu."
       },
       {
         "expression": "À supposer que + subjonctif",
         "usage": "Formuler une hypothèse incertaine",
-        "example": "À supposer que tu réussisses le concours, où irais-tu ?"
+        "example": "À supposer que tu réussisses le concours, où irais-tu ?",
+        "blanked_sentence": "{{À supposer que}} tu réussisses le concours, où irais-tu ?"
       },
       {
         "expression": "Au cas où + conditionnel",
         "usage": "Exprimer une éventualité",
-        "example": "Au cas où tu ne serais pas admis, prépare un plan B."
+        "example": "Au cas où tu ne serais pas admis, prépare un plan B.",
+        "blanked_sentence": "{{Au cas où}} tu ne serais pas admis, prépare un plan B."
       },
       {
         "expression": "Quand bien même + conditionnel",
         "usage": "Exprimer une concession forte",
-        "example": "Quand bien même il aurait un master, il ne trouverait pas d'emploi."
+        "example": "Quand bien même il aurait un master, il ne trouverait pas d'emploi.",
+        "blanked_sentence": "{{Quand bien même}} il aurait un master, il ne trouverait pas d'emploi."
       },
       {
         "expression": "Mettre toutes les chances de son côté",
         "usage": "Maximiser ses possibilités de réussite",
-        "example": "Pour mettre toutes les chances de son côté, elle a fait trois stages."
+        "example": "Pour mettre toutes les chances de son côté, elle a fait trois stages.",
+        "blanked_sentence": "Pour {{mettre toutes les chances de son côté}}, elle a fait trois stages."
       },
       {
         "expression": "Se remettre en question",
         "usage": "Réfléchir à ses choix et les réévaluer",
-        "example": "Après son licenciement, il a dû se remettre en question."
+        "example": "Après son licenciement, il a dû se remettre en question.",
+        "blanked_sentence": "Après son licenciement, il a dû {{se remettre en question}}."
       }
     ],
     "conjugation_list": [
@@ -956,42 +986,50 @@
       {
         "expression": "Être accro à",
         "usage": "Être dépendant de quelque chose",
-        "example": "Les adolescents sont accro aux réseaux sociaux."
+        "example": "Les adolescents sont accro aux réseaux sociaux.",
+        "blanked_sentence": "Les adolescents {{sont accro aux}} réseaux sociaux."
       },
       {
         "expression": "Faire le buzz",
         "usage": "Devenir viral et susciter l'attention médiatique",
-        "example": "Cette vidéo a fait le buzz en quelques heures."
+        "example": "Cette vidéo a fait le buzz en quelques heures.",
+        "blanked_sentence": "Cette vidéo {{a fait le buzz}} en quelques heures."
       },
       {
         "expression": "Couper le cordon numérique",
         "usage": "Se déconnecter volontairement des écrans",
-        "example": "Pendant les vacances, j'essaie de couper le cordon numérique."
+        "example": "Pendant les vacances, j'essaie de couper le cordon numérique.",
+        "blanked_sentence": "Pendant les vacances, j'essaie de {{couper le cordon numérique}}."
       },
       {
         "expression": "Prendre du recul",
         "usage": "S'éloigner pour mieux analyser une situation",
-        "example": "Il faut prendre du recul par rapport aux informations en ligne."
+        "example": "Il faut prendre du recul par rapport aux informations en ligne.",
+        "blanked_sentence": "Il faut {{prendre du recul}} par rapport aux informations en ligne."
       },
       {
         "expression": "Étant donné que",
         "usage": "Introduire une cause établie",
-        "example": "Étant donné que tout est en ligne, l'illectronisme est un vrai handicap."
+        "example": "Étant donné que tout est en ligne, l'illectronisme est un vrai handicap.",
+        "blanked_sentence": "{{Étant donné que}} tout est en ligne, l'illectronisme est un vrai handicap."
       },
       {
         "expression": "Sous prétexte que",
         "usage": "Indiquer une cause jugée fausse ou douteuse",
-        "example": "Il refuse de voter en ligne sous prétexte que ce n'est pas sécurisé."
+        "example": "Il refuse de voter en ligne sous prétexte que ce n'est pas sécurisé.",
+        "blanked_sentence": "Il refuse de voter en ligne {{sous prétexte que}} ce n'est pas sécurisé."
       },
       {
         "expression": "Il m'a affirmé que",
         "usage": "Rapporter des propos au passé",
-        "example": "Il m'a affirmé qu'il ne consultait jamais les réseaux sociaux."
+        "example": "Il m'a affirmé qu'il ne consultait jamais les réseaux sociaux.",
+        "blanked_sentence": "{{Il m'a affirmé qu'}}il ne consultait jamais les réseaux sociaux."
       },
       {
         "expression": "À force de + infinitif",
         "usage": "Exprimer une cause répétée menant à un résultat",
-        "example": "À force de scroller, elle a perdu la notion du temps."
+        "example": "À force de scroller, elle a perdu la notion du temps.",
+        "blanked_sentence": "{{À force de}} scroller, elle a perdu la notion du temps."
       }
     ],
     "conjugation_list": [
@@ -1235,42 +1273,50 @@
       {
         "expression": "À l'époque de",
         "usage": "Situer dans une période historique",
-        "example": "À l'époque de la Révolution, les droits fondamentaux ont été proclamés."
+        "example": "À l'époque de la Révolution, les droits fondamentaux ont été proclamés.",
+        "blanked_sentence": "{{À l'époque de}} la Révolution, les droits fondamentaux ont été proclamés."
       },
       {
         "expression": "Au fil des siècles",
         "usage": "Exprimer une évolution progressive dans le temps",
-        "example": "Au fil des siècles, les mentalités ont profondément évolué."
+        "example": "Au fil des siècles, les mentalités ont profondément évolué.",
+        "blanked_sentence": "{{Au fil des siècles}}, les mentalités ont profondément évolué."
       },
       {
         "expression": "Bien que + subjonctif",
         "usage": "Exprimer la concession",
-        "example": "Bien que la guerre ait été terrible, elle a renforcé la solidarité nationale."
+        "example": "Bien que la guerre ait été terrible, elle a renforcé la solidarité nationale.",
+        "blanked_sentence": "{{Bien que}} la guerre ait été terrible, elle a renforcé la solidarité nationale."
       },
       {
         "expression": "Avoir beau + infinitif",
         "usage": "Exprimer une concession forte",
-        "example": "Il avait beau protester, personne ne l'écoutait."
+        "example": "Il avait beau protester, personne ne l'écoutait.",
+        "blanked_sentence": "Il {{avait beau}} protester, personne ne l'écoutait."
       },
       {
         "expression": "Toutefois",
         "usage": "Introduire une opposition nuancée",
-        "example": "La monarchie semblait solide ; toutefois, le mécontentement grandissait."
+        "example": "La monarchie semblait solide ; toutefois, le mécontentement grandissait.",
+        "blanked_sentence": "La monarchie semblait solide ; {{toutefois}}, le mécontentement grandissait."
       },
       {
         "expression": "Néanmoins",
         "usage": "Marquer une opposition après une concession",
-        "example": "L'esclavage a été aboli ; néanmoins, les discriminations ont persisté."
+        "example": "L'esclavage a été aboli ; néanmoins, les discriminations ont persisté.",
+        "blanked_sentence": "L'esclavage a été aboli ; {{néanmoins}}, les discriminations ont persisté."
       },
       {
         "expression": "En dépit du fait que",
         "usage": "Exprimer la concession de manière formelle",
-        "example": "En dépit du fait que l'armistice ait été signé, les tensions restaient vives."
+        "example": "En dépit du fait que l'armistice ait été signé, les tensions restaient vives.",
+        "blanked_sentence": "{{En dépit du fait que}} l'armistice ait été signé, les tensions restaient vives."
       },
       {
         "expression": "Alors que",
         "usage": "Opposer deux faits simultanés",
-        "example": "Alors que la guerre faisait rage, des résistants s'organisaient dans l'ombre."
+        "example": "Alors que la guerre faisait rage, des résistants s'organisaient dans l'ombre.",
+        "blanked_sentence": "{{Alors que}} la guerre faisait rage, des résistants s'organisaient dans l'ombre."
       }
     ],
     "conjugation_list": [
@@ -1540,62 +1586,74 @@
       {
         "expression": "Prendre le large",
         "usage": "Partir en voyage, s'éloigner",
-        "example": "Après des mois de travail, il a décidé de prendre le large."
+        "example": "Après des mois de travail, il a décidé de prendre le large.",
+        "blanked_sentence": "Après des mois de travail, il a décidé de {{prendre le large}}."
       },
       {
         "expression": "Sortir des sentiers battus",
         "usage": "Explorer des lieux peu connus",
-        "example": "Elle préfère sortir des sentiers battus plutôt que de suivre un guide."
+        "example": "Elle préfère sortir des sentiers battus plutôt que de suivre un guide.",
+        "blanked_sentence": "Elle préfère {{sortir des sentiers battus}} plutôt que de suivre un guide."
       },
       {
         "expression": "Être en terrain connu",
         "usage": "Se retrouver dans un lieu familier",
-        "example": "Après trois voyages à Rome, il est en terrain connu."
+        "example": "Après trois voyages à Rome, il est en terrain connu.",
+        "blanked_sentence": "Après trois voyages à Rome, il {{est en terrain connu}}."
       },
       {
         "expression": "Avoir la bougeotte",
         "usage": "Avoir constamment envie de voyager",
-        "example": "Depuis l'enfance, elle a la bougeotte."
+        "example": "Depuis l'enfance, elle a la bougeotte.",
+        "blanked_sentence": "Depuis l'enfance, elle {{a la bougeotte}}."
       },
       {
         "expression": "D'autant plus... que",
         "usage": "Renforcer une comparaison",
-        "example": "Le sommet est d'autant plus impressionnant que l'effort pour l'atteindre a été long."
+        "example": "Le sommet est d'autant plus impressionnant que l'effort pour l'atteindre a été long.",
+        "blanked_sentence": "Le sommet est {{d'autant plus}} impressionnant {{que}} l'effort pour l'atteindre a été long."
       },
       {
         "expression": "Bien moins... que",
         "usage": "Nuancer une comparaison par infériorité",
-        "example": "Ce village est bien moins touristique que la côte."
+        "example": "Ce village est bien moins touristique que la côte.",
+        "blanked_sentence": "Ce village est {{bien moins}} touristi{{que}} {{que}} la côte."
       },
       {
         "expression": "Autant... autant",
         "usage": "Comparer deux réalités opposées",
-        "example": "Autant la plaine est monotone, autant la montagne est spectaculaire."
+        "example": "Autant la plaine est monotone, autant la montagne est spectaculaire.",
+        "blanked_sentence": "{{Autant}} la plaine est monotone, {{autant}} la montagne est spectaculaire."
       },
       {
         "expression": "Contrairement à",
         "usage": "Introduire un contraste",
-        "example": "Contrairement à ce qu'on imagine, le désert est riche en biodiversité."
+        "example": "Contrairement à ce qu'on imagine, le désert est riche en biodiversité.",
+        "blanked_sentence": "{{Contrairement à}} ce qu'on imagine, le désert est riche en biodiversité."
       },
       {
         "expression": "Aux alentours de",
         "usage": "Indiquer la proximité géographique",
-        "example": "Aux alentours du village, on trouve de nombreux sentiers de randonnée."
+        "example": "Aux alentours du village, on trouve de nombreux sentiers de randonnée.",
+        "blanked_sentence": "{{Aux alentours du}} village, on trouve de nombreux sentiers de randonnée."
       },
       {
         "expression": "Au cœur de",
         "usage": "Situer au centre d'un espace",
-        "example": "L'auberge se trouve au cœur de la forêt."
+        "example": "L'auberge se trouve au cœur de la forêt.",
+        "blanked_sentence": "L'auberge se trouve {{au cœur de}} la forêt."
       },
       {
         "expression": "À flanc de montagne",
         "usage": "Situer sur le versant d'une montagne",
-        "example": "Le village est construit à flanc de montagne."
+        "example": "Le village est construit à flanc de montagne.",
+        "blanked_sentence": "Le village est construit {{à flanc de montagne}}."
       },
       {
         "expression": "Faire escale",
         "usage": "S'arrêter brièvement au cours d'un voyage",
-        "example": "Le navire a fait escale dans trois ports méditerranéens."
+        "example": "Le navire a fait escale dans trois ports méditerranéens.",
+        "blanked_sentence": "Le navire {{a fait escale}} dans trois ports méditerranéens."
       }
     ],
     "conjugation_list": [
@@ -1797,42 +1855,50 @@
       {
         "expression": "Faire la une",
         "usage": "Être en première page d'un journal",
-        "example": "Le scandale a fait la une de tous les journaux."
+        "example": "Le scandale a fait la une de tous les journaux.",
+        "blanked_sentence": "Le scandale {{a fait la une}} de tous les journaux."
       },
       {
         "expression": "Relayer une information",
         "usage": "Transmettre et diffuser une nouvelle",
-        "example": "Les réseaux sociaux relaient l'information en temps réel."
+        "example": "Les réseaux sociaux relaient l'information en temps réel.",
+        "blanked_sentence": "Les réseaux sociaux {{relaient l'information}} en temps réel."
       },
       {
         "expression": "Mettre en lumière",
         "usage": "Révéler un fait au grand public",
-        "example": "L'enquête a mis en lumière des pratiques frauduleuses."
+        "example": "L'enquête a mis en lumière des pratiques frauduleuses.",
+        "blanked_sentence": "L'enquête {{a mis en lumière}} des pratiques frauduleuses."
       },
       {
         "expression": "Passer sous silence",
         "usage": "Ne pas mentionner volontairement",
-        "example": "Les médias ont passé sous silence cet événement."
+        "example": "Les médias ont passé sous silence cet événement.",
+        "blanked_sentence": "Les médias {{ont passé sous silence}} cet événement."
       },
       {
         "expression": "Quoi que + subjonctif",
         "usage": "Exprimer une concession totale",
-        "example": "Quoi que disent les médias, il faut vérifier les sources."
+        "example": "Quoi que disent les médias, il faut vérifier les sources.",
+        "blanked_sentence": "{{Quoi que}} disent les médias, il faut vérifier les sources."
       },
       {
         "expression": "Quel que soit + subjonctif",
         "usage": "Exprimer l'indifférence face aux circonstances",
-        "example": "Quelle que soit la source, il faut la vérifier."
+        "example": "Quelle que soit la source, il faut la vérifier.",
+        "blanked_sentence": "{{Quelle que soit}} la source, il faut la vérifier."
       },
       {
         "expression": "Où que + subjonctif",
         "usage": "Exprimer l'indifférence de lieu",
-        "example": "Où que vous soyez, l'information vous parvient instantanément."
+        "example": "Où que vous soyez, l'information vous parvient instantanément.",
+        "blanked_sentence": "{{Où que}} vous soyez, l'information vous parvient instantanément."
       },
       {
         "expression": "Qui que + subjonctif",
         "usage": "Exprimer l'indifférence de personne",
-        "example": "Qui que vous soyez, vous avez le droit à une information fiable."
+        "example": "Qui que vous soyez, vous avez le droit à une information fiable.",
+        "blanked_sentence": "{{Qui que}} vous soyez, vous avez le droit à une information fiable."
       }
     ],
     "conjugation_list": [
@@ -2088,52 +2154,62 @@
       {
         "expression": "Avoir une santé de fer",
         "usage": "Être rarement malade",
-        "example": "Malgré son âge, elle a une santé de fer."
+        "example": "Malgré son âge, elle a une santé de fer.",
+        "blanked_sentence": "Malgré son âge, elle {{a une santé de fer}}."
       },
       {
         "expression": "Être sur pied",
         "usage": "Être rétabli après une maladie",
-        "example": "Après deux semaines de repos, il est de nouveau sur pied."
+        "example": "Après deux semaines de repos, il est de nouveau sur pied.",
+        "blanked_sentence": "Après deux semaines de repos, il {{est}} de nouveau {{sur pied}}."
       },
       {
         "expression": "Se porter comme un charme",
         "usage": "Être en excellente santé",
-        "example": "Après l'opération, il se porte comme un charme."
+        "example": "Après l'opération, il se porte comme un charme.",
+        "blanked_sentence": "Après l'opération, il {{se porte comme un charme}}."
       },
       {
         "expression": "Garder le moral",
         "usage": "Rester optimiste malgré la difficulté",
-        "example": "Même hospitalisé, il garde le moral."
+        "example": "Même hospitalisé, il garde le moral.",
+        "blanked_sentence": "Même hospitalisé, il {{garde le moral}}."
       },
       {
         "expression": "C'est... qui (mise en relief)",
         "usage": "Mettre en relief le sujet",
-        "example": "C'est la prévention qui sauve le plus de vies."
+        "example": "C'est la prévention qui sauve le plus de vies.",
+        "blanked_sentence": "{{C'est}} la prévention {{qui}} sauve le plus de vies."
       },
       {
         "expression": "C'est... que (mise en relief)",
         "usage": "Mettre en relief le complément",
-        "example": "C'est à l'hôpital que le blessé a été soigné."
+        "example": "C'est à l'hôpital que le blessé a été soigné.",
+        "blanked_sentence": "{{C'est}} à l'hôpital {{que}} le blessé a été soigné."
       },
       {
         "expression": "Dès que + indicatif",
         "usage": "Exprimer une action immédiate",
-        "example": "Dès qu'il a ressenti la douleur, il a consulté un médecin."
+        "example": "Dès qu'il a ressenti la douleur, il a consulté un médecin.",
+        "blanked_sentence": "{{Dès qu'}}il a ressenti la douleur, il a consulté un médecin."
       },
       {
         "expression": "Avant que + subjonctif",
         "usage": "Exprimer l'antériorité",
-        "example": "Consultez un médecin avant que les symptômes ne s'aggravent."
+        "example": "Consultez un médecin avant que les symptômes ne s'aggravent.",
+        "blanked_sentence": "Consultez un médecin {{avant que}} les symptômes ne s'aggravent."
       },
       {
         "expression": "Depuis que",
         "usage": "Exprimer un point de départ temporel",
-        "example": "Depuis qu'il pratique le yoga, ses douleurs ont diminué."
+        "example": "Depuis qu'il pratique le yoga, ses douleurs ont diminué.",
+        "blanked_sentence": "{{Depuis qu'}}il pratique le yoga, ses douleurs ont diminué."
       },
       {
         "expression": "Jusqu'à ce que + subjonctif",
         "usage": "Exprimer une limite temporelle",
-        "example": "Prenez ce médicament jusqu'à ce que la fièvre disparaisse."
+        "example": "Prenez ce médicament jusqu'à ce que la fièvre disparaisse.",
+        "blanked_sentence": "Prenez ce médicament {{jusqu'à ce que}} la fièvre disparaisse."
       }
     ],
     "conjugation_list": [
@@ -2357,42 +2433,50 @@
       {
         "expression": "La moitié de",
         "usage": "Exprimer une proportion",
-        "example": "La moitié de la population mondiale vit avec moins de six dollars par jour."
+        "example": "La moitié de la population mondiale vit avec moins de six dollars par jour.",
+        "blanked_sentence": "{{La moitié de}} la population mondiale vit avec moins de six dollars par jour."
       },
       {
         "expression": "Un tiers des",
         "usage": "Exprimer une fraction",
-        "example": "Un tiers des bénéfices est redistribué aux employés."
+        "example": "Un tiers des bénéfices est redistribué aux employés.",
+        "blanked_sentence": "{{Un tiers des}} bénéfices est redistribué aux employés."
       },
       {
         "expression": "Les trois quarts de",
         "usage": "Exprimer une large majorité",
-        "example": "Les trois quarts des dons proviennent de particuliers."
+        "example": "Les trois quarts des dons proviennent de particuliers.",
+        "blanked_sentence": "{{Les trois quarts des}} dons proviennent de particuliers."
       },
       {
         "expression": "La quasi-totalité de",
         "usage": "Exprimer une proportion proche de l'intégralité",
-        "example": "La quasi-totalité des fonds a été investie dans l'éducation."
+        "example": "La quasi-totalité des fonds a été investie dans l'éducation.",
+        "blanked_sentence": "{{La quasi-totalité des}} fonds a été investie dans l'éducation."
       },
       {
         "expression": "Être loin du compte",
         "usage": "Être très éloigné de l'objectif",
-        "example": "En matière de redistribution, nous sommes encore loin du compte."
+        "example": "En matière de redistribution, nous sommes encore loin du compte.",
+        "blanked_sentence": "En matière de redistribution, nous {{sommes}} encore {{loin du compte}}."
       },
       {
         "expression": "Mettre en commun",
         "usage": "Partager des ressources collectivement",
-        "example": "Les habitants ont décidé de mettre en commun leurs outils de jardinage."
+        "example": "Les habitants ont décidé de mettre en commun leurs outils de jardinage.",
+        "blanked_sentence": "Les habitants ont décidé de {{mettre en commun}} leurs outils de jardinage."
       },
       {
         "expression": "À hauteur de",
         "usage": "Indiquer un montant ou une proportion",
-        "example": "L'État contribue à hauteur de 30 % du budget."
+        "example": "L'État contribue à hauteur de 30 % du budget.",
+        "blanked_sentence": "L'État contribue {{à hauteur de}} 30 % du budget."
       },
       {
         "expression": "Représenter une part de",
         "usage": "Quantifier une proportion",
-        "example": "Le bénévolat représente une part importante de l'économie sociale."
+        "example": "Le bénévolat représente une part importante de l'économie sociale.",
+        "blanked_sentence": "Le bénévolat {{représente une part}} importante de l'économie sociale."
       }
     ],
     "conjugation_list": [
@@ -2636,42 +2720,50 @@
       {
         "expression": "Ne pas mâcher ses mots",
         "usage": "Parler avec franchise et sans détour",
-        "example": "Le critique littéraire ne mâche pas ses mots."
+        "example": "Le critique littéraire ne mâche pas ses mots.",
+        "blanked_sentence": "Le critique littéraire {{ne mâche pas ses mots}}."
       },
       {
         "expression": "Avoir le mot juste",
         "usage": "Trouver l'expression la plus appropriée",
-        "example": "L'orateur avait toujours le mot juste."
+        "example": "L'orateur avait toujours le mot juste.",
+        "blanked_sentence": "L'orateur {{avait}} toujours {{le mot juste}}."
       },
       {
         "expression": "Tourner autour du pot",
         "usage": "Éviter de dire clairement ce qu'on pense",
-        "example": "Arrête de tourner autour du pot et dis ce que tu penses."
+        "example": "Arrête de tourner autour du pot et dis ce que tu penses.",
+        "blanked_sentence": "Arrête de {{tourner autour du pot}} et dis ce que tu penses."
       },
       {
         "expression": "Peser ses mots",
         "usage": "Choisir ses termes avec précaution",
-        "example": "En diplomatie, il faut peser ses mots."
+        "example": "En diplomatie, il faut peser ses mots.",
+        "blanked_sentence": "En diplomatie, il faut {{peser ses mots}}."
       },
       {
         "expression": "En parlant de",
         "usage": "Introduire un sujet par association",
-        "example": "En parlant de réforme, le projet de loi a été voté hier."
+        "example": "En parlant de réforme, le projet de loi a été voté hier.",
+        "blanked_sentence": "{{En parlant de}} réforme, le projet de loi a été voté hier."
       },
       {
         "expression": "D'une part... d'autre part",
         "usage": "Structurer deux arguments",
-        "example": "D'une part, l'anglais domine ; d'autre part, les langues régionales disparaissent."
+        "example": "D'une part, l'anglais domine ; d'autre part, les langues régionales disparaissent.",
+        "blanked_sentence": "{{D'une part}}, l'anglais domine ; {{d'autre part}}, les langues régionales disparaissent."
       },
       {
         "expression": "En ce qui concerne",
         "usage": "Introduire le sujet traité",
-        "example": "En ce qui concerne la francophonie, les enjeux sont considérables."
+        "example": "En ce qui concerne la francophonie, les enjeux sont considérables.",
+        "blanked_sentence": "{{En ce qui concerne}} la francophonie, les enjeux sont considérables."
       },
       {
         "expression": "Tout bien considéré",
         "usage": "Conclure après réflexion",
-        "example": "Tout bien considéré, la diversité linguistique est une richesse."
+        "example": "Tout bien considéré, la diversité linguistique est une richesse.",
+        "blanked_sentence": "{{Tout bien considéré}}, la diversité linguistique est une richesse."
       }
     ],
     "conjugation_list": [
@@ -2941,62 +3033,74 @@
       {
         "expression": "Aller de pair avec",
         "usage": "Être inséparable de",
-        "example": "Le progrès technologique va de pair avec de nouveaux défis éthiques."
+        "example": "Le progrès technologique va de pair avec de nouveaux défis éthiques.",
+        "blanked_sentence": "Le progrès technologique {{va de pair avec}} de nouveaux défis éthiques."
       },
       {
         "expression": "Être à la pointe de",
         "usage": "Être à l'avant-garde",
-        "example": "Ce laboratoire est à la pointe de la recherche en IA."
+        "example": "Ce laboratoire est à la pointe de la recherche en IA.",
+        "blanked_sentence": "Ce laboratoire {{est à la pointe de}} la recherche en IA."
       },
       {
         "expression": "Au détriment de",
         "usage": "Au préjudice de",
-        "example": "L'automatisation progresse au détriment de certains emplois."
+        "example": "L'automatisation progresse au détriment de certains emplois.",
+        "blanked_sentence": "L'automatisation progresse {{au détriment de}} certains emplois."
       },
       {
         "expression": "Dans un avenir proche",
         "usage": "Dans un futur imminent",
-        "example": "Dans un avenir proche, les voitures autonomes seront courantes."
+        "example": "Dans un avenir proche, les voitures autonomes seront courantes.",
+        "blanked_sentence": "{{Dans un avenir proche}}, les voitures autonomes seront courantes."
       },
       {
         "expression": "De manière significative",
         "usage": "De façon importante et notable",
-        "example": "Les émissions de CO2 ont diminué de manière significative."
+        "example": "Les émissions de CO2 ont diminué de manière significative.",
+        "blanked_sentence": "Les émissions de CO2 ont diminué {{de manière significative}}."
       },
       {
         "expression": "Au fur et à mesure que",
         "usage": "Progressivement, en même temps que",
-        "example": "Au fur et à mesure que la technologie avance, les questions éthiques se multiplient."
+        "example": "Au fur et à mesure que la technologie avance, les questions éthiques se multiplient.",
+        "blanked_sentence": "{{Au fur et à mesure que}} la technologie avance, les questions éthiques se multiplient."
       },
       {
         "expression": "D'ici à + horizon temporel",
         "usage": "Avant un moment futur",
-        "example": "D'ici à 2050, les énergies fossiles devraient être abandonnées."
+        "example": "D'ici à 2050, les énergies fossiles devraient être abandonnées.",
+        "blanked_sentence": "{{D'ici à}} 2050, les énergies fossiles devraient être abandonnées."
       },
       {
         "expression": "À terme",
         "usage": "En fin de compte, dans le futur",
-        "example": "À terme, l'intelligence artificielle transformera tous les secteurs."
+        "example": "À terme, l'intelligence artificielle transformera tous les secteurs.",
+        "blanked_sentence": "{{À terme}}, l'intelligence artificielle transformera tous les secteurs."
       },
       {
         "expression": "Progressivement",
         "usage": "De manière graduelle",
-        "example": "Les énergies renouvelables remplaceront progressivement le pétrole."
+        "example": "Les énergies renouvelables remplaceront progressivement le pétrole.",
+        "blanked_sentence": "Les énergies renouvelables remplaceront {{progressivement}} le pétrole."
       },
       {
         "expression": "De façon exponentielle",
         "usage": "À un rythme de croissance de plus en plus rapide",
-        "example": "La puissance des ordinateurs croît de façon exponentielle."
+        "example": "La puissance des ordinateurs croît de façon exponentielle.",
+        "blanked_sentence": "La puissance des ordinateurs croît {{de façon exponentielle}}."
       },
       {
         "expression": "En un clin d'œil",
         "usage": "Très rapidement",
-        "example": "La technologie évolue en un clin d'œil."
+        "example": "La technologie évolue en un clin d'œil.",
+        "blanked_sentence": "La technologie évolue {{en un clin d'œil}}."
       },
       {
         "expression": "Pas à pas",
         "usage": "De manière progressive et prudente",
-        "example": "La transition énergétique se fait pas à pas."
+        "example": "La transition énergétique se fait pas à pas.",
+        "blanked_sentence": "La transition énergétique se fait {{pas à pas}}."
       }
     ],
     "conjugation_list": [
@@ -3210,52 +3314,62 @@
       {
         "expression": "Être touché par",
         "usage": "Ressentir une émotion face à une œuvre",
-        "example": "J'ai été profondément touché par cette sculpture."
+        "example": "J'ai été profondément touché par cette sculpture.",
+        "blanked_sentence": "J'ai {{été}} profondément {{touché par}} cette sculpture."
       },
       {
         "expression": "Laisser indifférent",
         "usage": "Ne provoquer aucune émotion",
-        "example": "Cette exposition ne m'a pas laissé indifférent."
+        "example": "Cette exposition ne m'a pas laissé indifférent.",
+        "blanked_sentence": "Cette exposition ne m'a pas {{laissé indifférent}}."
       },
       {
         "expression": "Avoir le souffle coupé",
         "usage": "Être saisi d'admiration",
-        "example": "En entrant dans la chapelle Sixtine, j'ai eu le souffle coupé."
+        "example": "En entrant dans la chapelle Sixtine, j'ai eu le souffle coupé.",
+        "blanked_sentence": "En entrant dans la chapelle Sixtine, j'ai {{eu le souffle coupé}}."
       },
       {
         "expression": "Susciter la polémique",
         "usage": "Provoquer un débat vif",
-        "example": "L'œuvre de cet artiste contemporain a suscité la polémique."
+        "example": "L'œuvre de cet artiste contemporain a suscité la polémique.",
+        "blanked_sentence": "L'œuvre de cet artiste contemporain {{a suscité la polémique}}."
       },
       {
         "expression": "En ce qui me concerne",
         "usage": "Donner son avis personnel",
-        "example": "En ce qui me concerne, cet artiste est un génie."
+        "example": "En ce qui me concerne, cet artiste est un génie.",
+        "blanked_sentence": "{{En ce qui me concerne}}, cet artiste est un génie."
       },
       {
         "expression": "Il me semble que + indicatif",
         "usage": "Exprimer une opinion avec réserve",
-        "example": "Il me semble que cette toile manque de profondeur."
+        "example": "Il me semble que cette toile manque de profondeur.",
+        "blanked_sentence": "{{Il me semble que}} cette toile manque de profondeur."
       },
       {
         "expression": "Quoi qu'on en dise",
         "usage": "Malgré les critiques",
-        "example": "Quoi qu'on en dise, l'art contemporain a sa place dans les musées."
+        "example": "Quoi qu'on en dise, l'art contemporain a sa place dans les musées.",
+        "blanked_sentence": "{{Quoi qu'on en dise}}, l'art contemporain a sa place dans les musées."
       },
       {
         "expression": "Il est indéniable que",
         "usage": "Affirmer un fait incontestable",
-        "example": "Il est indéniable que l'art influence la société."
+        "example": "Il est indéniable que l'art influence la société.",
+        "blanked_sentence": "{{Il est indéniable que}} l'art influence la société."
       },
       {
         "expression": "Pour peu que + subjonctif",
         "usage": "Exprimer une condition minimale",
-        "example": "Pour peu qu'on s'y intéresse, l'art brut révèle une richesse insoupçonnée."
+        "example": "Pour peu qu'on s'y intéresse, l'art brut révèle une richesse insoupçonnée.",
+        "blanked_sentence": "{{Pour peu qu'}}on s'y intéresse, l'art brut révèle une richesse insoupçonnée."
       },
       {
         "expression": "N'en déplaise à",
         "usage": "Malgré le désaccord de",
-        "example": "N'en déplaise aux puristes, le street art est un art à part entière."
+        "example": "N'en déplaise aux puristes, le street art est un art à part entière.",
+        "blanked_sentence": "{{N'en déplaise aux}} puristes, le street art est un art à part entière."
       }
     ],
     "conjugation_list": [

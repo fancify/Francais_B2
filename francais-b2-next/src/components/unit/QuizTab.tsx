@@ -82,51 +82,11 @@ function Collapsible({
   );
 }
 
-// ── 工具：转义正则特殊字符 ──
+// ── 工具：将 {{...}} 标记替换为 ___ ──
 
-function escapeRegex(s: string): string {
-  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
-// ── 工具：去掉语法标注（如 "+ subjonctif", "(mise en relief)"）──
-
-function stripGrammarNotes(expr: string): string {
-  return expr
-    .replace(/\s*\([^)]*\)\s*/g, "") // (mise en relief)
-    .replace(/\s*\+\s*(subjonctif|indicatif|infinitif|conditionnel|nom)\b/gi, "")
-    .trim();
-}
-
-// ── 工具：在例句中将表达式替换为 ___ ──
-// 处理三种情况：
-//   1. 普通表达式：整词匹配
-//   2. 含 "..." 的表达式（如 "Certes... mais"）：拆分后分别替换每个部分
-//   3. 含语法标注的表达式：先去掉标注再匹配
-
-function blankExpression(sentence: string, expression: string): string {
-  if (!sentence) return "";
-  const boundary = "(?![a-zA-ZÀ-ÿ0-9])";
-  const cleaned = stripGrammarNotes(expression);
-
-  if (cleaned.includes("...")) {
-    const parts = cleaned
-      .split("...")
-      .map((p) => p.trim())
-      .filter(Boolean);
-    let result = sentence;
-    for (const part of parts) {
-      result = result.replace(
-        new RegExp(escapeRegex(part) + boundary, "gi"),
-        "___",
-      );
-    }
-    return result;
-  }
-
-  return sentence.replace(
-    new RegExp(escapeRegex(cleaned) + boundary, "gi"),
-    "___",
-  );
+function blankExpression(blankedSentence: string): string {
+  if (!blankedSentence) return "";
+  return blankedSentence.replace(/\{\{[^}]+\}\}/g, "___");
 }
 
 // ── 单题渲染（表单态） ──
@@ -225,18 +185,15 @@ function ExprSection({ questions, answers, onAnswer }: ExprSectionProps): React.
       {/* Questions */}
       <div className="space-y-5">
         {questions.map((q, i) => {
-          const hint = q.hint ?? "";
-          const blanked = hint ? blankExpression(hint, q.answer) : "";
-          // blanking 成功时显示挖空句子；失败时仍显示原句作为上下文
-          // （失败说明 expression 不是逐字出现在例句中，不会泄露答案）
-          const showSentence = !!hint;
+          const blanked = q.source ? blankExpression(q.source) : "";
+          const showSentence = !!blanked;
 
           return (
             <div key={q._key} className="space-y-2">
               <p className="text-xs italic text-apple-secondary">{q.prompt}</p>
               {showSentence && (
                 <p className="rounded-[10px] bg-apple-bg px-3 py-2 text-sm text-apple-text">
-                  {blanked !== hint ? blanked : hint}
+                  {blanked}
                 </p>
               )}
               <select
