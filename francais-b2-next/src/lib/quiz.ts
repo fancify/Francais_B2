@@ -204,13 +204,12 @@ export function generateUnitQuiz(
     nVocab,
     weakQuota(nVocab),
   );
-  // 表达题：全部纳入，weakQuota 设为 nExpr 确保不截断
   const exprQs = splitWeakAndNormal(
     expr,
     exprKey,
     weakKeysByType.expression,
     nExpr,
-    nExpr,
+    weakQuota(nExpr),
   );
   const conjQs = splitWeakAndNormal(
     conj,
