@@ -88,20 +88,30 @@ function escapeRegex(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+// ── 工具：去掉语法标注（如 "+ subjonctif", "(mise en relief)"）──
+
+function stripGrammarNotes(expr: string): string {
+  return expr
+    .replace(/\s*\([^)]*\)\s*/g, "") // (mise en relief)
+    .replace(/\s*\+\s*(subjonctif|indicatif|infinitif|conditionnel|nom)\b/gi, "")
+    .trim();
+}
+
 // ── 工具：在例句中将表达式替换为 ___ ──
-// 处理两种情况：
-//   1. 普通表达式：整词匹配，不匹配部分词（如 "Malgré le" 不匹配 "Malgré les"）
+// 处理三种情况：
+//   1. 普通表达式：整词匹配
 //   2. 含 "..." 的表达式（如 "Certes... mais"）：拆分后分别替换每个部分
+//   3. 含语法标注的表达式：先去掉标注再匹配
 
 function blankExpression(sentence: string, expression: string): string {
   if (!sentence) return "";
-  // 整词边界：匹配后不能紧跟字母或数字
   const boundary = "(?![a-zA-ZÀ-ÿ0-9])";
+  const cleaned = stripGrammarNotes(expression);
 
-  if (expression.includes("...")) {
-    const parts = expression
+  if (cleaned.includes("...")) {
+    const parts = cleaned
       .split("...")
-      .map((p) => p.replace(/\s*\([^)]*\)\s*$/, "").trim()) // strip "(mise en relief)" etc.
+      .map((p) => p.trim())
       .filter(Boolean);
     let result = sentence;
     for (const part of parts) {
@@ -114,7 +124,7 @@ function blankExpression(sentence: string, expression: string): string {
   }
 
   return sentence.replace(
-    new RegExp(escapeRegex(expression) + boundary, "gi"),
+    new RegExp(escapeRegex(cleaned) + boundary, "gi"),
     "___",
   );
 }
@@ -193,8 +203,22 @@ interface ExprSectionProps {
 function ExprSection({ questions, answers, onAnswer }: ExprSectionProps): React.ReactElement {
   const allExpressions = questions.map((q) => q.answer);
 
+  // ── DEBUG: 检查 _key 去重 ──
+  const keys = questions.map((q) => q._key);
+  const uniqueKeys = new Set(keys);
+  const hasDuplicateKeys = uniqueKeys.size !== keys.length;
+
   return (
     <Collapsible title={`Expressions (${questions.length})`} defaultOpen>
+      {/* ── DEBUG PANEL — 部署后检查，确认后删除 ── */}
+      <div className="mb-4 rounded-lg border-2 border-dashed border-apple-orange bg-apple-orange/5 p-3 text-xs font-mono">
+        <p className="font-bold text-apple-orange">DEBUG — ExprSection</p>
+        <p>questions.length = {questions.length}</p>
+        <p>unique _keys = {uniqueKeys.size} {hasDuplicateKeys ? "⚠️ DUPLICATE KEYS!" : "✅"}</p>
+        <p>keys: [{keys.map((k, i) => `${i}:"${k}"`).join(", ")}]</p>
+        <p>allExpressions (answers): [{allExpressions.join(", ")}]</p>
+      </div>
+
       {/* Référence */}
       <div className="mb-4 border-b border-apple-border pb-4">
         <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-apple-secondary">
@@ -217,15 +241,17 @@ function ExprSection({ questions, answers, onAnswer }: ExprSectionProps): React.
         {questions.map((q, i) => {
           const hint = q.hint ?? "";
           const blanked = hint ? blankExpression(hint, q.answer) : "";
-          // 如果 blanking 失败（句子未变化），不显示原句——避免答案暴露
-          const showSentence = blanked && blanked !== hint;
+          // blanking 成功时显示挖空句子；失败时仍显示原句作为上下文
+          // （失败说明 expression 不是逐字出现在例句中，不会泄露答案）
+          const showSentence = !!hint;
 
           return (
-            <div key={i} className="space-y-2">
+            <div key={q._key} className="space-y-2" data-debug-index={i} data-debug-key={q._key}>
+              <p className="text-xs text-apple-orange font-mono">[DEBUG idx={i} key=&quot;{q._key}&quot;]</p>
               <p className="text-xs italic text-apple-secondary">{q.prompt}</p>
               {showSentence && (
                 <p className="rounded-[10px] bg-apple-bg px-3 py-2 text-sm text-apple-text">
-                  {blanked}
+                  {blanked !== hint ? blanked : hint}
                 </p>
               )}
               <select
@@ -464,7 +490,7 @@ export function QuizTab({ unit, allUnits }: QuizTabProps): React.ReactElement {
               <div className="space-y-5">
                 {questions.map((q, i) => (
                   <QuestionField
-                    key={`${section.key}-${i}`}
+                    key={q._key}
                     question={q}
                     index={i}
                     sectionKey={section.key}
@@ -547,7 +573,7 @@ export function QuizTab({ unit, allUnits }: QuizTabProps): React.ReactElement {
             >
               <div className="space-y-4">
                 {sectionResults.map((r, i) => (
-                  <ResultItem key={i} result={r} index={i} />
+                  <ResultItem key={r._key} result={r} index={i} />
                 ))}
               </div>
             </Collapsible>

@@ -157,19 +157,20 @@ export function generateUnitQuiz(
     return { vocab: [], expr: [], conj: [], trans: [] };
   }
 
+  // 表达题全部纳入（题库小且每题都有价值），其余类别分配剩余配额
+  const nExpr = expr.length;
   const TARGET = 40;
+  const remainingTarget = Math.max(TARGET - nExpr, 0);
 
   const alloc = allocate(
     {
       vocab: vocab.length,
-      expr: expr.length,
       conj: conj.length,
       trans: transforms.length,
     },
-    TARGET,
+    remainingTarget,
   );
   const nVocab = alloc.vocab;
-  const nExpr = alloc.expr;
   const nConj = alloc.conj;
   const nTrans = alloc.trans;
 
@@ -269,6 +270,11 @@ export function generateUnitQuiz(
     answer: e.expression,
     _key: exprKey(e),
   }));
+
+  // DEBUG — 确认后删除
+  console.log("[DEBUG quiz.ts] expr pool:", expr.length, "→ nExpr:", nExpr, "→ exprQs:", exprQs.length, "→ exprQuestions:", exprQuestions.length);
+  console.log("[DEBUG quiz.ts] expr _keys:", exprQuestions.map((q) => q._key));
+  console.log("[DEBUG quiz.ts] duplicate _keys?", exprQuestions.length !== new Set(exprQuestions.map((q) => q._key)).size);
 
   // ── 变位题：填空 ──
   const conjQuestions: QuizQuestion[] = conjQs.map((c) => ({
