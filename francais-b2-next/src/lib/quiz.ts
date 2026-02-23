@@ -271,11 +271,6 @@ export function generateUnitQuiz(
     _key: exprKey(e),
   }));
 
-  // DEBUG — 确认后删除
-  console.log("[DEBUG quiz.ts] expr pool:", expr.length, "→ nExpr:", nExpr, "→ exprQs:", exprQs.length, "→ exprQuestions:", exprQuestions.length);
-  console.log("[DEBUG quiz.ts] expr _keys:", exprQuestions.map((q) => q._key));
-  console.log("[DEBUG quiz.ts] duplicate _keys?", exprQuestions.length !== new Set(exprQuestions.map((q) => q._key)).size);
-
   // ── 变位题：填空 ──
   const conjQuestions: QuizQuestion[] = conjQs.map((c) => ({
     qtype: "fill" as const,

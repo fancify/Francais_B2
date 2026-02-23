@@ -203,22 +203,8 @@ interface ExprSectionProps {
 function ExprSection({ questions, answers, onAnswer }: ExprSectionProps): React.ReactElement {
   const allExpressions = questions.map((q) => q.answer);
 
-  // ── DEBUG: 检查 _key 去重 ──
-  const keys = questions.map((q) => q._key);
-  const uniqueKeys = new Set(keys);
-  const hasDuplicateKeys = uniqueKeys.size !== keys.length;
-
   return (
     <Collapsible title={`Expressions (${questions.length})`} defaultOpen>
-      {/* ── DEBUG PANEL — 部署后检查，确认后删除 ── */}
-      <div className="mb-4 rounded-lg border-2 border-dashed border-apple-orange bg-apple-orange/5 p-3 text-xs font-mono">
-        <p className="font-bold text-apple-orange">DEBUG — ExprSection</p>
-        <p>questions.length = {questions.length}</p>
-        <p>unique _keys = {uniqueKeys.size} {hasDuplicateKeys ? "⚠️ DUPLICATE KEYS!" : "✅"}</p>
-        <p>keys: [{keys.map((k, i) => `${i}:"${k}"`).join(", ")}]</p>
-        <p>allExpressions (answers): [{allExpressions.join(", ")}]</p>
-      </div>
-
       {/* Référence */}
       <div className="mb-4 border-b border-apple-border pb-4">
         <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-apple-secondary">
@@ -246,8 +232,7 @@ function ExprSection({ questions, answers, onAnswer }: ExprSectionProps): React.
           const showSentence = !!hint;
 
           return (
-            <div key={q._key} className="space-y-2" data-debug-index={i} data-debug-key={q._key}>
-              <p className="text-xs text-apple-orange font-mono">[DEBUG idx={i} key=&quot;{q._key}&quot;]</p>
+            <div key={q._key} className="space-y-2">
               <p className="text-xs italic text-apple-secondary">{q.prompt}</p>
               {showSentence && (
                 <p className="rounded-[10px] bg-apple-bg px-3 py-2 text-sm text-apple-text">
